@@ -1,0 +1,36 @@
+.radio-player__volume {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 4px;
+  background-color: #56699F;
+}
+
+.radio-player__volume::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.radio-player__volume:focus::-webkit-slider-thumb {
+  background-color: #CCD6DD;
+}
+
+.radio-player__volume::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.radio-player__volume:focus::-moz-range-thumb {
+  background-color: #CCD6DD;
+}
+
+.radio-player__volume:focus {
+  outline: none;
+}

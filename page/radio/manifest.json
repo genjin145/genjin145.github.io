@@ -1,0 +1,17 @@
+{
+  "short_name": "Radio",
+  "name": "Mark Radio",
+  "icons": [
+    {
+      "src": "img/favicon.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }
+  ],
+  "start_url": "/radio",
+  "background_color": "#497DCA",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/radio",
+  "theme_color": "#497DCA"
+}

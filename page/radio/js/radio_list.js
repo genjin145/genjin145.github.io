@@ -1,0 +1,72 @@
+var radio_list = [
+    {
+        "Name" : "ROCK Antenne",
+        "Radio": "http://mp3channels.webradio.antenne.de:80/rockantenne",
+        "Logo": "img/logo/Rock_Antenne.png",
+        "Genre": "Rock",
+        "Site": "http://www.rockantenne.de",
+ },
+    {
+        "Name" : "ENERGY",
+        "Radio": "http://ic2.101.ru:8000/v1_1",
+        "Logo": "img/logo/nrj.jpg",
+        "Genre": "Pop",
+		"Site": "http://www.energyfm.ru",
+ },
+    {
+        "Name" : "RECORD",
+        "Radio": "http://online.radiorecord.ru:8100/rr128_com_reg",
+        "Logo": "img/logo/11820872.jpg",
+        "Genre": "Dance",
+		"Site": "http://www.radiorecord.ru",
+ },
+    {
+        "Name" : "Русское Радио",
+        "Radio": "https://rusradio.hostingradio.ru/rusradio96.aacp?0.9220414744702066",
+        "Logo": "img/logo/muz-puls.ru-18.07.2016-lMupBu46cqd0iEk73MAPtWX1sF5lxwVT.png",
+        "Genre": "Pop",
+		"Site": "http://www.rusradio.ru",
+ },
+    {
+        "Name" : "Rock Arsenal",
+        "Radio": "http://188.128.117.99:8000/rockarsenal",
+        "Logo": "img/logo/logo.png",
+        "Genre": "Rock",
+		"Site": "http://www.rockarsenal.ru",
+ },
+    {
+        "Name" : "Europa Plus",
+        "Radio": "http://ep256.hostingradio.ru:8052/europaplus256.mp3",
+        "Logo": "img/logo/2494.jpg",
+        "Genre": "Pop",
+		"Site": "http://www.europaplus.ru",
+ },
+    {
+        "Name" : "Hit FM",
+        "Radio": "https://hitfm.hostingradio.ru/hitfm96.aacp?0.6632664076869881",
+        "Logo": "img/logo/hitfm_logo.png",
+        "Genre": "Pop",
+		"Site": "http://www.hitfm.ru/",
+ },
+        {
+        "Name" : "Русский Хит",
+        "Radio": "http://stream.n340.com/19_ruhit_24?type=.aac&UID=7A85E688161CBDB55014B45BF37BED40",
+        "Logo": "img/logo/12734.png",
+        "Genre": "Pop",
+		"Site": "http://www.ruhit.fm",
+ },
+        {
+        "Name" : "DFM",
+        "Radio": "https://dfm.hostingradio.ru/dfm96.aacp",
+        "Logo": "img/logo/DFM.jpg",
+        "Genre": "Dance",
+		"Site": "http://www.dfm.ru",
+ },
+        {
+        "Name" : "Джем FM",
+        "Radio": "http://46.61.148.62:8000/jam_aacplus",
+        "Logo": "img/logo/jam.png",
+        "Genre": "Pop",
+		"Site": "http://www.radiojamfm.ru",
+ }
+];

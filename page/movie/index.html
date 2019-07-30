@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies</title>
+  <link rel="shortcut icon" href="img/favicon-96.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .hidden {
+      display: none;
+    }
+
+    .visually-hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <button class="main-navigation__button_menu button button_menu">
+          <svg class="button_menu__svg-inactive hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+          <svg class="button_menu__svg-active" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>          
+      </button>
+
+      <a href="#" class="logo">movies</a>
+
+      <div class="main-navigation__search search">
+        <input class="search__input" type="text" placeholder="Fied movies">
+        <button class="search__button button button_search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </button>
+      </div>
+
+      <ul class="main-navigation__view-options view-options">
+        <li class="view-options__item">
+            <button class="view-options_list button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 14h4v-4H4v4zm0 5h4v-4H4v4zM4 9h4V5H4v4zm5 5h12v-4H9v4zm0 5h12v-4H9v4zM9 5v4h12V5H9z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+            </button>
+        </li>
+
+        <li class="view-options__item">
+            <button class="view-options_module button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+            </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__inner">
+      <ul class="footer-social">
+        <li class="footer-social__item">
+          <a href="https://github.com/genjin145">
+            <img src="img/GitHub-Mark-Light-32px.png" alt="GitHub" title="GitHub">
+          </a>
+        </li>
+      </ul>
+
+      <p class="footer-use">
+        Site use<a class="footer-use__link" href="http://www.omdbapi.com/">OMDb API</a>
+      </p>
+
+      <p class="footer-copyright">
+        Copyright © 2019<a class="footer-copyright__link" href="mailto:genjin145@gmail.com">by Mark</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- <script src="js/movie_list.json"></script> -->
+  <script src="js/page/cap.js"></script>
+  <script src="js/page/mainView.js"></script>
+  <script src="js/page/movie.js"></script>
+  <script src="js/page/error.js"></script>
+  <script src="js/block/pagination.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

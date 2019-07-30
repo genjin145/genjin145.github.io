@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <link rel="manifest" href="/radio/manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/volume.css">
+  <title>Radio</title>
+</head>
+<body>
+  <main>
+    <article class="radio">
+      <h2 class="radio__title" hidden>Radio</h2>
+
+      <nav class="radio__player radio-player">
+        <button class="radio-player__play radio-player-button">&#xf16b;</button>
+        <button class="radio-player__prev radio-player-button radio-player-button_prev">&#xf169;</button>
+        <button class="radio-player__next radio-player-button radio-player-button_next">&#xf16d;</button>
+
+        <p class="radio__logo radio-logo">
+          <span class="radio-logo__image">&#xf040;</span>
+          <b>Mark</b>
+          <sub>Radio</sub>
+        </p>
+
+        <div class="radio-player__sound">
+          <button class="radio-player__speaker radio-player-button radio-player-button_speaker">&#xf03a;</button>
+          <input class="radio-player__volume" type="range">
+        </div>
+      </nav>
+
+      <div class="radio__active-track radio-active-track">
+        <div class="radio-active-track__image-wrapper">
+          <img class="radio-active-track__image" src="img/logo/2494.jpg" alt="Europa Plus">
+        </div>
+
+        <p class="radio-active-track__info">
+          <b class="radio-active-track__title">Europa Plus</b>
+          <span class="radio-active-track__genre">Жанр: Pop</span>
+        </p>
+
+        <a class="radio-active-track__site" href="http://www.europaplus.ru" target="_blank">europaplus.ru</a>
+
+        <button class="radio__close radio-player-button" onclick="window.close()">&#xf017;</button>
+      </div>
+
+      <ol class="radio__list radio-list"></ol>
+    </article>
+  </main>
+
+  <audio src="http://ep256.hostingradio.ru:8052/europaplus256.mp3" crossorigin="anonymous"></audio>
+
+  <script src="js/drag_and_drop.js"></script>
+
+  <script src="js/radio_list.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

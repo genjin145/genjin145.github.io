@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Барбершоп "Бородинский"</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner-page">
+	<header class="main-header">
+		<nav class="main-navigation">
+			<a href="index.html" class="logo-small">
+				<img src="img/logo.svg" alt="Барбершоп &#8220;Бородинский&#8221;" width="111" height="24">
+			</a>
+			<ul class="main-menu">
+				<li><a href="#">информация</a></li>
+				<li><a href="#">новости</a></li>
+				<li><a href="price.html">прайс-лист</a></li>
+				<li class="active"><a href="shop.html">магазин</a></li>
+				<li><a href="#">контакты</a></li>
+			</ul>
+			<ul class="user-menu">
+				<li><a class="link-login icon-login" href="">вход</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="main">
+		<div class="container">
+			<h1 class="section-title">набор для путешествий «BAXTER OF CALIFORNIA»</h1>
+
+			<ul class="breadcrumbs">
+				<li><a href="index.html">главная</a></li>
+				<li><a href="shop.html">магазин</a></li>
+				<li><a href="shop.html">средства для ухода</a></li>
+				<li>набор для путешествий «BAXTER OF CALIFORNIA»</li>
+			</ul>
+		</div>
+
+		<div class="container page-catalog-item">
+			<section class="product-photos">
+				<h2 class="visually-hidden">Изображения товара</h2>
+				<p class="product-photo-full">
+					<img src="img/product-big.png" alt="Весь набор" width="460" height="498">
+				</p>
+				<ul class="product-photo-preview">
+					<li><img src="img/product-small-1.png" alt="Фото 1" width="140" height="149"></li>
+					<li><img src="img/product-small-2.png" alt="Фото 2" width="140" height="149"></li>
+					<li><img src="img/product-small-3.png" alt="Фото 3" width="140" height="149"></li>
+				</ul>
+			</section>
+
+			<section class="product-info">
+				<h2 class="visually-hidden">Описание товара</h2>
+				<p class="product-info-title">
+					<span class="pridct-info-presence">есть в наличии</span>
+					<span class="product-info-article">артикул: dexter-ae</span>
+				</p>
+				<p class="product-info-description">
+					travel kit – необходимый аксессуар во время любого путешествия. в аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. набор также может стать отличным подарком.
+				</p>
+				<p class="product-info-price">
+					<b>2900 ₽</b>
+					<a class="button" href="">купить</a>
+				</p>
+				
+				<div class="product-description-recruit">
+					<h3>в набор входят:</h3>
+					<ul class="base-list">
+						<li>средство для умывания (50 мл)</li>
+						<li>увлажняющий крем (50 мл)</li>
+						<li>крем для бритья (50 мл)</li>
+						<li>крем после бритья, шампунь (50 мл)</li>
+						<li>удобная кожаная косметичка</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<footer class="main-footer">
+		<div class="container">
+			<address>
+				барбершоп «бородинский»<br>
+				адрес: г. санкт-петербург, ул. б. конюшенная, д. 19/8<br>
+				<a href="#">как нас найти?</a><br>
+				телефон: +7 (495) 666-02-66
+			</address>
+			<div class="footer-social">
+				<b>давайте дружить!</b>
+				<ul class="social-list">
+					<li><a class="social-button" href="#"></a></li>
+					<li><a class="social-button" href="#"></a></li>
+					<li><a class="social-button" href="#"></a></li>
+				</ul>
+			</div>
+			<p class="footer-copyright">
+				<b>разработано:</b>
+				<a class="button" href="#">html academy</a>
+			</p>
+		</div>
+	</footer>
+
+	<section class="modal modal-login">
+		<h2>Личный кабинет</h2>
+		<p>введите пожалуйста свой логин и пароль</p>
+		<form action="http://echo.htmlacademy.ru" method="POST">
+			<label class="visually-hidden" for="login-name">Введите свой логин</label>
+			<input id="login-name" name="login-name" type="text" placeholder="ЛОГИН">
+
+			<label class="visually-hidden" for="login-password">Введите свой пароль</label>
+			<input id="login-password" name="login-password" type="password" placeholder="ПАРОЛЬ">
+
+			<p class="login-remember-me">
+				<label>
+					<input class="visually-hidden" id="login-remember-me" name="login-remember-me" type="checkbox" checked>
+					<span class="checkbox-indicator"></span>
+					запомните меня
+				</label>
+				<a class="forgot-password" href="#">я забыл пароль!</a>
+			</p>
+			<button class="button">войти</button>
+		</form>
+		<button class="modal-close"><img src="img/cross.svg" alt="Закрыть карту"></button>
+	</section>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
