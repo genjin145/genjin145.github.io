@@ -26,6 +26,7 @@ img {
   display: inline-block;
   margin: 0;
   margin-left: 20px;
+  padding: 10px;
   font-size: 32px;
   background-color: #5E6B72;
 }
@@ -36,9 +37,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 120px;
   margin: 0;
-  margin-top: 120px;
+  margin-top: 60px;
   padding: 0;
   list-style-type: none;
 }
