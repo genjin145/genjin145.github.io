@@ -16,7 +16,7 @@ view.renderPagination = function(html) {
 let model = {};
 
 model.requestApi = {
-  url: "http://www.omdbapi.com/",
+  url: "https://www.omdbapi.com/",
   apikey: "cd1e14a6&i"
 };
 
