@@ -1,0 +1,217 @@
+.banner {
+    position: relative;
+  }
+  
+  .banner__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .banner__item {
+    display: flex;
+    flex-direction: column;
+    padding-top: 112px;
+    padding-bottom: 45px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background: url(../img/background.png) no-repeat 50% 0;
+    background: linear-gradient(180deg, rgba(24, 14, 9, 0) calc(100% - 100px), #190E09 100%),
+                linear-gradient(0deg, rgba(18, 10, 6, 0.7), rgba(18, 10, 6, 0.7)), url(../img/background.png) no-repeat 35% 0;
+    
+  }
+  
+  .banner__item.banner__item--slide-2 {
+    background: url(../img/background_2.png) no-repeat 50% 0;
+    background: linear-gradient(180deg, rgba(24, 14, 9, 0) calc(100% - 100px), #190E09 100%),
+                linear-gradient(0deg, rgba(18, 10, 6, 0.7), rgba(18, 10, 6, 0.7)), url(../img/background_2.png) no-repeat 100% 0;
+    background-size: auto 100%;
+  }
+  
+  .banner__description {
+    order: 1;
+  
+    @media screen and (min-width: 360px) {
+      margin-left: 0 !important;
+    }
+  }
+  
+  .banner__title {
+    order: 2;
+  }
+  
+  .banner-menu-diamond {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .banner-menu-diamond__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 18px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .banner-menu-diamond__icon path {
+    fill: rgba(255, 255, 255, 0.3);
+    transition: fill 200ms;
+  }
+  
+  .banner-menu-diamond__button:hover  > .banner-menu-diamond__icon path,
+  .banner-menu-diamond__button--active > .banner-menu-diamond__icon path {
+    fill: rgba(224, 139, 102, 0.7)
+  }
+  
+  .banner-menu-circle {
+    display: none;
+  }
+  
+  .banner-title {
+    margin: 0;
+    margin-top: 30px;
+    max-width: 335px;
+    color: #fff;
+    font-size: 36px;
+    line-height: 42px;
+    font-family: "Lazurski";
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  
+    @media screen and (min-width: 360px) {
+      margin-left: auto;
+      margin-right: auto;
+      width: 335px;
+    }
+  }
+  
+  .banner-title__bigger {
+    display: block;
+    color: #E08B66;
+    text-align: right;
+  }
+  
+  .banner-description {
+    margin: 0 auto;
+    width: 296px;
+    font-family: "Intro Light";
+  }
+  
+  .banner-description__button {
+    margin-top: 30px;
+  }
+  
+  .banner-description__text {
+    margin: 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .banner__item {
+      padding-top: 133px;
+      padding-bottom: 135px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background: linear-gradient(180deg, rgba(24, 14, 9, 0) calc(100% - 150px), #190E09 100%),
+                  radial-gradient(243.38px at 70.46% 43.59%, rgba(18, 10, 6, 0) 0%, rgba(18, 10, 6, 0.38) 100%),
+                  url(../img/background_768.png) no-repeat 50% 0;
+    }
+  
+    .banner-title {
+      margin-top: 60px;
+      margin-bottom: 0;
+      max-width: inherit;
+      width: 650px;
+      margin-left: 0;
+      font-size: 64px;
+      line-height: 80px;
+    }
+  
+    .banner-title__bigger {
+      font-size: 100px;
+      line-height: 80px;
+    }
+  
+    .banner__description {
+      margin-left: 0;
+      width: 325px;
+    }
+  
+    .banner-description__text {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  
+    .banner-description__button {
+      margin-top: 15px;
+    }
+  
+    .banner-menu-diamond {
+      bottom: 30px;
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .banner__item {
+      position: relative;
+      padding-top: 280px;
+      padding-left: 270px;
+      padding-bottom: 235px;
+      background: linear-gradient(180deg, rgba(24, 14, 9, 0) calc(100% - 150px), #190E09 100%),
+                  url(../img/background_1440.png) no-repeat 30% 30%;
+    }
+  
+    .banner__title {
+      margin-top: 200px;
+      width: 550px;
+    }
+  
+    .banner__description {
+      width: 550px;
+    }
+  
+    .banner-description__button {
+      margin-top: 40px;
+    }
+  
+    .banner-menu-diamond {
+      display: none;
+    }
+  
+    .banner-menu-circle {
+      position: absolute;
+      right: -150px;
+      bottom: 0;
+      display: block;
+      height: 410px;
+      overflow: hidden;
+    }
+  }
+  
+  @media screen and (min-width: 1920px) {
+    .banner__item {
+      padding-left: 310px;
+      padding-bottom: 220px;
+      background: linear-gradient(180deg, rgba(24, 14, 9, 0) calc(100% - 150px), #190E09 100%),
+      url(../img/background_1440.png) no-repeat calc(100% + 80px) -30px;
+    }
+  
+    .banner__title {
+      margin-top: 100px;
+      width: 650px;
+    }
+  
+    .banner-menu-circle {
+      right: 170px;
+    }
+  }

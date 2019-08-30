@@ -1,0 +1,139 @@
+.jumping-slider {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.jumping-slider__item {
+  flex-shrink: 0;
+  margin-right: 30px;
+  width: 253px;
+}
+
+.jumping-slider__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 186px;
+  overflow: hidden;
+}
+
+.jumping-slider__image {
+  width: 100%;
+}
+
+.jumping-slider__title {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  font-family: "Lazurski Bold";
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+
+.jumping-slider__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #E08B66;
+}
+
+.jumping-slider__description {
+  margin: 0;
+  margin-top: 15px;
+  font-family: "Intro Light";
+  font-size: 16px;
+  line-height: 26px;
+  color: #F8F8F8;
+}
+
+.jumping-slider__link-detail {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .jumping-slider {
+    height: 390px;
+  }
+
+  .jumping-slider__item {
+    position: absolute;
+  }
+
+  .jumping-slider__image-wrapper {
+    width: 530px;
+    height: 390px;
+  }
+
+  .jumping-slider__text {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+  }
+
+  .jumping-slider__title::after {
+    width: 65px;
+  }
+
+  .jumping-slider__description {
+    width: 450px;
+  }
+
+  .jumping-slider__link-detail {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .jumping-slider {
+    height: 590px;
+  }
+
+  .jumping-slider__image-wrapper {
+    width: 717px;
+    height: 527px;
+  }
+
+  .jumping-slider__text {
+    bottom: 40px;
+    left: 60px;
+  }
+
+  .jumping-slider__title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .jumping-slider__title::after {
+    width: 87px;
+  }
+
+  .jumping-slider__description {
+    margin-top: 20px;
+  }
+
+  .jumping-slider__link-detail {
+    margin-top: 30px;
+  }
+}
+
+
+
+
+.jumping-slider-options {
+  display: none;
+
+  @media screen and (min-width: 1440px) {
+    display: block;
+    margin-top: 80px;
+  }
+}

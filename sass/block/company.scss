@@ -1,0 +1,169 @@
+.company {
+  position: relative;
+  padding: 12px;
+  padding-top: 50px;
+  padding-bottom: 52px;
+  background-color: #0D0705;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 72px;
+    background-image: url(../../img/company_skew_320.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    z-index: 10;
+
+    @media screen and (min-width: 768px) {
+      height: 150px;
+      background-image: url(../../img/company_skew_768.svg);
+    }
+
+    @media screen and (min-width: 1440px) {
+      height: 190px;
+      background-image: url(../../img/company_skew_1440.svg);
+    }
+
+    @media screen and (min-width: 1920px) {
+      height: 300px;
+      background-image: url(../../img/company_skew_1920.svg);
+    }
+  }
+}
+
+.company__image {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.company__year-foundation {
+  display: block;
+  width: 100%;
+  height: 1px;
+  text-align: center;
+  font-family: "Lazurski";
+  font-size: 100px;
+  font-weight: normal;
+  line-height: 100px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #E08B66;
+  transform: translateY(-50px);
+}
+
+.company__description {
+  margin: 0;
+  margin-top: 65px;
+  font-family: "Intro Light";
+  font-size: 16px;
+  line-height: 26px;
+  color: #F8F8F8;
+}
+
+.company__link-detail {
+  margin-top: 30px;
+}
+
+.company__button-up {
+  position: absolute;
+  right: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .company {
+    padding: 20px;
+    padding-top: 75px;
+    padding-bottom: 52px;
+  }
+
+  .company__image {
+    margin-top: 50px;
+  }
+
+  .company__year-foundation {
+    font-size: 250px;
+    line-height: 300px;
+    transform: translateY(-150px);
+  }
+
+  .company__description {
+    margin-top: 130px;
+  }
+
+  .company__link-detail {
+    margin-top: 40px;
+  }
+
+  .company__button-up {
+    bottom: 30px;
+    right: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .company {
+    padding-left: 270px;
+    padding-right: 75px;
+    padding-top: 150px;
+    padding-bottom: 32px;
+  }
+
+  .company__image {
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    margin-top: 15px;
+    width: 731px;
+  }
+
+  .company__year-foundation {
+    transform: translate(-540px, -190px);
+    text-align: right;
+  }
+
+  .company__description {
+    margin-top: 70px;
+    width: 600px;
+  }
+
+  .company__button-up {
+    bottom: 124px;
+    right: 50px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .company {
+    position: relative;
+    padding-left: 605px;
+    padding-right: 240px;
+    padding-bottom: 75px;
+    background: url(../../img/company_bc_img.png) no-repeat bottom 90px left 0,
+                linear-gradient(#0D0705, #0D0705);
+  }
+
+  .company__title {
+    position: absolute;
+    left: 310px;
+  }
+
+
+  .company__button-up {
+    bottom: 180px;
+    right: 90px;
+  }
+}
+
+
+
+
+
+
+
+.button-up {
+  background-color: transparent;
+  border: none;
+}
