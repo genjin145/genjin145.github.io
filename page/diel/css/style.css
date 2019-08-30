@@ -35,13 +35,13 @@ body {
   font-family: "Intro Light";
   font-size: 16px;
   line-height: 32px;
-  text-decoration: none;
-  transition: padding-left 300ms; }
-  .link-detail:hover {
-    padding-left: 20px; }
+  text-decoration: none; }
+  .link-detail:hover .link-detail__image {
+    margin-left: 30px; }
 
 .link-detail__image {
-  margin-left: 10px; }
+  margin-left: 10px;
+  transition: margin-left 300ms; }
 
 .button-transition {
   position: relative;
@@ -72,7 +72,7 @@ body {
   color: #E08B66;
   font-size: 24px;
   line-height: 32px;
-  font-family: "Lazurski Bold";
+  font-family: "Lazurski";
   font-weight: normal;
   letter-spacing: 2px;
   text-transform: uppercase; }
@@ -623,22 +623,22 @@ body {
   left: 0;
   width: 100%;
   height: 72px;
-  background-image: url(../img/section_skew_320.svg);
+  background-image: url(../../img/section_skew_320.svg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   z-index: 10; }
   @media screen and (min-width: 768px) {
     .advantages::after {
       height: 150px;
-      background-image: url(../img/section_skew_768.svg); } }
+      background-image: url(../../img/section_skew_768.svg); } }
   @media screen and (min-width: 1440px) {
     .advantages::after {
       height: 190px;
-      background-image: url(../img/section_skew_1440.svg); } }
+      background-image: url(../../img/section_skew_1440.svg); } }
   @media screen and (min-width: 1920px) {
     .advantages::after {
       height: 300px;
-      background-image: url(../img/section_skew_1920.svg); } }
+      background-image: url(../../img/section_skew_1920.svg); } }
 
 .advantages-title-wrapper {
   position: relative;
@@ -681,7 +681,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  transition: background-color 300ms; }
+  transition: background-color 600ms; }
 
 .advantages-article__image-wrapper:hover > .advantages-article__image-mask {
   background-color: rgba(0, 0, 0, 0.2); }
@@ -691,7 +691,7 @@ body {
 
 .advantages-article__image {
   width: 100%;
-  transition: transform 300ms; }
+  transition: transform 600ms; }
 
 .advantages-article__image-wrapper:hover > .advantages-article__button-prev,
 .advantages-article__image-wrapper:hover > .advantages-article__button-next {
@@ -805,22 +805,22 @@ body {
     left: 0;
     width: 100%;
     height: 72px;
-    background-image: url(../img/section_skew_320.svg);
+    background-image: url(../../img/section_skew_320.svg);
     background-repeat: no-repeat;
     background-size: 100% auto;
     z-index: 10; }
     @media screen and (min-width: 768px) {
       .our-products::after {
         height: 150px;
-        background-image: url(../img/section_skew_768.svg); } }
+        background-image: url(../../img/section_skew_768.svg); } }
     @media screen and (min-width: 1440px) {
       .our-products::after {
         height: 190px;
-        background-image: url(../img/section_skew_1440.svg); } }
+        background-image: url(../../img/section_skew_1440.svg); } }
     @media screen and (min-width: 1920px) {
       .our-products::after {
         height: 300px;
-        background-image: url(../img/section_skew_1920.svg); } }
+        background-image: url(../../img/section_skew_1920.svg); } }
 
 .our-products__button-group {
   display: flex;
@@ -892,7 +892,7 @@ body {
     padding-top: 230px;
     padding-bottom: 465px;
     padding-left: 310px;
-    background: url(../img/our_products_diamond_bc.png) no-repeat bottom 60px left 310px, linear-gradient(#0C0704, #190E09); }
+    background: url(../../img/our_products_diamond_bc.png) no-repeat bottom 60px left 310px, linear-gradient(#0C0704, #190E09); }
   .our-products__description {
     width: 415px; }
   .our-products__list {
@@ -985,7 +985,7 @@ body {
 @media screen and (min-width: 1920px) {
   .stocks {
     padding-left: 310px;
-    background: #130A07 url(../img/background_diamond.png) no-repeat;
+    background: #130A07 url(../../img/background_diamond.png) no-repeat;
     background-position: bottom -260px right -400px; }
   .stocks__button-transition {
     left: 310px; } }
@@ -1080,22 +1080,22 @@ body {
     left: 0;
     width: 100%;
     height: 72px;
-    background-image: url(../img/company_skew_320.svg);
+    background-image: url(../../img/company_skew_320.svg);
     background-repeat: no-repeat;
     background-size: 100% auto;
     z-index: 10; }
     @media screen and (min-width: 768px) {
       .company::after {
         height: 150px;
-        background-image: url(../img/company_skew_768.svg); } }
+        background-image: url(../../img/company_skew_768.svg); } }
     @media screen and (min-width: 1440px) {
       .company::after {
         height: 190px;
-        background-image: url(../img/company_skew_1440.svg); } }
+        background-image: url(../../img/company_skew_1440.svg); } }
     @media screen and (min-width: 1920px) {
       .company::after {
         height: 300px;
-        background-image: url(../img/company_skew_1920.svg); } }
+        background-image: url(../../img/company_skew_1920.svg); } }
 
 .company__image {
   margin-top: 40px;
@@ -1177,7 +1177,7 @@ body {
     padding-left: 605px;
     padding-right: 240px;
     padding-bottom: 75px;
-    background: url(../img/company_bc_img.png) no-repeat bottom 90px left 0, linear-gradient(#0D0705, #0D0705); }
+    background: url(../../img/company_bc_img.png) no-repeat bottom 90px left 0, linear-gradient(#0D0705, #0D0705); }
   .company__title {
     position: absolute;
     left: 310px; }
@@ -1317,7 +1317,7 @@ body {
     left: 0;
     width: 100%;
     height: 72px;
-    background-image: url(../img/footer_skew_320.svg);
+    background-image: url(../../img/footer_skew_320.svg);
     background-position-y: bottom;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -1325,15 +1325,15 @@ body {
     @media screen and (min-width: 768px) {
       .footer::before {
         height: 150px;
-        background-image: url(../img/footer_skew_768.svg); } }
+        background-image: url(../../img/footer_skew_768.svg); } }
     @media screen and (min-width: 1440px) {
       .footer::before {
         height: 190px;
-        background-image: url(../img/footer_skew_1440.svg); } }
+        background-image: url(../../img/footer_skew_1440.svg); } }
     @media screen and (min-width: 1920px) {
       .footer::before {
         height: 300px;
-        background-image: url(../img/footer_skew_1920.svg); } }
+        background-image: url(../../img/footer_skew_1920.svg); } }
 
 .footer__info {
   margin-top: 70px; }

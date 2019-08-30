@@ -85,7 +85,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    transition: background-color 300ms;
+    transition: background-color 600ms;
   }
   
   .advantages-article__image-wrapper:hover > .advantages-article__image-mask {
@@ -98,7 +98,7 @@
   
   .advantages-article__image {
     width: 100%;
-    transition: transform 300ms;
+    transition: transform 600ms;
   }
   
   .advantages-article__image-wrapper:hover > .advantages-article__button-prev,
