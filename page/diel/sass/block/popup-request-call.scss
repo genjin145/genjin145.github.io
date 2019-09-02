@@ -1,0 +1,31 @@
+.popup-request-call {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 12px;
+  width: 100vw;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, .5);
+  overflow: hidden;
+  overflow-y: hidden;
+  z-index: 100;
+}
+
+.popup-request-call__inner {
+  margin: 0 auto;
+
+  background: #160A04;
+  border: 2px solid rgba(224, 139, 102, 0.3);
+}
+
+.popup-request-call__title {
+  width: 182px;
+}
+
+.popup-request-call__lable {
+  font-family: "Intro Light";
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
