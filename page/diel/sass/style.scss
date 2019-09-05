@@ -331,15 +331,20 @@ body {
   z-index: 1;
 }
 
-.input-checkbox:checked::after {
+.input-checkbox::after {
   content: "";
   position: absolute;
+  display: none;
   top: -5px;
   left: -5px;
   width: 20px;
   height: 20px;
   background: url(../img/daw.svg) no-repeat 50%;
   z-index: 2;
+}
+
+.input-checkbox:checked::after {
+  display: block;
 }
 
 .input-submit {
@@ -409,6 +414,8 @@ body {
 @import "./block/popup-main-menu";
 @import "./block/popup-search";
 @import "./block/popup-request-call";
+
+@import "./block/tiny-slider";
 
 
 
