@@ -100,12 +100,12 @@
     bottom: 0;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1366px) {
     .footer {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      padding-left: 270px;
+      padding-left: 55px;
       padding-right: 50px;
       padding-top: 120px;
       padding-bottom: 170px;
@@ -145,6 +145,11 @@
     }
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding-left: 270px;}
+  }
 
 @media screen and (min-width: 1920px) {
   .footer {

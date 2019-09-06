@@ -12,6 +12,12 @@ gulp.task("sass", function () {
     .pipe(gulp.dest("./css"))
     .pipe(browserSync.stream());
 });
+
+gulp.task("js", function() {
+  return gulp.src("js/**/*.js")
+    .pipe(gulp.dest("./dist/js"))
+    .pipe(browserSync.stream());
+});
  
 gulp.task("serve", function () {
   browserSync.init({
@@ -20,4 +26,5 @@ gulp.task("serve", function () {
 
   gulp.watch("./sass/**/*.scss", gulp.series("sass"));
   gulp.watch("./*.html").on('change', browserSync.reload);
+  gulp.watch("./js/**/*.js", gulp.series("js"));
 });

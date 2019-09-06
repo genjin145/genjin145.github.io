@@ -28,18 +28,24 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1366px) {
   .collections {
     padding-top: 225px;
     padding-bottom: 100px;
-    padding-left: 270px;
-    background: url(../img/background_diamond.png) no-repeat -457px 200px,
-                linear-gradient(#0F0805, #110A07);
+    padding-left: 55px;
   }
 
   .collections__button-transition {
     top: 240px;
     right: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .collections {
+    padding-left: 270px;
+    background: url(../img/background_diamond.png) no-repeat -457px 200px,
+                linear-gradient(#0F0805, #110A07);
   }
 }
 

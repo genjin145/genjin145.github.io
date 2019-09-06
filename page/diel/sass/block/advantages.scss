@@ -45,6 +45,7 @@
   .advantages__button-next {
     position: absolute;
     right: 10px;
+    display: none;
     padding: 0;
     background-color: transparent;
     border: none;
@@ -173,12 +174,16 @@
       margin-right: 50px;
       width: 400px;
     }
+
+    .advantages__button-next {
+      display: block;
+    }
   }
   
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1366px) {
     .advantages {
-      padding-left: 275px;
       padding-top: 109px;
+      padding-left: 55px;
 
       &::before {
         content: "";
@@ -214,6 +219,12 @@
     .advantages-article__title {
       font-size: 24px;
       line-height: 29px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .advantages {
+      padding-left: 275px;
     }
   }
   

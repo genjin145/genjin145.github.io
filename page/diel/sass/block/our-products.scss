@@ -105,15 +105,21 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1366px) {
   .our-products {
-    padding-left: 270px;
+    padding-left: 55px;
     padding-right: 50px;
     padding-top: 228px;
   }
 
   .our-products__list {
     height: 675px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .our-products {
+    padding-left: 270px;
   }
 }
 

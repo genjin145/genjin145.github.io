@@ -103,9 +103,9 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1366px) {
   .company {
-    padding-left: 270px;
+    padding-left: 55px;
     padding-right: 75px;
     padding-top: 150px;
     padding-bottom: 32px;
@@ -132,6 +132,12 @@
   .company__button-up {
     bottom: 124px;
     right: 50px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .company {
+    padding-left: 270px;
   }
 }
 

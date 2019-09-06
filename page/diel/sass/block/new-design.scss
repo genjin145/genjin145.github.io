@@ -63,10 +63,10 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1366px) {
   .new-design {
     position: relative;
-    padding-left: 270px;
+    padding-left: 55px;
     padding-right: 97px;
     padding-top: 210px;
     padding-bottom: 145px;
@@ -114,6 +114,12 @@
     width: 470px;
     height: 950px;
     overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .new-design {
+    padding-left: 270px;
   }
 }
 
