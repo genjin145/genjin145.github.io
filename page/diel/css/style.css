@@ -1768,7 +1768,8 @@ body {
     padding-left: 55px;
     padding-right: 50px;
     padding-top: 120px;
-    padding-bottom: 170px; }
+    padding-bottom: 170px;
+    overflow: hidden; }
     .footer::after {
       content: "";
       position: absolute;
@@ -2467,9 +2468,9 @@ body {
 @media screen and (min-width: 1440px) {
   .main {
     background: url(../img/background_diamond.png) no-repeat -457px 150px; }
-  body {
+  .main {
     position: relative; }
-  body::before {
+  .main::before {
     content: "";
     position: absolute;
     top: 0;
@@ -2486,7 +2487,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 1920px !important; }
-  section {
+  main,
+  .footer {
     margin-left: auto !important;
     margin-right: auto !important;
-    width: 1920px !important; } }
+    max-width: 1920px !important;
+    box-sizing: border-box; } }
