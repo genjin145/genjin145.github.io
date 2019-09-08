@@ -1,0 +1,26 @@
+.logo {
+  width: 86px;
+
+  @media screen and (min-width: 1366px) {
+    width: 126px;
+  }
+}
+
+@keyframes logo-brilliant {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.logo:hover > .logo__brilliant {
+  animation-name: logo-brilliant;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}

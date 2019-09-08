@@ -8,8 +8,13 @@
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, .5);
   overflow: hidden;
-  overflow-y: scroll;
+  transition: opacity 400ms;
   z-index: 100;
+}
+
+.popup-request-call--hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .popup-request-call__inner {

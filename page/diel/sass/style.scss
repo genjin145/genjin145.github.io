@@ -417,7 +417,7 @@ body {
 
 .popup-button {
   position: absolute;
-  padding: 0;
+  padding: 10px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -430,6 +430,7 @@ body {
 
 @import "./block/slider";
 
+@import "./element/logo";
 @import "./element/social-menu";
 @import "./element/payment-methods";
 
@@ -454,14 +455,10 @@ body {
 
 
 .main {
-  position: relative;
   overflow: hidden;
 }
 
 @media screen and (min-width: 1440px) {
-  .main {
-  }
-
   .main-page {
     position: relative;
     overflow: hidden;
