@@ -1,0 +1,28 @@
+.social-menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social-menu__item:first-child > .social-menu__link {
+  padding-left: 0;
+}
+
+.social-menu__item:last-child > .social-menu__link {
+  padding-right: 0;
+}
+
+.social-menu__link {
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.social-menu__link path {
+  transition: fill 300ms;
+}
+
+.social-menu__link:hover path,
+.social-menu__link:focus path {
+  fill: #D7825D;
+}

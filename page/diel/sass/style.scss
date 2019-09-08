@@ -21,7 +21,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #21120C;
+  background-color: #0D0705;
 }
 
 .visually-hidden {
@@ -430,6 +430,9 @@ body {
 
 @import "./block/slider";
 
+@import "./element/social-menu";
+@import "./element/payment-methods";
+
 @import "./block/header";
 @import "./block/banner";
 @import "./block/advantages";
@@ -446,7 +449,7 @@ body {
 
 
 
-
+@import "./element/section-skew";
 
 
 
@@ -457,14 +460,14 @@ body {
 
 @media screen and (min-width: 1440px) {
   .main {
-    background: url(../img/background_diamond.png) no-repeat -457px 150px;
   }
 
-  body {
+  .main-page {
     position: relative;
+    overflow: hidden;
   }
 
-  body::before {
+  .main-page::before {
     content: "";
     position: absolute;
     top: 0;
@@ -477,16 +480,50 @@ body {
 }
 
 @media screen and (min-width: 1921px) {
-  header {
-    left: 0;
-    right: 0;
+  .main-page {
     margin-left: auto;
     margin-right: auto;
     width: 1920px !important;
   }
-  section {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    width: 1920px !important;
+}
+
+
+.our-products {
+  z-index: 1;
+
+  &::before {
+    background-image: linear-gradient(#0C0704, #190E09);
+    -webkit-filter: blur(1px);
+  }
+}
+
+.new-design {
+  z-index: 1;
+  background-color: #170D08;
+
+  &::before {
+    background-color: #170D08;
+    height: 95%;
+
+    @media screen and (min-width: 1366px) {
+      background-image: url(../img/new-design_image.png);
+      background-repeat: no-repeat;
+      background-position: top 0 right 60px;
+    }
+
+    @media screen and (min-width: 1920px) {
+      background-position: top 0 right 260px;
+    } 
+  }
+}
+
+.footer {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    background-color: #0D0705;
+    height: 95%;
+    z-index: -1;
   }
 }

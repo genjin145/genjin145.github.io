@@ -1,0 +1,14 @@
+.payment-methods {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.payment-methods__item {
+  margin-right: 5px;
+}
+
+.payment-methods__item:last-child {
+  margin-right: 0;
+}
