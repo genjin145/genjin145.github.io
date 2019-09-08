@@ -1,5 +1,6 @@
 .banner {
   position: relative;
+  background-color: #21120C;
 }
   
 .banner__list {
@@ -176,8 +177,7 @@
     padding-left: 55px;
     padding-top: 280px;
     padding-bottom: 235px;
-    background: linear-gradient(180deg, rgba(24, 14, 9, 0) calc(100% - 150px), #190E09 100%),
-                url(../img/background_1440.png) no-repeat 30% 30%;
+    background: url(../img/background_1440.png) no-repeat 30% 30%;
   }
 
   .banner__title {
@@ -208,8 +208,16 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .banner {
+    background-image: url(../img/background_diamond.png);
+    background-repeat: no-repeat;
+    background-position: -457px 150px;
+  }
+
   .banner__item-inner {
     padding-left: 270px;
+    background: linear-gradient(to bottom, rgba(24, 14, 9, 0) 150px, #190E09 100%),
+                url(../img/background_1440.png) no-repeat 30% 30%;
   }
 }
   

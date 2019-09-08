@@ -2,36 +2,8 @@
   position: relative;
   padding: 12px;
   padding-top: 50px;
-  padding-bottom: 52px;
+  padding-bottom: 70px;
   background-color: #0D0705;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 72px;
-    background-image: url(../../img/company_skew_320.svg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    z-index: 10;
-
-    @media screen and (min-width: 768px) {
-      height: 150px;
-      background-image: url(../../img/company_skew_768.svg);
-    }
-
-    @media screen and (min-width: 1440px) {
-      height: 190px;
-      background-image: url(../../img/company_skew_1440.svg);
-    }
-
-    @media screen and (min-width: 1920px) {
-      height: 300px;
-      background-image: url(../../img/company_skew_1920.svg);
-    }
-  }
 }
 
 .company__image {
@@ -76,7 +48,7 @@
   .company {
     padding: 20px;
     padding-top: 75px;
-    padding-bottom: 52px;
+    padding-bottom: 80px;
   }
 
   .company__image {
@@ -98,7 +70,7 @@
   }
 
   .company__button-up {
-    bottom: 30px;
+    bottom: 80px;
     right: 20px;
   }
 }
@@ -108,7 +80,7 @@
     padding-left: 55px;
     padding-right: 75px;
     padding-top: 150px;
-    padding-bottom: 32px;
+    padding-bottom: 135px;
   }
 
   .company__image {
@@ -130,7 +102,7 @@
   }
 
   .company__button-up {
-    bottom: 124px;
+    bottom: 205px;
     right: 50px;
   }
 }
@@ -146,7 +118,7 @@
     position: relative;
     padding-left: 605px;
     padding-right: 240px;
-    padding-bottom: 75px;
+    padding-bottom: 200px;
     background: url(../../img/company_bc_img.png) no-repeat bottom 90px left 0,
                 linear-gradient(#0D0705, #0D0705);
   }
@@ -158,7 +130,7 @@
 
 
   .company__button-up {
-    bottom: 180px;
+    bottom: 280px;
     right: 90px;
   }
 }

@@ -1,37 +1,8 @@
-.our-products {
+.our-products__inner{
   position: relative;
   padding: 12px;
-  padding-top: 102px;
-  padding-bottom: 50px;
-  background: linear-gradient(#0C0704, #190E09);
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 72px;
-    background-image: url(../../img/section_skew_320.svg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    z-index: 10;
-
-    @media screen and (min-width: 768px) {
-      height: 150px;
-      background-image: url(../../img/section_skew_768.svg);
-    }
-
-    @media screen and (min-width: 1440px) {
-      height: 190px;
-      background-image: url(../../img/section_skew_1440.svg);
-    }
-
-    @media screen and (min-width: 1920px) {
-      height: 300px;
-      background-image: url(../../img/section_skew_1920.svg);
-    }
-  }
+  padding-top: 70px;
+  padding-bottom: 30px;
 }
 
 .our-products__button-group {
@@ -70,12 +41,12 @@
 }
 
 @media screen and (min-width: 768px) {
-  .our-products {
+  .our-products__inner{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 20px;
-    padding-top: 150px;
+    padding-top: 40px;
     padding-bottom: 50px;
   }
 
@@ -106,10 +77,11 @@
 }
 
 @media screen and (min-width: 1366px) {
-  .our-products {
+  .our-products__inner{
     padding-left: 55px;
     padding-right: 50px;
-    padding-top: 228px;
+    padding-top: 90px;
+    padding-bottom: 105px;
   }
 
   .our-products__list {
@@ -118,20 +90,21 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .our-products {
+  .our-products__inner{
     padding-left: 270px;
   }
 }
 
 @media screen and (min-width: 1920px) {
-  .our-products {
+  .our-products__inner{
     position: relative;
-    padding-top: 230px;
-    padding-bottom: 465px;
+    padding-top: 45px;
+    padding-bottom: 470px;
     padding-left: 310px;
 
-    background: url(../../img/our_products_diamond_bc.png) no-repeat bottom 60px left 310px,
-                linear-gradient(#0C0704, #190E09);
+    background-image: url(../../img/our_products_diamond_bc.png);
+    background-repeat: no-repeat;
+    background-position: bottom 60px left 310px;
   }
 
   .our-products__description {
@@ -140,14 +113,14 @@
 
   .our-products__list {
     position: absolute;
-    top: 320px;
+    top: 135px;
     margin-left: 500px;
     height: 675px;
   }
 
   .product-card__button-next {
     position: absolute;
-    top: 250px;
+    top: 70px;
     right: 50px;
     z-index: 100;
   }

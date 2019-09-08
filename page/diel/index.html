@@ -9,10 +9,11 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="main-page">
   <header class="header">
     <nav class="header__nav">
       <a class="logo-wrapper">
-          <img class="logo" src="img/logo.svg" alt="Diel">
+        <img class="logo" src="img/logo.svg" alt="Diel">
       </a>
   
       <ul class="main-menu">
@@ -271,82 +272,83 @@
       </ul>
     </section>
 
-    <section class="our-products">
-      
-      <h2 class="our-products__title section-title">наша продукция</h2>
+    <section class="our-products section-skew">
+      <div class="our-products__inner">
+        <h2 class="our-products__title section-title">наша продукция</h2>
 
-      <p class="our-products__description">Несколько производственных площадок в разных городах, более 300 мастеров, современное оборудование, новейшие технологии, прототипирование, жесткая система проверок и многоступенчатый</p>
+        <p class="our-products__description">Несколько производственных площадок в разных городах, более 300 мастеров, современное оборудование, новейшие технологии, прототипирование, жесткая система проверок и многоступенчатый</p>
 
-      <ul class="our-products__list">
-        <li class="product-card product-card--view-2">
-          <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/product_card_1.png" alt="Серьги">
-          </div>
-
-          <h3 class="product-card__title">Серьги</h3>
-
-          <p class="product-card__description">Несколько производственных площадок в разных городах, более 300 мастеров</p>
-        
-          <a class="product-card__button-detail link-detail" href="#">Подробнее
-            <svg class="link-detail__image" width="34" height="11" viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M28.763 9.9L29.537 10.533L33.587 5.583C33.737 5.399 33.737 5.134 33.587 4.95L29.537 0L28.763 0.632L32.145 4.766H0V5.766H32.145L28.763 9.9Z" fill="#E08B66"></path>
-            </svg>
-          </a>
-        </li>
-
-        <li class="product-card product-card--view-1">
-          <a class="product-card__link" href="#">
+        <ul class="our-products__list">
+          <li class="product-card product-card--view-2">
             <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/product_card_2.png" alt="Браслеты">
-            </div>
-
-            <h3 class="product-card__title">Браслеты</h3>
-          </a>
-        </li>
-
-        <li class="product-card product-card--view-1">
-          <a class="product-card__link" href="#">
-            <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/product_card_3.png" alt="Браслеты">
-            </div>
-  
-            <h3 class="product-card__title">Браслеты</h3>
-          </a>
-        </li>
-
-        <li class="product-card product-card--view-1">
-          <a class="product-card__link" href="#">
-            <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/product_card_4.png" alt="Серьги">
+                <img class="product-card__image" src="img/product_card_1.png" alt="Серьги">
             </div>
 
             <h3 class="product-card__title">Серьги</h3>
-          </a>
-        </li>
-  
-        <li class="product-card product-card--view-1">
-          <a class="product-card__link" href="#">
-            <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/product_card_5.png" alt="Кольца">
-            </div>
-  
-            <h3 class="product-card__title">Кольца</h3>
-          </a>
-        </li>
-      </ul>
 
-      <div class="our-products__button-group">
-        <a class="product-card__button-transition button-transition" href="#">Перейти в каталог
-          <svg class="button-transition__image" width="34" height="11" viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M28.763 9.9L29.537 10.533L33.587 5.583C33.737 5.399 33.737 5.134 33.587 4.95L29.537 0L28.763 0.632L32.145 4.766H0V5.766H32.145L28.763 9.9Z" fill="#E08B66"></path>
-          </svg>
-        </a>
+            <p class="product-card__description">Несколько производственных площадок в разных городах, более 300 мастеров</p>
+          
+            <a class="product-card__button-detail link-detail" href="#">Подробнее
+              <svg class="link-detail__image" width="34" height="11" viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.763 9.9L29.537 10.533L33.587 5.583C33.737 5.399 33.737 5.134 33.587 4.95L29.537 0L28.763 0.632L32.145 4.766H0V5.766H32.145L28.763 9.9Z" fill="#E08B66"></path>
+              </svg>
+            </a>
+          </li>
 
-        <button class="product-card__button-next button-next">
-          <svg class="button-next__icon" width="60" height="31" viewBox="0 0 60 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M44.6269 0L42.6769 2.27916C42.6769 2.27916 50.8923 10.4853 54.4115 13.6761C42.0538 13.5498 0 13.6761 0 13.6761V16.4122C0 16.4122 42.0654 16.3123 54.4115 16.4122C50.8923 20.0589 42.6769 28.265 42.6769 28.265L44.6269 31L59.5 15.0401L44.6269 0Z" fill="#765B4A"></path>
-          </svg>
-        </button>
+          <li class="product-card product-card--view-1">
+            <a class="product-card__link" href="#">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="img/product_card_2.png" alt="Браслеты">
+              </div>
+
+              <h3 class="product-card__title">Браслеты</h3>
+            </a>
+          </li>
+
+          <li class="product-card product-card--view-1">
+            <a class="product-card__link" href="#">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="img/product_card_3.png" alt="Браслеты">
+              </div>
+    
+              <h3 class="product-card__title">Браслеты</h3>
+            </a>
+          </li>
+
+          <li class="product-card product-card--view-1">
+            <a class="product-card__link" href="#">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="img/product_card_4.png" alt="Серьги">
+              </div>
+
+              <h3 class="product-card__title">Серьги</h3>
+            </a>
+          </li>
+    
+          <li class="product-card product-card--view-1">
+            <a class="product-card__link" href="#">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="img/product_card_5.png" alt="Кольца">
+              </div>
+    
+              <h3 class="product-card__title">Кольца</h3>
+            </a>
+          </li>
+        </ul>
+
+        <div class="our-products__button-group">
+          <a class="product-card__button-transition button-transition" href="#">Перейти в каталог
+            <svg class="button-transition__image" width="34" height="11" viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M28.763 9.9L29.537 10.533L33.587 5.583C33.737 5.399 33.737 5.134 33.587 4.95L29.537 0L28.763 0.632L32.145 4.766H0V5.766H32.145L28.763 9.9Z" fill="#E08B66"></path>
+            </svg>
+          </a>
+
+          <button class="product-card__button-next button-next">
+            <svg class="button-next__icon" width="60" height="31" viewBox="0 0 60 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M44.6269 0L42.6769 2.27916C42.6769 2.27916 50.8923 10.4853 54.4115 13.6761C42.0538 13.5498 0 13.6761 0 13.6761V16.4122C0 16.4122 42.0654 16.3123 54.4115 16.4122C50.8923 20.0589 42.6769 28.265 42.6769 28.265L44.6269 31L59.5 15.0401L44.6269 0Z" fill="#765B4A"></path>
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -533,27 +535,27 @@
       </button>
     </section>
 
-    <section class="new-design">
-      <h2 class="new-design__title">мы создаем новый
-        <span class="new-design__title-bigger">брилиантовый дизайн</span>
-      </h2>
+    <section class="new-design section-skew--left">
+      <div class="new-design__inner">
+        <h2 class="new-design__title">мы создаем новый
+          <span class="new-design__title-bigger">брилиантовый дизайн</span>
+        </h2>
 
-      <div class="new-design__description-wrapper">
-        <p class="new-design__description">Почти четверть века бренд входит в топ-10 лидеров российского ювелирного рынка. В багаже бренда – свидетельство клуба российской ювелирной торговли «Лидер отраслевого движения», награда «За высокое качество и современный дизайн»</p>
-        <p class="new-design__description">Приз в номинации «Заслуга» (Merit Award) на престижной международной премии в области ювелирного искусства International Design Jewellery Excellence Award и другие дипломы крупнейших отраслевых и международных выставок.</p>
-        <a class="new-design__link-detail link-detail" href="#">Подробнее
-          <svg class="link-detail__image" width="34" height="11" viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M28.763 9.9L29.537 10.533L33.587 5.583C33.737 5.399 33.737 5.134 33.587 4.95L29.537 0L28.763 0.632L32.145 4.766H0V5.766H32.145L28.763 9.9Z" fill="#E08B66"></path>
-          </svg>
-        </a>
-      </div>
-
-      <div class="new-design__image-wrapper">
-        <img class="new-design__image" src="img/new-design_image.png" alt="new-design">
+        <div class="new-design__description-wrapper">
+          <p class="new-design__description">Почти четверть века бренд входит в топ-10 лидеров российского ювелирного рынка. В багаже бренда – свидетельство клуба российской ювелирной торговли «Лидер отраслевого движения», награда «За высокое качество и современный дизайн»</p>
+          <p class="new-design__description">Приз в номинации «Заслуга» (Merit Award) на престижной международной премии в области ювелирного искусства International Design Jewellery Excellence Award и другие дипломы крупнейших отраслевых и международных выставок.</p>
+          <a class="new-design__link-detail link-detail" href="#">Подробнее
+            <svg class="link-detail__image" width="34" height="11" viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M28.763 9.9L29.537 10.533L33.587 5.583C33.737 5.399 33.737 5.134 33.587 4.95L29.537 0L28.763 0.632L32.145 4.766H0V5.766H32.145L28.763 9.9Z" fill="#E08B66"></path>
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
+
   </main>
-  <footer class="footer">
+
+  <footer class="footer section-skew--left">
     <nav class="footer__nav">
       <ul class="footer-menu">
         <li class="footer-menu__item">
@@ -569,7 +571,7 @@
           <a class="footer-menu__link" href="#">покупка и доставка</a>
         </li>
 
-        <li class="footer-menu__copyright copyright">©2019 DIEL</li>
+        <li class="footer-menu__item footer-menu__item--copyright">©2019 DIEL</li>
       </ul>
 
       <ul class="footer-menu">
@@ -586,13 +588,15 @@
           <a class="footer-menu__link" href="#">контакты</a>
         </li>
 
-        <li class="footer-privacy-policy">Политика конфиденциальности</li>
+        <li class="footer-menu__item footer-menu__item--privacy-policy">
+          <a class="footer-menu__link" href="#">Политика конфиденциальности</a>
+        </li>
       </ul>
     </nav>
 
     <div class="footer__info footer-info">
       <ul class="footer-info__menu footer-info-menu">
-        <li class="footer-info-menu__item">
+        <li class="footer-info-menu__item footer-info-menu__item--logo">
           <a class="logo-wrapper">
             <img class="logo" src="img/logo.svg" alt="Diel">
           </a>
@@ -600,14 +604,14 @@
         <li class="footer-info-menu__item">
           <a class="footer-info-menu__link">контакты</a>
         </li>
-        <li class="footer-info-menu__item">
-          <a class="footer-phone-humber" href="tel:88005005050">8 800 500 50 50</a>
+        <li class="footer-info-menu__item footer-info-menu__item--phone">
+          <a class="footer-info-menu__link footer-phone-humber" href="tel:88005005050">8 800 500 50 50</a>
         </li>
-        <li class="footer-info-menu__item">
-          <a class="footer-email" href="mailto:info@mail.ru">info@mail.ru</a>
+        <li class="footer-info-menu__item footer-info-menu__item--email">
+          <a class="footer-info-menu__link footer-email" href="mailto:info@mail.ru">info@mail.ru</a>
         </li>
 
-        <li class="footer-info-menu__item">
+        <li class="footer-info-menu__item footer-info-menu__item--social">
           <ul class="social-menu">
             <li class="social-menu__item">
               <a class="social-menu__link social-menu__link-twitter" href="#">
@@ -662,7 +666,7 @@
       </ul>
 
       <ul class="footer-info__menu footer-info-menu">
-        <li class="footer-info-menu__item">
+        <li class="footer-info-menu__item footer-info-menu__item--payment">
           <ul class="payment-methods">
             <li class="payment-methods__item">
               <svg width="40" height="28" viewBox="0 0 40 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -714,15 +718,16 @@
             </li>
           </ul>
         </li>
-        <li class="footer-info-menu__item">
+        <li class="footer-info-menu__item footer-info-menu__item--address">
           <address class="footer-address">Адрес<br>г. Екатеринбург,<br>ул. Генеральская, дом 3, оф. 208</address>
         </li>
-        <li class="footer-info-menu__item">
+        <li class="footer-info-menu__item footer-info-menu__item--development">
           <p class="footer-development">Разработка сайта:<a href="https://website96.ru/" target="_blanck">website96</a></p>
         </li>
       </ul>
     </div>
   </footer>
+</div>
 
   <div class="popup-main-menu hidden">
     <div class="popup-main-menu__inner">
