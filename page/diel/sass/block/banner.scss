@@ -22,7 +22,7 @@
   
 }
 
-.banner__item-inner.banner__item-inner--slide-2 {
+.banner__item.banner__item--slide-2 > .banner__item-inner {
   background: url(../img/background_2.png) no-repeat 50% 0;
   background: linear-gradient(180deg, rgba(24, 14, 9, 0) calc(100% - 100px), #190E09 100%),
               linear-gradient(0deg, rgba(18, 10, 6, 0.7), rgba(18, 10, 6, 0.7)), url(../img/background_2.png) no-repeat 100% 0;

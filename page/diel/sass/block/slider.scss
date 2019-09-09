@@ -66,7 +66,7 @@
   }
 
   .jumping-slider__item {
-    position: absolute;
+    position: relative;
   }
 
   .jumping-slider__image-wrapper {
@@ -136,4 +136,45 @@
     display: block;
     margin-top: 80px;
   }
+}
+
+.jumping-slider-options__item-text {
+  font-family: "Lazurski";
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  fill: #765B4A;
+}
+
+.jumping-slider-options__item {
+  cursor: pointer;
+}
+
+.jumping-slider-options__item .jumping-slider-options__item-text,
+.jumping-slider-options__item line,
+.jumping-slider-options__item circle:last-of-type,
+.jumping-slider-options__item circle:first-of-type {
+  transition: 300ms;
+}
+
+.jumping-slider-options__item--active circle:first-of-type,
+.jumping-slider-options__item:hover circle:first-of-type {
+  fill: #AF6A4D;
+}
+
+.jumping-slider-options__item--active circle:last-of-type,
+.jumping-slider-options__item:hover circle:last-of-type {
+  stroke: #AF6A4D;
+}
+
+.jumping-slider-options__item--active line,
+.jumping-slider-options__item:hover line {
+  stroke: #AF6A4D;
+}
+
+.jumping-slider-options__item--active .jumping-slider-options__item-text,
+.jumping-slider-options__item:hover .jumping-slider-options__item-text {
+  stroke: #AF6A4D;
+  font-size: 24px;
+  line-height: 24px;
 }

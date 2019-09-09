@@ -35,7 +35,7 @@
 }
 
 
-.advantages-list__item {
+.advantages-article__inner {
   margin-right: 30px;
   width: 235px;
   flex-shrink: 0;
@@ -133,15 +133,15 @@
     margin-top: 0;
   }
 
-  .advantages-list__item:nth-child(n) {
+  .advantages-list__item:nth-child(n) > .advantages-article__inner {
     margin-top: 30px;
   }
 
-  .advantages-list__item:nth-child(2n+1) {
+  .advantages-list__item:nth-child(2n+1) > .advantages-article__inner {
     margin-top: 105px;
   }
 
-  .advantages-list__item {
+  .advantages-article__inner {
     margin-right: 50px;
     width: 400px;
   }
@@ -163,16 +163,16 @@
     background-position: bottom -150px right -320px;
   }
 
-  .advantages-list__item {
+  .advantages-article__inner {
     margin-right: 60px;
     width: 550px;
   }
 
-  .advantages-list__item:nth-child(n) {
+  .advantages-list__item:nth-child(n) > .advantages-article__inner {
     margin-top: 40px;
   }
 
-  .advantages-list__item:nth-child(2n+1) {
+  .advantages-list__item:nth-child(2n+1) > .advantages-article__inner{
     margin-top: 180px;
   }
 
@@ -208,11 +208,11 @@
     right: 145px;
   }
 
-  .advantages-list__item:nth-child(n) {
+  .advantages-list__item:nth-child(n) > .advantages-article__inner{
     margin-top: 40px;
   }
 
-  .advantages-list__item:nth-child(2n+1) {
+  .advantages-list__item:nth-child(2n+1) > .advantages-article__inner {
     margin-top: 180px;
   }
 }
