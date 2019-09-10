@@ -7,6 +7,7 @@
     navContainer: ".stocks-slider-options__nav",
     touch: true,
     speed: 1200,
+    mode: "gallery",
     
     responsive: {
       "320": {
