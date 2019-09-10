@@ -1,7 +1,10 @@
 (function() {
   let umBtnPhone = document.querySelector(".user-menu__link-phone");
-
   umBtnPhone.addEventListener("click", showPopupPhone);
+
+  let flowBtnPhone = document.querySelector(".flow-menu__link-phone");
+  flowBtnPhone.addEventListener("click", showPopupPhone);
+
 
   let btnPopupClose = document.querySelector(".popup-request-call__close");
 
@@ -12,7 +15,9 @@
     }
   });
 
-  function showPopupPhone() {
+  function showPopupPhone(evt) {
+    evt.preventDefault();
+    
     let popup = document.querySelector(".popup-request-call");
 
     popup.classList.remove("popup-request-call--hidden");

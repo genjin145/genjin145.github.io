@@ -3,8 +3,8 @@
       container: ".collections__slider",
   
       controls: false,
-      nav: false,
-      // navContainer: ".jumping-slider-options__nav",
+      // nav: false,
+      navContainer: ".jumping-slider-options__nav",
       touch: true,
       speed: 1200,
 
@@ -63,9 +63,9 @@
   
         for (let i = 0; i < svgJumpBtns.length; i++) {
           svgJumpBtns[i].classList.remove("jumping-slider-options__item--active");
-          if (evt.currentTarget == svgJumpBtns[i]) {
-            jumpingSlider.goTo(i);
-          }
+          // if (evt.currentTarget == svgJumpBtns[i]) {
+          //   jumpingSlider.goTo(i);
+          // }
         }
         evt.currentTarget.classList.add("jumping-slider-options__item--active");
       });

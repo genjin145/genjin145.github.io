@@ -152,11 +152,15 @@
 
 .popup-search__close {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 2px;
+  right: 2px;
   padding: 0;
   background-color: transparent;
   border: none;
+}
+
+.popup-search__button--close {
+  padding: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -179,8 +183,8 @@
   }
 
   .popup-search__close {
-    top: 70px;
-    left: 20px;
+    top: 60px;
+    left: 10px;
     right: auto;
   }
 
@@ -221,9 +225,9 @@
   }
 
   .popup-search__close {
-    top: 87px;
+    top: 77px;
     left: auto;
-    right: 50px;
+    right: 40px;
   }
 }
   

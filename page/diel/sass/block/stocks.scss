@@ -6,7 +6,7 @@
   background: linear-gradient(#1C0F0A 0%, #130A07 5%, #130A07 100%);
 }
 
-.stocks__slider {
+.stocks__slider-wrapper {
   margin-top: 40px !important;
 }
 
@@ -22,7 +22,7 @@
     padding-left: 20px;
   }
 
-  .stocks__slider {
+  .stocks__slider-wrapper {
     margin-top: 50px !important;
   }
 
@@ -44,9 +44,10 @@
 
   .stocks__title {
     position: absolute;
+    z-index: 1;
   }
 
-  .stocks__slider {
+  .stocks__slider-wrapper {
     margin: 0 !important;
   }
 
@@ -76,6 +77,10 @@
   }
 
   .stocks__button-transition {
+    // top: 152px;
+    // bottom: auto;
+    // right: 125px;
+    // left: auto;
     left: 310px;
   }
 }
@@ -96,7 +101,6 @@
 
 .stocks-slider__item {
   flex-shrink: 0;
-  margin-right: 30px;
   width: 253px;
 }
 
@@ -149,11 +153,7 @@
 }
 
 @media screen and (min-width: 1366px) {
-  .stocks-slider__item:nth-child(n + 2) {
-    display: none;
-  }
-
-  .stocks-slider__item {
+  .stocks-slider__inner {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -161,6 +161,7 @@
 
   .stocks-slider__image-wrapper {
     order: 1;
+    padding-right: 410px;
     width: 750px;
     height: 550px;
   }
@@ -189,4 +190,46 @@
   .stocks-slider__text {
     margin-right: 85px; 
   }
+}
+
+
+.stocks-slider-options__item-text {
+  font-family: "Lazurski";
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  fill: #765B4A;
+}
+
+.stocks-slider-options__item {
+  cursor: pointer;
+}
+
+.stocks-slider-options__item .stocks-slider-options__item-text,
+.stocks-slider-options__item line,
+.stocks-slider-options__item circle:last-of-type,
+.stocks-slider-options__item circle:first-of-type {
+  transition: 300ms;
+}
+
+.stocks-slider-options__item--active circle:first-of-type,
+.stocks-slider-options__item:hover circle:first-of-type {
+  fill: #AF6A4D;
+}
+
+.stocks-slider-options__item--active circle:last-of-type,
+.stocks-slider-options__item:hover circle:last-of-type {
+  stroke: #AF6A4D;
+}
+
+.stocks-slider-options__item--active line,
+.stocks-slider-options__item:hover line {
+  stroke: #AF6A4D;
+}
+
+.stocks-slider-options__item--active .stocks-slider-options__item-text,
+.stocks-slider-options__item:hover .stocks-slider-options__item-text {
+  stroke: #AF6A4D;
+  font-size: 24px;
+  line-height: 24px;
 }

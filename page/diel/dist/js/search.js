@@ -1,6 +1,8 @@
 let buttonSearchUserMenu = document.querySelector(".user-menu__link-search");
-
 buttonSearchUserMenu.addEventListener("click", showPopupSearch);
+
+let flowSearch = document.querySelector(".flow-menu__link-search");
+flowSearch.addEventListener("click", showPopupSearch);
 
 let popupSearchClose = document.querySelector(".popup-search__close");
 
@@ -15,7 +17,9 @@ let buttonSearchPopupMenu = document.querySelector(".popup-main-menu__search");
 
 buttonSearchPopupMenu.addEventListener("click", showPopupSearch);
 
-function showPopupSearch() {
+function showPopupSearch(evt) {
+  evt.preventDefault();
+
   let popupSearch = document.querySelector(".popup-search");
 
   popupSearch.classList.remove("hidden");

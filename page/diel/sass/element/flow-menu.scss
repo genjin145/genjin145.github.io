@@ -1,0 +1,75 @@
+.flow-menu-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .flow-menu-nav {
+    position: fixed;
+    top: 100%;
+    left: 85px;
+    z-index: 100;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 600ms;
+  }
+
+  .flow-menu-nav--active {
+    visibility: initial;
+    opacity: 1;
+    top: 0;
+  }
+
+  .flow-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    list-style-type: none;
+  }
+
+  .flow-menu__item {
+    padding: 30px 10px;
+  }
+
+  .flow-menu__item--description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    height: 300px;
+  }
+
+  .flow-menu__item-text {
+    position: absolute;
+    top: 200px;
+    font-family: "Intro Light";
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    color: #F8F8F8;
+
+    opacity: 0.8;
+    transform: rotate(270deg);
+  }
+
+  .flow-menu__item--description::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: rgba(248, 248, 248, 0.8);
+  }
+}

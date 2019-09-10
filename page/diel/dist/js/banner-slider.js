@@ -2,13 +2,14 @@
   let bannerSlider = tns({
     container: ".banner__list",
     controlsPosition: "bottom",
+    mode: "gallery",
     // nav: false,
     items: 1,
     navContainer: ".banner-menu-circle__nav",
 
     controls: false,
     touch: false,
-    speed: 1200,
+    speed: 1600,
 
     // autoplay: true,
     autoplayTimeout: 10000,
@@ -21,32 +22,37 @@
   let time = 10000;
   let interval = setInterval(startInterval, time);
 
-  function startInterval() {
-    // bannerSlider.goTo('next');
-
-    // let bannerItem = document.querySelectorAll(".banner__item");
-    //     active = document.querySelector(".banner__item.tns-slide-active");
-    // let svgBtns = document.querySelectorAll(".banner-menu-circle__nav-btn");
-    
-    // for (let i = 0; i < bannerItem.length; i++) {
-    //   if (bannerItem[i] == active) {
-    //     for (let j = 0; j < svgBtns.length; j++) {
-    //       svgBtns[j].classList.remove("banner-menu-circle__nav-btn--active");
-    //       svgBtns[i - 1].classList.add("banner-menu-circle__nav-btn--active");
-
-    //     }
-
-    //     break;
-    //   }
-    // }
-  }
-
-
   let circle = document.querySelector("#transition-svg circle"),
     animate = document.querySelector("#transition-svg animate"),
     rCirleClip = circle.getAttribute("r"),
     toSvg = animate.getAttribute("to"),
     fromSvg = animate.getAttribute("from");
+
+  function startInterval() {
+    bannerSlider.goTo('next');
+
+    let bannerItem = document.querySelectorAll(".banner__item");
+        active = document.querySelector(".banner__item.tns-slide-active");
+    let svgBtns = document.querySelectorAll(".banner-menu-circle__nav-btn");
+    let index = bannerSlider.getInfo().index;
+    
+    if (index == 3) {
+      
+    }
+
+    
+    for (let i = 0; i < bannerItem.length; i++) {
+      if (bannerItem[i] == active) {
+        for (let j = 0; j < svgBtns.length; j++) {
+          svgBtns[j].classList.remove("banner-menu-circle__nav-btn--active");
+          svgBtns[i - 1].classList.add("banner-menu-circle__nav-btn--active");
+
+        }
+
+        break;
+      }
+    }
+  }
 
   animate.beginElement();
 
@@ -94,6 +100,14 @@
       diamond.classList.remove("hidden");
       circle.classList.add("hidden");
 
+      let btnDiamond = document.querySelectorAll(".banner-menu-diamond__button");
+
+      for (let i = 0; i < btnDiamond.length; i++) {
+        btnDiamond[i].addEventListener("click", function() {
+          bannerSlider.goTo(i);
+        });
+      }
+
       // bannerSlider.navContainer = ".banner-menu-diamond";
       // bannerSlider.refresh();
     }
@@ -103,8 +117,3 @@
 console.log(bannerSlider);
 
 })();
-
-
-
-
-
