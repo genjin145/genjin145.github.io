@@ -34,21 +34,13 @@
     let bannerItem = document.querySelectorAll(".banner__item");
         active = document.querySelector(".banner__item.tns-slide-active");
     let svgBtns = document.querySelectorAll(".banner-menu-circle__nav-btn");
-    let index = bannerSlider.getInfo().index;
-    
-    if (index == 3) {
-      
-    }
-
     
     for (let i = 0; i < bannerItem.length; i++) {
       if (bannerItem[i] == active) {
         for (let j = 0; j < svgBtns.length; j++) {
           svgBtns[j].classList.remove("banner-menu-circle__nav-btn--active");
           svgBtns[i - 1].classList.add("banner-menu-circle__nav-btn--active");
-
         }
-
         break;
       }
     }
@@ -101,15 +93,17 @@
       circle.classList.add("hidden");
 
       let btnDiamond = document.querySelectorAll(".banner-menu-diamond__button");
+      let index = bannerSlider.getInfo().index;
 
       for (let i = 0; i < btnDiamond.length; i++) {
         btnDiamond[i].addEventListener("click", function() {
           bannerSlider.goTo(i);
+          for (let j = 0; j < btnDiamond.length; j++) {
+            btnDiamond[j].classList.remove("banner-menu-diamond__button--active");
+          }
+          btnDiamond[index].classList.remove("banner-menu-diamond__button--active");
         });
       }
-
-      // bannerSlider.navContainer = ".banner-menu-diamond";
-      // bannerSlider.refresh();
     }
 
   }

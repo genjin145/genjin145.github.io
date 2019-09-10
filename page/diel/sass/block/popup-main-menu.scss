@@ -6,7 +6,13 @@
   height: 100vh;
   z-index: 100;
   overflow: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
+  transition: opacity 400ms;
+}
+
+.popup-main-menu--hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .popup-main-menu__inner {
@@ -239,7 +245,7 @@
   .popup-main-menu__right {
     padding-left: 175px;
     padding-right: 250px;
-    padding-bottom: 330px;
+    padding-bottom: 130px;
   }
 
   .popup-menu__item--title::before,
@@ -292,6 +298,14 @@
 }
 
 @media screen and (min-width: 1920px) {
+  .popup-main-menu {
+    overflow-y: auto;
+  }
+
+  .popup-main-menu__inner {
+    height: inherit;
+  }
+  
   .popup-main-menu__right {
     padding-right: 195px;
   }

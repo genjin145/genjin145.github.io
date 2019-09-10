@@ -145,6 +145,9 @@ body {
 .button-next__icon {
   transition: margin 300ms; }
 
+.button-next:focus {
+  outline: none; }
+
 .button-next:hover > .button-next__icon,
 .button-next:focus > .button-next__icon {
   margin-left: 20px; }
@@ -1184,7 +1187,6 @@ body {
   margin-top: 40px; }
 
 .advantages-article__inner {
-  margin-right: 30px;
   width: 235px;
   flex-shrink: 0; }
 
@@ -1268,7 +1270,6 @@ body {
   .advantages-list__item:nth-child(2n+1) > .advantages-article__inner {
     margin-top: 105px; }
   .advantages-article__inner {
-    margin-right: 50px;
     width: 400px; }
   .advantages__button-next {
     display: block; } }
@@ -1283,7 +1284,6 @@ body {
     background-repeat: no-repeat;
     background-position: bottom -150px right -320px; }
   .advantages-article__inner {
-    margin-right: 60px;
     width: 550px; }
   .advantages-list__item:nth-child(n) > .advantages-article__inner {
     margin-top: 40px; }
@@ -2019,7 +2019,12 @@ body {
   height: 100vh;
   z-index: 100;
   overflow: hidden;
-  overflow-y: scroll; }
+  overflow-y: auto;
+  transition: opacity 400ms; }
+
+.popup-main-menu--hidden {
+  visibility: hidden;
+  opacity: 0; }
 
 .popup-main-menu__inner {
   position: relative;
@@ -2198,7 +2203,7 @@ body {
   .popup-main-menu__right {
     padding-left: 175px;
     padding-right: 250px;
-    padding-bottom: 330px; }
+    padding-bottom: 130px; }
   .popup-menu__item--title::before,
   .popup-menu__item--title:hover::after,
   .popup-menu__item--title:focus::after {
@@ -2229,6 +2234,10 @@ body {
     right: auto; } }
 
 @media screen and (min-width: 1920px) {
+  .popup-main-menu {
+    overflow-y: auto; }
+  .popup-main-menu__inner {
+    height: inherit; }
   .popup-main-menu__right {
     padding-right: 195px; }
   .popup-menu {
@@ -2308,7 +2317,12 @@ body {
   height: 100vh;
   z-index: 100;
   overflow: hidden;
-  overflow-y: scroll; }
+  overflow-y: auto;
+  transition: opacity 400ms; }
+
+.popup-search--hidden {
+  visibility: hidden;
+  opacity: 0; }
 
 .popup-search__inner {
   position: relative;
@@ -2478,7 +2492,7 @@ body {
     padding-top: 80px;
     padding-left: 90px;
     padding-right: 225px;
-    padding-bottom: 205px; }
+    padding-bottom: 105px; }
   .popup-search__item--title {
     margin-top: 80px; }
   .popup-search__close {
@@ -2487,6 +2501,8 @@ body {
     right: 40px; } }
 
 @media screen and (min-width: 1920px) {
+  .popup-search__inner {
+    height: inherit; }
   .popup-search__right {
     padding-right: 320px; }
   .popup-search__close {

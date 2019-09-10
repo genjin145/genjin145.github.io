@@ -10,13 +10,16 @@
 
       responsive: {
         "320": {
-          fixedWidth: 265,
+          fixedWidth: 235,
+          gutter: 30
         },
         "768": {
-          fixedWidth: 450,
+          fixedWidth: 400,
+          gutter: 50
         },
         "1366": {
-          fixedWidth: 610,
+          fixedWidth: 550,
+          gutter: 60
         }
       }
     });

@@ -6,7 +6,13 @@
   height: 100vh;
   z-index: 100;
   overflow: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
+  transition: opacity 400ms;
+}
+
+.popup-search--hidden {
+  visibility: hidden;
+  opacity: 0;
 }
   
 .popup-search__inner {
@@ -217,7 +223,7 @@
     padding-top: 80px;
     padding-left: 90px;
     padding-right: 225px;
-    padding-bottom: 205px;
+    padding-bottom: 105px;
   }
 
   .popup-search__item--title {
@@ -232,6 +238,10 @@
 }
   
 @media screen and (min-width: 1920px) {
+  .popup-search__inner {
+    height: inherit;
+  }
+
   .popup-search__right {
     padding-right: 320px;
   }

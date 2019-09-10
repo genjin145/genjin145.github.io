@@ -6,6 +6,8 @@
       // nav: false,
       navContainer: ".jumping-slider-options__nav",
       touch: true,
+      mouseDrag: true,
+
       speed: 1200,
 
       responsive: {
@@ -27,7 +29,7 @@
         jumpingLineFrom,
         jumpingLineTo,
         svgJumpBtns = document.querySelectorAll(".jumping-slider-options__item");
-  
+      
     for (let i = 0; i < svgJumpBtns.length; i++) {
       svgJumpBtns[i].addEventListener("click", function(evt) {
   

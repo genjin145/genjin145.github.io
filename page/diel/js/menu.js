@@ -17,13 +17,13 @@ window.addEventListener("keydown", function(evt) {
 function showPopupMenu() {
   let popupMenu = document.querySelector(".popup-main-menu");
 
-  popupMenu.classList.remove("hidden");
+  popupMenu.classList.remove("popup-main-menu--hidden");
   document.body.style.overflow = "hidden";
 }
 
 function closePopupMenu() {
   let popupMenu = document.querySelector(".popup-main-menu");
 
-  popupMenu.classList.add("hidden");
+  popupMenu.classList.add("popup-main-menu--hidden");
   document.body.style.overflow = "initial";
 }

@@ -197,6 +197,10 @@ body {
   transition: margin 300ms;
 }
 
+.button-next:focus {
+  outline: none;
+}
+
 .button-next:hover > .button-next__icon,
 .button-next:focus > .button-next__icon {
   margin-left: 20px;

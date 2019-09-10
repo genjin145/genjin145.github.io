@@ -22,13 +22,13 @@ function showPopupSearch(evt) {
 
   let popupSearch = document.querySelector(".popup-search");
 
-  popupSearch.classList.remove("hidden");
+  popupSearch.classList.remove("popup-search--hidden");
   document.body.style.overflow = "hidden";
 }
 
 function closePopupSearch() {
   let popupSearch = document.querySelector(".popup-search");
 
-  popupSearch.classList.add("hidden");
+  popupSearch.classList.add("popup-search--hidden");
   document.body.style.overflow = "initial";
 }
