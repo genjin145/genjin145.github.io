@@ -72,4 +72,10 @@
         evt.currentTarget.classList.add("jumping-slider-options__item--active");
       });
     }
+
+    let collectionsSlider = document.querySelector(".collections__slider");
+    collectionsSlider.addEventListener("click", function() {
+      let index = jumpingSlider.getInfo().index;
+      // console.log(index);
+    });
   })();

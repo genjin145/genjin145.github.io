@@ -1,0 +1,78 @@
+.catalog-our-products {
+  position: relative;
+  padding: 12px;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  background-color: #20120D;
+}
+
+.catalog-our-products__list {
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+@media screen and (min-width: 768px) {
+  .catalog-our-products {
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 180px;
+  }
+  
+  .catalog-our-products__list {
+    // display: flex;
+    // flex-wrap: wrap;
+    margin-top: 40px;
+    float: both;
+  }
+  .catalog-our-products::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    float: both;
+  }
+  .catalog-our-products li {
+    float: left;
+  }
+  
+}
+
+@media screen and (min-width: 1366px) {
+  .catalog-our-products {
+    padding-left: 55px;
+    padding-right: 50px;
+    padding-top: 90px;
+    padding-bottom: 180px;
+  }
+
+  .catalog-our-products__list {
+    margin-top: 85px;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+  .catalog-our-products {
+    padding-left: 270px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .catalog-our-products  {
+    padding-top: 45px;
+    padding-bottom: 275px;
+    padding-left: 310px;
+
+    background-image: url(../../img/our_products_diamond_bc.png);
+    background-repeat: no-repeat;
+    background-position: top 0 right -210px;
+  }
+
+  .catalog-our-products__list {
+    margin-top: 100px;
+  }
+
+}

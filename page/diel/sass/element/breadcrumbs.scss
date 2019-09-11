@@ -1,0 +1,37 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+
+  list-style-type: none;
+}
+
+.breadcrumbs__item::after {
+  content: "/";
+}
+
+.breadcrumbs__item:last-child::after {
+  content: "";
+}
+
+.breadcrumbs__item:first-child > .breadcrumbs__link {
+  padding-left: 0;
+}
+
+.breadcrumbs__link {
+  padding: 5px;
+  font-family: "Intro Light";
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: color 300ms;
+}
+
+.breadcrumbs__link:hover[href] {
+  color: #E08B66;
+}
+

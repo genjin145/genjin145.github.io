@@ -518,6 +518,7 @@ body {
 @import "./element/social-menu";
 @import "./element/payment-methods";
 @import "./element/flow-menu";
+@import "./element/breadcrumbs";
 
 @import "./block/header";
 @import "./block/banner";
@@ -536,6 +537,9 @@ body {
 
 
 @import "./element/section-skew";
+
+@import "./page.scss";
+@import "./block/catalog-our-products";
 
 
 

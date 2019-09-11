@@ -5,4 +5,3 @@
   };
   var mask = IMask(element, maskOptions);
 })();
-
