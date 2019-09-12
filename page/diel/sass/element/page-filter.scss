@@ -1,0 +1,132 @@
+.page-filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-filter__label {
+  font-family: "Intro Light";
+  font-size: 12px;
+  line-height: 21px;
+
+  color: #FFFFFF;
+}
+
+.page-filter__label-sum {
+  display: none;
+}
+
+.filter-tag__list {
+  width: 100%;
+}
+
+.page-filter__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-filter__right {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.page-filter__right .diel-select:first-of-type {
+  flex-grow: 1;
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-filter {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .page-filter__label {
+    margin-right: 20px;
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .filter__diel-select {
+    margin-right: 25px !important;
+  }
+
+  .page-filter__right {
+    margin-top: 0;
+  }
+
+  .filter__tag-list {
+    margin-top: 15px !important;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .page-filter__right {
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: center;
+
+    & > .filter__diel-select:first-of-type {
+      flex-grow: unset !important;
+    }
+
+    & > .filter__diel-select:last-of-type {
+      margin-right: 0 !important;
+    }
+  }
+
+  .page-filter__label-sum {
+    display: block;
+    margin-left: auto;
+  }
+
+  .filter__tag-list {
+    margin-top: 25px !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+.filter-tag-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.filter-tag-list__link {
+  display: block;
+  padding: 15px 20px;
+  font-family: "Lazurski";
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  transition: color 300ms;
+  text-decoration: none;
+}
+
+.filter-tag-list__item:first-child > .filter-tag-list__link {
+  padding-left: 0;
+}
+.filter-tag-list__item:last-child > .filter-tag-list__link {
+  padding-right: 0;
+}
+
+.filter-tag-list__link:hover {
+  color: #E08B66;
+}
+
+@media screen and (min-width: 1366px) {
+  .filter-tag-list__link {
+    font-size: 24px;
+    line-height: 120%;
+  }
+}

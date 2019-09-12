@@ -25,6 +25,10 @@
     position: static;
     background-color: #20120D;
   }
+
+  .footer::after {
+    display: none;
+  }
 }
 
 .page__breadcrumbs {
