@@ -1,0 +1,121 @@
+.price-list-form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.price-list-form__item {
+  margin-bottom: 35px;
+}
+
+.price-list-form__label {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  font-family: "Intro Light";
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+}
+
+.price-list-form__label a {
+  color: #E08B66;
+  text-decoration: none;
+}
+
+.price-list-form__label a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .price-list-form__item {
+    margin-bottom: 45px;
+  }
+}
+
+
+
+
+
+
+.price-list {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 50px;
+  padding-bottom: 85px;
+  z-index: 1;
+}
+
+.price-list::before {
+  filter: blur(1px);
+  background-image: linear-gradient(143.57deg, #220F06 27.07%, #0D0704 87.12%);
+
+  @media screen and (min-width: 768px) {
+    background: url(../../img/price_list_bg.png) no-repeat top 0 right -340px,
+                linear-gradient(143.57deg, #220F06 27.07%, #0D0704 87.12%);
+    background-size: contain;
+  }
+
+  @media screen and (min-width: 1366px) {
+    background-position: top 0 right 50px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    background-position: top 0 right 0;
+  }
+}
+
+.price-list__form {
+  margin-top: 40px;
+}
+
+.price-list__form .price-list-form__item--submit {
+  text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+  .price-list {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+    padding-bottom: 65px;
+  }
+  
+  .price-list__form {
+    margin-top: 65px;
+    width: 360px;
+  }
+
+  .price-list__form {
+    .price-list-form__item--submit {
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .price-list {
+    padding-left: 95px;
+    padding-right: 50px;
+    // padding-top: 235px;
+    padding-top: 85px;
+    padding-bottom: 120px;  
+  }
+
+  .price-list__form {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .price-list {
+    padding-left: 270px; 
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .price-list {
+    padding-left: 310px; 
+  }
+}

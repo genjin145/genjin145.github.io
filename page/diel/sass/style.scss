@@ -47,7 +47,6 @@ body {
 
 
 
-  
 .link-search {
   & > .link-search__image {
     transition: transform 300ms;
@@ -367,6 +366,7 @@ body {
 
 // ************************************************************************** form
 .input-text {
+  padding-top: 10px;
   padding-bottom: 10px;
   font-family: "Lazurski";
   font-weight: normal;
@@ -382,6 +382,7 @@ body {
   @media screen and (min-width: 768px) {
     font-size: 24px;
     line-height: 29px;
+    padding-top: 15px;
     padding-bottom: 15px;
   }
 }
@@ -647,8 +648,7 @@ body {
 @import "./page.scss";
 @import "./block/catalog-our-products";
 @import "./block/page-card";
-@import "./block/page-pagination";
-
+@import "./block/price-list";
 
 
 .main {

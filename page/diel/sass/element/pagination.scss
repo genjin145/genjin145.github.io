@@ -1,5 +1,6 @@
 .pagination {
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -22,11 +23,21 @@
 }
 
 .pagination__link-next {
-  transition: padding-left 300ms;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 81px;
+  box-sizing: border-box;
 }
 
-.pagination__link-next:hover {
-  padding-left: 30px;
+.pagination__link-next svg {
+  position: absolute;
+  left: 10px;
+  transition: left 300ms;
+}
+
+.pagination__link-next:hover svg {
+  left: 30px;
 }
 
 @media screen and (min-width: 768px) {
