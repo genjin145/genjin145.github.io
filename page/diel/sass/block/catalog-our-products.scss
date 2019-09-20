@@ -3,7 +3,6 @@
   padding: 12px;
   padding-top: 70px;
   padding-bottom: 55px;
-  background-color: #20120D;
 }
 
 .catalog-our-products__list {
@@ -29,7 +28,7 @@
     // display: flex;
     // flex-wrap: wrap;
     margin-top: 40px;
-    float: both;
+    clear: both;
   }
   .catalog-our-products::after {
     content: "";
@@ -74,9 +73,18 @@
     padding-bottom: 275px;
     padding-left: 310px;
 
-    background-image: url(../../img/our_products_diamond_bc.png);
-    background-repeat: no-repeat;
-    background-position: top 0 right -210px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50px;
+      right: -150px;
+      width: 404px;
+      height: 363px;
+      transform: scaleX(-1) rotate(-10deg);
+      background-image: url(../../img/our_products_diamond_bc.png);
+      background-repeat: no-repeat;
+      opacity: .2;
+    }
   }
 
   .catalog-our-products__list {

@@ -11,6 +11,7 @@
         responsive: {
           "320": {
             fixedWidth: 265,
+            gutter: 10
           },
           "768": {
             fixedWidth: 680,
