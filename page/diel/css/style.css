@@ -3785,6 +3785,7 @@ body {
 .favorites-list {
   margin: 0;
   padding: 0;
+  width: 100%;
   list-style-type: none; }
 
 .favorites__item {
@@ -3793,15 +3794,22 @@ body {
 @media screen and (min-width: 768px) {
   .favorites-list {
     display: flex;
-    flex-wrap: wrap;
-    margin: -15px; }
+    flex-wrap: wrap; }
   .favorites__item {
-    margin: 15px;
-    width: 46%; } }
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: calc((100% - 30px) / 2);
+    box-sizing: border-box; }
+  .favorites__item:nth-child(2n + 2) {
+    margin-right: 0; } }
 
 @media screen and (min-width: 1366px) {
   .favorites__item {
-    width: 22%; } }
+    width: calc((100% - 30px * 3) / 4); }
+  .favorites__item:nth-child(n) {
+    margin-right: 30px; }
+  .favorites__item:nth-child(4n + 4) {
+    margin-right: 0; } }
 
 .favorites {
   padding: 12px;
