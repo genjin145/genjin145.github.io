@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>filter</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <section class="filter">
+    <form class="filter__form filter-form" action="">
+      <h2 class="filter__title">Фильтр</h2>
+      
+      <button class="filter__close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 0.908974L19.091 0L10 9.09103L0.908974 0L0 0.908974L9.09103 10L0 19.091L0.908974 20L10 10.909L19.091 20L20 19.091L10.909 10L20 0.908974Z" fill="rgba(255, 255, 255, 0.5)"/>
+        </svg>
+      </button>
+
+      <div class="filter__section filter__section-reset">
+        <button class="filter__reset" type="reset">Сбросить фильтр</button>
+      </div>
+
+      <div class="filter__section">
+        <h3 class="filter__section-title">Цена</h3>
+
+        <div class="filter__price-wrapper">
+          <input class="filter__price-min" type="text" value="562">
+          <span> - </span>
+          <input class="filter__price-max" type="text" value="52500">
+        </div>
+      </div>
+
+      <div class="filter__section">
+        <h3 class="filter__section-title">Дропдаун</h3>
+  
+        <div class="diel-select">
+          <button class="diel-select__button" type="button">
+            <span class="diel-select__button-text">Бриллианты белые</span>
+          </button>
+
+          <ol class="diel-select__list diel-select-list">
+            <li class="diel-select-list__item">Изумруды</li>
+            <li class="diel-select-list__item">Аметисты</li>
+            <li class="diel-select-list__item">Булыжник</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="filter__section">
+        <h3 class="filter__section-title">Чекбокс</h3>
+
+        <label class="filter__section-checkbox">
+          <input class="input-checkbox" type="checkbox" checked>Текст</label>
+        <label class="filter__section-checkbox">
+          <input class="input-checkbox" type="checkbox">Текст</label>
+        <label class="filter__section-checkbox">
+          <input class="input-checkbox" type="checkbox">Текст</label>
+        <label class="filter__section-checkbox">
+          <input class="input-checkbox" type="checkbox">Текст</label>
+      </div>
+
+      <div class="filter__section">
+        <h3 class="filter__section-title">Радиобаттоны</h3>
+
+        <label class="filter__section-radio">
+          <input class="input-radio" type="radio" name="fr1" checked>Текст</label>
+        <label class="filter__section-radio">
+          <input class="input-radio" type="radio" name="fr1">Текст</label>
+        <label class="filter__section-radio">
+          <input class="input-radio" type="radio" name="fr1">Текст</label>
+        <label class="filter__section-radio">
+          <input class="input-radio" type="radio" name="fr1">Текст</label>
+      </div>
+
+      <div class="filter__section">
+        <h3 class="filter__section-title">Драгоценные камни</h3>
+
+        
+      </div>
+
+      <div class="filter__section filter__section-submit ">
+        <button class="filter__reset" type="submit">Применить фильтр</button>
+      </div>
+    </form>
+  </section>
+</body>
+</html>

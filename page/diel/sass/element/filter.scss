@@ -1,0 +1,122 @@
+.filter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow-y: auto;
+}
+
+.filter__close {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+
+  svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.filter-form {
+  position: relative;
+  margin: 12px;
+  color: #FFFFFF;
+  font-family: "Intro Light";
+  background-color: #160D08;
+  border: 1px solid rgba(224, 139, 102, 0.7);
+}
+
+.filter__section {
+  padding: 0 30px;
+}
+
+.filter__title {
+  padding: 0 30px;
+  font-family: "Lazurski";
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 32px;
+}
+
+.filter__section-title {
+  font-family: "Lazurski";
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 32px;
+  letter-spacing: 2px;
+  color: #F8F8F8;
+}
+
+.filter__section-reset {
+  padding: 0;
+  border-top: 1px solid rgba(224, 139, 102, 0.7);
+  border-bottom: 1px solid rgba(224, 139, 102, 0.7);
+}
+
+.filter__section-submit {
+  padding: 0;
+  border-top: 1px solid rgba(224, 139, 102, 0.7);
+}
+
+.filter__reset,
+.filter__submit {
+  margin: 0;
+  padding: 30px 25px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  font-family: "Lazurski";
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.15px;
+  color: #E08B66;
+  background-color: transparent;
+  border: none;
+}
+
+.filter__section-title {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.filter__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter__price-min,
+.filter__price-max {
+  padding: 5px 30px;
+  width: 80px;
+  font-family: "Intro Light";
+  font-size: 16px;
+  line-height: 26px;
+  color: #F8F8F8;
+  opacity: 0.8;
+  background-color: transparent;
+  border: 1px solid rgba(248, 248, 248, 0.2);
+
+}
+
+.filter__section-checkbox {
+  position: relative;
+  padding-left: 30px;
+}
+
+.filter__section-radio {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-form {
+    max-width: 333px;
+  }
+}

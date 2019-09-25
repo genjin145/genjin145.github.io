@@ -185,7 +185,7 @@ body {
     line-height: 42px;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1366px) {
     font-size: 64px;
     line-height: 80px;
   }
@@ -497,6 +497,48 @@ body {
   display: block;
 }
 
+.input-radio {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #160D08;
+    border: 1px solid #F8F8F8;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+    width: 10px;
+    height: 10px;
+    background-color: #E08B66;
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  &:checked {
+    &::before {
+      border-color: #E08B66;
+    }
+    &::after {
+      display: block;
+    }
+  }
+}
+
 .input-submit {
   padding: 8px 62px;
   font-family: "Intro Light";
@@ -661,6 +703,7 @@ body {
 @import "./element/product-card";
 @import "./element/page-filter";
 @import "./element/pagination";
+@import "./element/filter";
 
 @import "./block/header";
 @import "./block/banner";
@@ -686,6 +729,7 @@ body {
 @import "./block/price-list";
 @import "./block/card-item";
 @import "./block/favorites";
+@import "./block/page-collections";
 
 
 .main {
