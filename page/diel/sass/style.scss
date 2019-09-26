@@ -191,6 +191,10 @@ body {
   }
 }
 
+.section-title__span-white {
+  color: #fff;
+}
+
 .section-title-small {
   position: relative;
   display: inline-block;
@@ -689,7 +693,7 @@ body {
 }
 
 
-
+@import "./element/mixin";
 
 @import "./block/tiny-slider";
 
@@ -730,6 +734,8 @@ body {
 @import "./block/card-item";
 @import "./block/favorites";
 @import "./block/page-collections";
+@import "./block/collection-information";
+@import "./block/collection-products";
 
 
 .main {

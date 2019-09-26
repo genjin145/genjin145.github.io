@@ -9,10 +9,6 @@
   flex-direction: column-reverse;
 }
 
-.page-collections__title {
-  margin-bottom: 30px;
-}
-
 .page-collections-item__image-wrapper {
   position: relative;
   margin-bottom: 47px;
@@ -78,13 +74,14 @@
 
   .page-collections-item__description {
     padding-right: 20px;
-    width: 60%;
+    width: inherit;
   }
 
   .page-collections-item__image-wrapper {
+    flex-shrink: 0;
     margin-top: 10px;
     margin-bottom: 0;
-    width: 40%;
+    width: 302px;
     
     min-height: 555px;
 
@@ -95,7 +92,7 @@
   }
 
   .page-collections-item__title {
-    left: -80%;
+    transform: translateX(-70%);
     bottom: 2%;
     width: 400px;
     text-align: right;
@@ -118,7 +115,6 @@
 @media screen and (min-width: 1366px) {
   .page-collections-item__title {
     bottom: 10%;
-    left: -100%;
     width: 713px;
     font-size: 64px;
     line-height: 80px;
@@ -129,15 +125,11 @@
     line-height: 80px;
   }
 
-  .page-collections-item__description {
-    width: 55%;
-  }
-
   .page-collections-item__image-wrapper {
     margin-top: 10px;
     margin-bottom: 0;
-    width: 45%;
-    min-height: 863px;;
+    width: 470px;
+    min-height: 863px;
   }
 }
 
@@ -151,33 +143,84 @@
 
 
 
-.page-collections {
+.page-collections__item {
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 66px;
+  // padding-bottom: 66px;
 }
 
 .page-collections__item {
-  margin-bottom: 60px
+  // margin-bottom: 60px
+}
+
+.page-collections__title {
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  .page-collections {
+  .page-collections__title {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .page-collections__item {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 66px;
+    // padding-bottom: 66px;
+  }
+
+  .page-collections__item:nth-child(2n + 2) {
+    flex-direction: row-reverse;
+
+    .page-collections-item__description {
+      padding-right: 0;
+      padding-left: 20px;
+    }
+
+    .page-collections-item__title {
+      text-align: left;
+      transform: translate(50%);
+    }
+
+    .page-collections-item__title-bigger {
+      transform: translateX(-10%);
+    }
   }
 }
 
 @media screen and (min-width: 1366px) {
-  .page-collections {
+  .page-collections__title {
+    margin-left: 55px;
+    margin-right: 70px;
+  }
+
+  .page-collections__item {
     padding-left: 55px;
     padding-right: 70px;
-    padding-bottom: 143px;
+    // padding-bottom: 143px;
   }
 
   .page-collections__item:first-child {
     margin-top: -155px;
+
+    & * {
+      z-index: 2;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 295px;
+      width: 403px;
+      height: 363px;
+      background-image: url(../../img/our_products_diamond_bc.png);
+      background-repeat: no-repeat;
+      opacity: .1;
+      z-index: 1;
+    }
 
     .page-collections-item__description {
       padding-top: 155px;
@@ -187,13 +230,21 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .page-collections {
+  .page-collections__title {
+    margin-left: 270px;
+  }
+
+  .page-collections__item {
     padding-left: 270px;
   }
 }
 
 @media screen and (min-width: 1920px) {
-  .page-collections {
+  .page-collections__title {
+    margin-left: 310px;
+    margin-right: 252px;
+  }
+  .page-collections__item {
     padding-left: 310px;
     padding-right: 252px;
   }
