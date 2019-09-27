@@ -1,0 +1,7 @@
+.page-collections {
+  .all-collections__item {
+    &::before {
+      background-color: transparent;
+    }
+  }
+}

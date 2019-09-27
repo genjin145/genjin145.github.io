@@ -1,0 +1,58 @@
+.work-process {
+  padding-left: 12px;
+  padding-top: 105px;
+  padding-bottom: 50px;
+  background: linear-gradient(#0F0805, #110A07);
+}
+
+.work-process__slider {
+  margin-top: 45px;
+}
+
+.work-process__button-transition {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .work-process {
+    position: relative;
+    padding-bottom: 105px;
+    padding-left: 20px;
+  }
+
+  .work-process__button-transition {
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .work-process {
+    padding-top: 225px;
+    padding-bottom: 100px;
+    padding-left: 55px;
+  }
+
+  .work-process__button-transition {
+    top: 240px;
+    right: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .work-process {
+    padding-left: 270px;
+    background: url(../img/background_diamond.png) no-repeat -457px 200px,
+                linear-gradient(#0F0805, #110A07);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .work-process {
+    padding-top: 227px;
+    padding-bottom: 100px;
+    padding-left: 310px;
+  }
+}

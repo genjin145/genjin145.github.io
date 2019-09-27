@@ -120,6 +120,10 @@ body {
 @import "./block/collection-information";
 @import "./block/collection-products";
 @import "./block/all-collections";
+@import "./block/for-buyer";
+@import "./block/work-process";
+@import "./block/section-faq";
+@import "./block/reviews";
 
 // PopUp
 
@@ -130,7 +134,9 @@ body {
 // page
 
 @import "./page/page";
+@import "./page/page-collections";
 @import "./page/page-collection";
+@import "./page/page-for-buyer";
 
 
 .main {

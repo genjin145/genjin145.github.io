@@ -1,0 +1,50 @@
+.page-for-buyer {
+  .header {
+    position: absolute;
+    top: 0;
+  }
+
+  .main {
+    padding-top: 57px;
+  }
+}
+
+.page-for-buyer__buyer {
+  // padding-bottom: 60px;
+
+
+
+  &::before {
+    background-color: transparent;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-for-buyer__buyer {
+    // padding-bottom: 105px;
+  }
+
+  .page-for-buyer {
+    .main {
+      padding-top: 74px;
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .page-for-buyer__buyer {
+    // padding-bottom: 250px;
+  }
+
+  .page-for-buyer {
+    .main {
+      padding-top: 119px;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .page-for-buyer__buyer {
+    // padding-bottom: 227px;
+  }
+}

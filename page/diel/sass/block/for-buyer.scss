@@ -1,0 +1,144 @@
+.for-buyer {
+  @include section-position;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.for-buyer__title {
+  order: 1;
+  margin-bottom: 40px;
+}
+
+.for-buyer__text-box {
+  order: 4;
+}
+
+.for-buyer__image-wrapper {
+  order: 2;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.for-buyer__information {
+  order: 3;
+}
+
+.for-buyer__image {
+  width: 100%;
+  filter: grayscale(100%);
+}
+
+.for-buyer__image-title {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin: 0;
+  font-family: "Lazurski";
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 100px;
+  text-align: right;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #E08B66;
+  transform: translate(-50%, 50%);
+}
+
+.for-buyer__p {
+  margin: 10px 0;
+  font-family: "Intro Light";
+  font-size: 16px;
+  line-height: 26px;
+  color: #F8F8F8;
+}
+
+@media screen and (min-width: 768px) {
+  .for-buyer__image-wrapper {
+    margin-bottom: 130px;
+  }
+
+  .for-buyer__image-title {
+    font-size: 250px;
+    line-height: 300px;
+    text-align: right;
+    letter-spacing: 5px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .for-buyer__title {
+    margin-bottom: 25px;
+  }
+
+  .for-buyer__image-wrapper {
+    display: flex;
+    margin-bottom: 105px;
+  }
+
+  .for-buyer__image {
+    margin-left: auto;
+    width: 731px;
+  }
+
+  .for-buyer__image-title {
+    font-size: 250px;
+    line-height: 300px;
+    text-align: right;
+    letter-spacing: 5px;
+    transform: translate(-90%, 30%);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .for-buyer {
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 80px;
+      width: 565px;
+      height: 400px;
+      background-image: url(../../img/ring_bg.png);
+      background-repeat: no-repeat;
+      opacity: .2;
+    }
+  }
+
+  .for-buyer__title {
+    width: 100%;
+    margin-bottom: 40px;
+
+    span {
+      max-width: 745px;
+    }
+  }
+
+  .for-buyer__text-box {
+    order: 2;
+    width: 600px;
+  }
+
+  .for-buyer__image-wrapper {
+    order: 3;
+    margin-top: -120px;
+    min-height: 480px;
+  }
+
+  .for-buyer__image-title {
+    left: 20%;
+    transform: translate(-90%, 40%);
+  }
+
+  .for-buyer__information {
+    margin: 0 auto;
+    width: 600px;
+  }
+
+
+}

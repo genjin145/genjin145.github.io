@@ -1,0 +1,58 @@
+.section-faq {
+  padding-left: 12px;
+  padding-top: 105px;
+  padding-bottom: 50px;
+  background: linear-gradient(#0F0805, #110A07);
+}
+
+.section-faq__slider {
+  margin-top: 45px;
+}
+
+.section-faq__button-transition {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-faq {
+    position: relative;
+    padding-bottom: 105px;
+    padding-left: 20px;
+  }
+
+  .section-faq__button-transition {
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .section-faq {
+    padding-top: 225px;
+    padding-bottom: 100px;
+    padding-left: 55px;
+  }
+
+  .section-faq__button-transition {
+    top: 240px;
+    right: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section-faq {
+    padding-left: 270px;
+    background: url(../img/background_diamond.png) no-repeat -457px 200px,
+                linear-gradient(#0F0805, #110A07);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .section-faq {
+    padding-top: 227px;
+    padding-bottom: 100px;
+    padding-left: 310px;
+  }
+}
