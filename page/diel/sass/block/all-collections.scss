@@ -1,24 +1,24 @@
-.page-collections-list {
+.all-collections-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.page-collections-item {
+.all-collections-item {
   display: flex;
   flex-direction: column-reverse;
 }
 
-.page-collections-item__image-wrapper {
+.all-collections-item__image-wrapper {
   position: relative;
   margin-bottom: 47px;
 }
 
-.page-collections-item__image {
+.all-collections-item__image {
   width: 100%;
 }
 
-.page-collections-item__title {
+.all-collections-item__title {
   position: absolute;
   bottom: -20px;
   margin: 0;
@@ -41,7 +41,7 @@
   }
 }
 
-.page-collections-item__title-bigger {
+.all-collections-item__title-bigger {
   font-size: 36px;
   line-height: 48px;
   letter-spacing: 2px;
@@ -50,11 +50,11 @@
 }
 
 
-.page-collections-item__description {
+.all-collections-item__description {
   // padding-right: 52px;
 }
 
-.page-collections-item__p {
+.all-collections-item__p {
   margin: 12px 0;
   font-family: "Intro Light";
   font-size: 16px;
@@ -62,22 +62,22 @@
   color: #FFFFFF;
 }
 
-.page-collections-item__button-detail {
+.all-collections-item__button-detail {
   margin-top: 40px;
 }
 
 @media screen and (min-width: 768px) {
-  .page-collections-item {
+  .all-collections-item {
     display: flex;
     flex-direction: row;
   }
 
-  .page-collections-item__description {
+  .all-collections-item__description {
     padding-right: 20px;
     width: inherit;
   }
 
-  .page-collections-item__image-wrapper {
+  .all-collections-item__image-wrapper {
     flex-shrink: 0;
     margin-top: 10px;
     margin-bottom: 0;
@@ -91,7 +91,7 @@
     }
   }
 
-  .page-collections-item__title {
+  .all-collections-item__title {
     transform: translateX(-70%);
     bottom: 2%;
     width: 400px;
@@ -104,7 +104,7 @@
     }
   }
 
-  .page-collections-item__title-bigger {
+  .all-collections-item__title-bigger {
     transform: translateX(10%);
     width: inherit;
     font-size: 46px;
@@ -113,19 +113,19 @@
 }
 
 @media screen and (min-width: 1366px) {
-  .page-collections-item__title {
+  .all-collections-item__title {
     bottom: 10%;
     width: 713px;
     font-size: 64px;
     line-height: 80px;
   }
 
-  .page-collections-item__title-bigger {
+  .all-collections-item__title-bigger {
     font-size: 100px;
     line-height: 80px;
   }
 
-  .page-collections-item__image-wrapper {
+  .all-collections-item__image-wrapper {
     margin-top: 10px;
     margin-bottom: 0;
     width: 470px;
@@ -143,66 +143,66 @@
 
 
 
-.page-collections__item {
+.all-collections__item {
   padding-left: 12px;
   padding-right: 12px;
   // padding-bottom: 66px;
 }
 
-.page-collections__item {
+.all-collections__item {
   // margin-bottom: 60px
 }
 
-.page-collections__title {
+.all-collections__title {
   margin-left: 12px;
   margin-right: 12px;
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  .page-collections__title {
+  .all-collections__title {
     margin-left: 20px;
     margin-right: 20px;
   }
 
-  .page-collections__item {
+  .all-collections__item {
     padding-left: 20px;
     padding-right: 20px;
     // padding-bottom: 66px;
   }
 
-  .page-collections__item:nth-child(2n + 2) {
+  .all-collections__item:nth-child(2n + 2) {
     flex-direction: row-reverse;
 
-    .page-collections-item__description {
+    .all-collections-item__description {
       padding-right: 0;
       padding-left: 20px;
     }
 
-    .page-collections-item__title {
+    .all-collections-item__title {
       text-align: left;
       transform: translate(50%);
     }
 
-    .page-collections-item__title-bigger {
+    .all-collections-item__title-bigger {
       transform: translateX(-10%);
     }
   }
 }
 
 @media screen and (min-width: 1366px) {
-  .page-collections__title {
+  .all-collections__title {
     margin-left: 55px;
     margin-right: 70px;
   }
 
-  .page-collections__item {
+  .all-collections__item {
     padding-left: 55px;
     padding-right: 70px;
     // padding-bottom: 143px;
   }
 
-  .page-collections__item:first-child {
+  .all-collections__item:first-child {
     margin-top: -155px;
 
     & * {
@@ -222,7 +222,7 @@
       z-index: 1;
     }
 
-    .page-collections-item__description {
+    .all-collections-item__description {
       padding-top: 155px;
     }
   }
@@ -230,21 +230,21 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .page-collections__title {
+  .all-collections__title {
     margin-left: 270px;
   }
 
-  .page-collections__item {
+  .all-collections__item {
     padding-left: 270px;
   }
 }
 
 @media screen and (min-width: 1920px) {
-  .page-collections__title {
+  .all-collections__title {
     margin-left: 310px;
     margin-right: 252px;
   }
-  .page-collections__item {
+  .all-collections__item {
     padding-left: 310px;
     padding-right: 252px;
   }

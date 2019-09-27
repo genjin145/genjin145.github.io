@@ -1,0 +1,104 @@
+.page {
+  @media screen and (min-width: 1440px) {
+    position: relative;
+    overflow: hidden;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 215px;
+      width: 2px;
+      background-color: rgba(215, 130, 93, 0.2);
+      z-index: 100;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 220px;
+      left: -440px;
+      width: 627px;
+      height: 548px;
+      background-image: url(../img/background_diamond.png);
+      opacity: .5;
+      z-index: 100;
+    }
+  }
+  
+  @media screen and (min-width: 1921px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1920px !important;
+  }
+
+  .header {
+    position: static;
+  }
+
+  .footer::after {
+    display: none;
+  }
+}
+
+.page__breadcrumbs {
+  padding: 12px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    padding: 20px;
+    padding-left: 55px;
+    padding-top: 90px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-left: 270px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    padding-left: 310px;
+    padding-top: 95px;
+  }
+}
+
+.page__pagination {
+  padding: 12px;
+  padding-top: 15px;
+  padding-bottom: 90px;
+
+  .pagination__item:first-child {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 110px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    padding-left: 55px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 180px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-left: 270px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    padding-left: 310px;
+    padding-right: 120px;
+    padding-bottom: 230px;
+  }
+}

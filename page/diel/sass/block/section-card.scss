@@ -1,76 +1,76 @@
-.page-card {
+.section-card {
   padding-left: 12px;
   padding-right: 12px;
   padding-bottom: 0;
 }
 
-.page-card__title {
+.section-card__title {
   margin-bottom: 40px;
 }
 
-.page-card__list {
+.section-card__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.page-card__list {
+.section-card__list {
   margin-top: 30px;
 }
 
-.page-card-list__item {
+.section-card-list__item {
   // margin-bottom: 30px;
   // margin-right: 30px;
 }
 
-.page-card-list__item:nth-child(3) {
+.section-card-list__item:nth-child(3) {
   margin-right: 0;
 }
-.page-card-list__item:nth-child(5) {
+.section-card-list__item:nth-child(5) {
   margin-right: 0;
 }
 
 @media screen and (min-width: 768px) {
-  .page-card {
+  .section-card {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 0;
   }
 
-  .page-card__title {
+  .section-card__title {
     margin-bottom: 50px;
   }
 
-  .page-card__list {
+  .section-card__list {
     margin-top: 40px;
   }
 }
 
 @media screen and (min-width: 1366px) {
-  .page-card {
+  .section-card {
     padding-left: 55px;
     padding-right: 50px;
     padding-bottom: 0;
   }
 
-  .page-card__title {
+  .section-card__title {
     margin-bottom: 60px;
   }
 
-  .page-card__list {
+  .section-card__list {
     margin-top: 60px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .page-card {
+  .section-card {
     padding-left: 270px;
     padding-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1920px) {
-  .page-card {
+  .section-card {
     padding-left: 310px;
     padding-right: 100px;
     padding-bottom: 0;
@@ -89,7 +89,7 @@
   }
 }
 
-.page-card__list {
+.section-card__list {
   display: grid;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
@@ -98,7 +98,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .page-card-list__item {
+  .section-card-list__item {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -107,15 +107,15 @@
 
 
 @media screen and (min-width: 1366px) {
-  .page-card-list__item {
+  .section-card-list__item {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
 
-  .page-card__list-1 {
+  .section-card__list-1 {
     grid-template-columns: 2fr 1fr 1fr;
   
-    .page-card-list__item {
+    .section-card-list__item {
       margin-bottom: 0;
   
     }
@@ -126,12 +126,12 @@
   
   }
   
-  .page-card__list-2 {
+  .section-card__list-2 {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     margin-top: 0;
   
-    .page-card-list__item {
+    .section-card-list__item {
       margin-bottom: 0;
   
     }
@@ -142,7 +142,7 @@
   
   }
   
-  .page-card__list-3 {
+  .section-card__list-3 {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
     margin-top: 0;
@@ -161,13 +161,13 @@
 
 
 
-.page-card__list--view-list {
+.section-card__list--view-list {
   display: flex;
   flex-direction: column;
   padding: 0;
   border-top: 1px solid rgba(224, 139, 102, 0.2);
 
-  .page-card-list__item {
+  .section-card-list__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
