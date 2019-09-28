@@ -6,8 +6,16 @@
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.6);
+  visibility: hidden;
+  opacity: 0;
   overflow-y: auto;
   z-index: 200;
+  transition: opacity 300ms;
+}
+
+.popup--active {
+  visibility: visible;
+  opacity: 1;
 }
 
 .popup__close {

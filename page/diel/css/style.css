@@ -4255,8 +4255,15 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+  visibility: hidden;
+  opacity: 0;
   overflow-y: auto;
-  z-index: 200; }
+  z-index: 200;
+  transition: opacity 300ms; }
+
+.popup--active {
+  visibility: visible;
+  opacity: 1; }
 
 .popup__close {
   padding: 5px;
@@ -5074,6 +5081,9 @@ body {
 @media screen and (min-width: 1366px) {
   .page-for-buyer .main {
     padding-top: 119px; } }
+
+.page-contacts__top-wrapper {
+  background-image: linear-gradient(143.89deg, #220F06 25.63%, #120A06 82.49%); }
 
 .main {
   overflow: hidden; }
