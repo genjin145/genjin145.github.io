@@ -1,0 +1,18 @@
+.address {
+  position: relative;
+  padding-left: 40px;
+}
+
+.address__icon {
+  position: absolute;
+  left: 0;
+}
+
+.address__location {
+  font-family: "Intro Light";
+  font-size: 16px;
+  line-height: 150%;
+  font-style: normal;
+
+  color: #FFFFFF;
+}

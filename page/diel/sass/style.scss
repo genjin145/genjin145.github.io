@@ -89,6 +89,11 @@ body {
 @import "./element/button";
 @import "./element/form-element";
 @import "./element/product-card";
+@import "./element/address";
+@import "./element/call";
+@import "./element/email";
+@import "./element/operating-mode";
+@import "./element/requisites";
 
 // block
 
@@ -99,6 +104,7 @@ body {
 @import "./block/small-block/page-filter";
 @import "./block/small-block/pagination";
 @import "./block/small-block/filter";
+@import "./block/small-block/tabs";
 @import "./block/small-block/section-skew";
 
 @import "./block/header";
@@ -124,12 +130,16 @@ body {
 @import "./block/work-process";
 @import "./block/section-faq";
 @import "./block/reviews";
+@import "./block/contacts";
 
 // PopUp
 
+@import "./block/popup";
 @import "./block/popup-main-menu";
 @import "./block/popup-search";
 @import "./block/popup-request-call";
+@import "./block/popup-leave-feedback";
+
 
 // page
 
@@ -137,6 +147,7 @@ body {
 @import "./page/page-collections";
 @import "./page/page-collection";
 @import "./page/page-for-buyer";
+@import "./page/page-contacts";
 
 
 .main {

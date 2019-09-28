@@ -1,0 +1,22 @@
+.call {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+  font-family: "Intro Light";
+  font-size: 18px;
+  line-height: 150%;
+  /* identical to box height, or 27px */
+
+  color: #fff;
+  text-decoration: none;
+}
+
+.call__icon {
+  position: absolute;
+  left: 0;
+}
+
+.call__description {
+  display: block;
+  color: #E08B66;
+}

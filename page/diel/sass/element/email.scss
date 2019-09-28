@@ -1,0 +1,17 @@
+.email {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  font-family: "Intro Light";
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.email__icon {
+  position: absolute;
+  left: 0;
+}
+

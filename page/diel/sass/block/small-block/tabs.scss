@@ -1,0 +1,42 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tabs__item:last-child .tabs__button {
+  padding-right: 0;
+}
+
+.tabs__button {
+  padding: 7px 0;
+  padding-right: 30px; 
+  font-family: "Lazurski";
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 300ms;
+}
+
+.tabs__item--active .tabs__button,
+.tabs__button:hover,
+.tabs__button:focus {
+  color: #FFFFFF;
+  outline: none;
+}
+
+.tabs__content,
+.tabs__item-content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.tabs__item-content {
+  display: none;
+}

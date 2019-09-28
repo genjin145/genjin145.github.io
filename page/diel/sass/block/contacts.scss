@@ -1,0 +1,72 @@
+.contacts {
+  @include section-position;
+}
+
+.contacts__title {
+  margin-bottom: 40px;
+}
+
+.contacts-inormation {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.contacts-inormation__item {
+  margin-bottom: 30px;
+}
+
+.contacts-inormation__item-requisites {
+  margin-left: 40px;
+}
+
+.contacts-inormation__item-map {
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__title {
+    margin-bottom: 60px;
+  }
+
+  .contacts-inormation__item-requisites {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .contacts__title {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .contacts {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 450px;
+      left: 295px;
+      width: 403px;
+      height: 363px;
+      background-image: url(../../img/our_products_diamond_bc.png);
+      background-repeat: no-repeat;
+      opacity: .1;
+      z-index: -1;
+    }
+  }
+
+  .contacts-inormation__item-map {
+    position: absolute;
+    top: 0;
+    right: 75px;
+  }
+
+  .contacts__tabs {
+    max-width: 600px;
+  }
+}

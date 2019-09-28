@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Отзывы</title>
+  <title>Контакты</title>
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="page page-for-buyer">
+  <div class="page page-contacts">
+    <div class="page-collection__top-wrapper">
     <header class="header">
       <nav class="header__nav">
         <a class="header__logo logo-wrapper" href="./index.html">
@@ -129,90 +130,217 @@
             <a class="breadcrumbs__link" href="./index.html">Главная</a>
           </li>
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link">Отзывы</a>
+            <a class="breadcrumbs__link">контакты</a>
           </li>
         </ul>
       </nav>
 
-      <section class="reviews">
-        <h2 class="reviews__title section-title">Отзывы</h2>
+      <section class="page-contacts__contacts contacts">
+        <h2 class="contacts__title section-title">Контакты</h2>
 
-        <a class="reviews__button-primery button-primery" href="#">Оставить отзыв</a>
+        <ul class="contacts__tabs tabs">
+          <li class="tabs__item tabs__item--active">
+            <button class="tabs__button" type="button">Москва</button>
+            <div class="tabs__item-content">
+              <ul class="contacts-inormation">
+                <li class="contacts-inormation__item">
+                  <div class="address">
+                    <svg class="address__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="29" viewBox="0 0 20 29" fill="none">
+                      <path d="M10 0C4.486 0 0 4.486 0 10C0 11.863 0.516056 13.6811 1.49272 15.2584L9.43078 28.0505C9.58283 28.2956 9.85072 28.4444 10.1388 28.4444C10.1411 28.4444 10.1432 28.4444 10.1454 28.4444C10.4361 28.4422 10.7045 28.2887 10.8538 28.0393L18.5895 15.1233C19.5123 13.5793 20 11.8077 20 10C20 4.486 15.514 0 10 0ZM17.1592 14.2677L10.1262 26.0103L2.90928 14.3803C2.09633 13.0674 1.65556 11.5528 1.65556 10C1.65556 5.405 5.405 1.65556 10 1.65556C14.595 1.65556 18.3389 5.405 18.3389 10C18.3389 11.5067 17.9272 12.9827 17.1592 14.2677Z" fill="white" fill-opacity="0.7"/>
+                      <path d="M10 5C7.243 5 5 7.243 5 10C5 12.7394 7.2065 15 10 15C12.8279 15 15 12.7093 15 10C15 7.243 12.757 5 10 5ZM10 13.3444C8.15239 13.3444 6.65556 11.8426 6.65556 10C6.65556 8.162 8.162 6.65556 10 6.65556C11.838 6.65556 13.3389 8.162 13.3389 10C13.3389 11.8157 11.8769 13.3444 10 13.3444Z" fill="white" fill-opacity="0.7"/>
+                    </svg>
+                    <address class="address__location">Москва, ул. Сткпана Разина, 78  офис 10</address>
+                  </div>
+                </li>
 
-        <ul class="reviews__list">
-          <li class="reviews__item reviews-item reviews-item--big">
-            <div class="reviews-item__header">
-              <h3 class="reviews-item__title">Александр Ромашкин, бизнесмен</h3>
+                <li class="contacts-inormation__item">
+                  <a class="call" href="tel:88005005050">
+                    <svg class="call__icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                      <path d="M20.093 25.0001C19.0528 25.0001 17.7966 24.7395 16.415 24.2181C13.3862 23.0762 10.0908 20.8193 7.13591 17.8644C4.18022 14.9087 1.9233 11.6125 0.780549 8.58365C-0.257936 5.82978 -0.260459 3.5695 0.774662 2.53521C0.923498 2.38638 1.07486 2.22661 1.23126 2.0618C2.17557 1.06872 3.24264 -0.0488049 4.657 0.0016478C5.63158 0.04201 6.57588 0.647443 7.54289 1.85074C10.4002 5.40429 9.11197 6.67065 7.62109 8.13883L7.3579 8.3995C7.11404 8.64336 6.65324 9.77265 10.94 14.0595C12.3393 15.4587 13.5325 16.4829 14.486 17.1026C15.0864 17.4928 16.1602 18.0831 16.6008 17.6424L16.8657 17.375C18.3322 15.8875 19.5986 14.6035 23.1496 17.4583C24.3529 18.4253 24.9575 19.3688 24.9978 20.345C25.0559 21.7585 23.9299 22.8281 22.936 23.7716C22.772 23.928 22.6123 24.0794 22.4634 24.2274C21.9497 24.742 21.1281 25.0001 20.093 25.0001ZM4.55609 0.840844C3.55124 0.840844 2.64394 1.79608 1.8409 2.64117C1.67945 2.81102 1.52304 2.97583 1.36916 3.12972C0.598078 3.89996 0.67628 5.92395 1.56761 8.28766C2.66916 11.2072 4.85797 14.3975 7.73125 17.2708C10.6037 20.1424 13.7923 22.3312 16.7127 23.4319C19.0764 24.3249 21.1004 24.4006 21.8698 23.6312C22.0237 23.4773 22.1885 23.3209 22.3583 23.1603C23.2219 22.3396 24.2015 21.4096 24.1586 20.3778C24.1292 19.669 23.6129 18.9063 22.624 18.1116C19.665 15.732 18.8376 16.572 17.4653 17.9637L17.1962 18.2353C16.5403 18.892 15.4749 18.7465 14.0286 17.8064C13.0254 17.1539 11.786 16.0927 10.3464 14.6523C6.78862 11.0954 5.65092 8.91832 6.76424 7.80248L7.03248 7.5376C8.4275 6.16529 9.26922 5.33702 6.88869 2.37629C6.09238 1.38826 5.33054 0.871957 4.62168 0.841685C4.59982 0.840845 4.57796 0.840844 4.55609 0.840844Z" fill="white"/>
+                    </svg>
+                    <span class="call__phone-number">8 800 500 50 50</span>
+                    <span class="call__description">Заказать звонок</span>
+                  </a>
+                </li>
 
-              <time class="reviews-item__date">12.07.2019</time>
-            </div>
+                <li class="contacts-inormation__item">
+                  <a class="email" href="mailto:example@gmail.com">
+                    <svg class="email__icon" width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M23.0112 0.281281H0.988783C0.442688 0.281281 0 0.723968 0 1.27006V14.7299C0 15.276 0.442688 15.7187 0.988783 15.7187H23.0112C23.5573 15.7187 24 15.276 24 14.7299V1.27006C24 0.723968 23.5573 0.281281 23.0112 0.281281ZM0.988783 1.05781H23.0112C23.1041 1.05826 23.1859 1.11909 23.2131 1.20794L12 8.21225L0.786885 1.20794C0.814064 1.11909 0.895859 1.05826 0.988783 1.05781ZM0.776532 2.09319L8.84211 7.13029L0.776532 13.5289V2.09319ZM23.2235 14.7248C23.2235 14.842 23.1284 14.937 23.0112 14.937H0.988783C0.871592 14.937 0.776532 14.842 0.776532 14.7248V14.5177L9.54098 7.59103L11.7929 8.99914C11.9194 9.07893 12.0806 9.07893 12.2071 8.99914L14.459 7.59103L23.2235 14.5177V14.7248ZM23.2235 13.5289L15.1372 7.151L23.2235 2.13978V13.5289Z" fill="white"/>
+                    </svg>
+                    example@gmail.com</a>
+                </li>
 
-            <div class="reviews-item__content">
-              <img src="img/video.png" alt="">
-            </div>
+                <li class="contacts-inormation__item">
+                  <div class="operating-mode">
+                    <svg class="operating-mode__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 0C5.3832 0 0 5.3832 0 12C0 18.6168 5.3832 24 12 24C18.6168 24 24 18.6168 24 12C24 5.3832 18.6168 0 12 0ZM12 23.2C5.8244 23.2 0.8 18.1756 0.8 12C0.8 5.8244 5.8244 0.8 12 0.8C18.1756 0.8 23.2 5.8244 23.2 12C23.2 18.1756 18.1756 23.2 12 23.2Z" fill="white"/>
+                      <path d="M12.0002 2.39999C11.7794 2.39999 11.6002 2.57879 11.6002 2.79999V12H5.6002C5.3794 12 5.2002 12.1788 5.2002 12.4C5.2002 12.6212 5.3794 12.8 5.6002 12.8H12.0002C12.221 12.8 12.4002 12.6212 12.4002 12.4V2.79999C12.4002 2.57879 12.221 2.39999 12.0002 2.39999Z" fill="white"/>
+                    </svg>
 
-            <div class="reviews-item__text">
-              <p>Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН».</p>
-              <p>Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН».</p>
+                    <ul class="operating-mode__list">
+                      <li class="operating-mode__item">ПН-ЧТ 9:00-21:00</li>
+                      <li class="operating-mode__item">ПН 9:00-17:00</li>
+                      <li class="operating-mode__item">СБ-ВС выходной</li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="contacts-inormation__item contacts-inormation__item-requisites">
+                  <div class="requisites">
+                    <h4 class="requisites__title">Реквизиты</h4>
+
+                    <ul class="requisites__list">
+                      <li class="requisites__item">УРАЛЬСКИЙ БАНК ПАО "СБЕРБАНК"</li>
+                      <li class="requisites__item">БИК: 046577674</li>
+                      <li class="requisites__item">К/с: 30101810500000000674</li>
+                      <li class="requisites__item">Р/с: 40802810216540023885</li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="contacts-inormation__item contacts-inormation__item-map">
+                  <img src="img/map.png" alt="map">
+                </li>
+              </ul>
             </div>
           </li>
-          <li class="reviews__item reviews-item">
-            <div class="reviews-item__header">
-              <h3 class="reviews-item__title">Александр Ромашкин, бизнесмен</h3>
 
-              <time class="reviews-item__date">12.07.2019</time>
-            </div>
+          <li class="tabs__item">
+            <button class="tabs__button" type="button">Екатеринбург</button>
+            <div class="tabs__item-content">
+              <ul class="contacts-inormation">
+                <li class="contacts-inormation__item">
+                  <div class="address">
+                    <svg class="address__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="29" viewBox="0 0 20 29" fill="none">
+                      <path d="M10 0C4.486 0 0 4.486 0 10C0 11.863 0.516056 13.6811 1.49272 15.2584L9.43078 28.0505C9.58283 28.2956 9.85072 28.4444 10.1388 28.4444C10.1411 28.4444 10.1432 28.4444 10.1454 28.4444C10.4361 28.4422 10.7045 28.2887 10.8538 28.0393L18.5895 15.1233C19.5123 13.5793 20 11.8077 20 10C20 4.486 15.514 0 10 0ZM17.1592 14.2677L10.1262 26.0103L2.90928 14.3803C2.09633 13.0674 1.65556 11.5528 1.65556 10C1.65556 5.405 5.405 1.65556 10 1.65556C14.595 1.65556 18.3389 5.405 18.3389 10C18.3389 11.5067 17.9272 12.9827 17.1592 14.2677Z" fill="white" fill-opacity="0.7"/>
+                      <path d="M10 5C7.243 5 5 7.243 5 10C5 12.7394 7.2065 15 10 15C12.8279 15 15 12.7093 15 10C15 7.243 12.757 5 10 5ZM10 13.3444C8.15239 13.3444 6.65556 11.8426 6.65556 10C6.65556 8.162 8.162 6.65556 10 6.65556C11.838 6.65556 13.3389 8.162 13.3389 10C13.3389 11.8157 11.8769 13.3444 10 13.3444Z" fill="white" fill-opacity="0.7"/>
+                    </svg>
+                    <address class="address__location">Екатеринбург, ул. Генеральская, 3  офис 210</address>
+                  </div>
+                </li>
 
-            <div class="reviews-item__text">
-              <p>Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН».</p>
-              <p>Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН».</p>
-              <p>Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН».</p>
+                <li class="contacts-inormation__item">
+                  <a class="call" href="tel:88005005050">
+                    <svg class="call__icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                      <path d="M20.093 25.0001C19.0528 25.0001 17.7966 24.7395 16.415 24.2181C13.3862 23.0762 10.0908 20.8193 7.13591 17.8644C4.18022 14.9087 1.9233 11.6125 0.780549 8.58365C-0.257936 5.82978 -0.260459 3.5695 0.774662 2.53521C0.923498 2.38638 1.07486 2.22661 1.23126 2.0618C2.17557 1.06872 3.24264 -0.0488049 4.657 0.0016478C5.63158 0.04201 6.57588 0.647443 7.54289 1.85074C10.4002 5.40429 9.11197 6.67065 7.62109 8.13883L7.3579 8.3995C7.11404 8.64336 6.65324 9.77265 10.94 14.0595C12.3393 15.4587 13.5325 16.4829 14.486 17.1026C15.0864 17.4928 16.1602 18.0831 16.6008 17.6424L16.8657 17.375C18.3322 15.8875 19.5986 14.6035 23.1496 17.4583C24.3529 18.4253 24.9575 19.3688 24.9978 20.345C25.0559 21.7585 23.9299 22.8281 22.936 23.7716C22.772 23.928 22.6123 24.0794 22.4634 24.2274C21.9497 24.742 21.1281 25.0001 20.093 25.0001ZM4.55609 0.840844C3.55124 0.840844 2.64394 1.79608 1.8409 2.64117C1.67945 2.81102 1.52304 2.97583 1.36916 3.12972C0.598078 3.89996 0.67628 5.92395 1.56761 8.28766C2.66916 11.2072 4.85797 14.3975 7.73125 17.2708C10.6037 20.1424 13.7923 22.3312 16.7127 23.4319C19.0764 24.3249 21.1004 24.4006 21.8698 23.6312C22.0237 23.4773 22.1885 23.3209 22.3583 23.1603C23.2219 22.3396 24.2015 21.4096 24.1586 20.3778C24.1292 19.669 23.6129 18.9063 22.624 18.1116C19.665 15.732 18.8376 16.572 17.4653 17.9637L17.1962 18.2353C16.5403 18.892 15.4749 18.7465 14.0286 17.8064C13.0254 17.1539 11.786 16.0927 10.3464 14.6523C6.78862 11.0954 5.65092 8.91832 6.76424 7.80248L7.03248 7.5376C8.4275 6.16529 9.26922 5.33702 6.88869 2.37629C6.09238 1.38826 5.33054 0.871957 4.62168 0.841685C4.59982 0.840845 4.57796 0.840844 4.55609 0.840844Z" fill="white"/>
+                    </svg>
+                    <span class="call__phone-number">8 800 500 50 50</span>
+                    <span class="call__description">Заказать звонок</span>
+                  </a>
+                </li>
+
+                <li class="contacts-inormation__item">
+                  <a class="email" href="mailto:example@gmail.com">
+                    <svg class="email__icon" width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M23.0112 0.281281H0.988783C0.442688 0.281281 0 0.723968 0 1.27006V14.7299C0 15.276 0.442688 15.7187 0.988783 15.7187H23.0112C23.5573 15.7187 24 15.276 24 14.7299V1.27006C24 0.723968 23.5573 0.281281 23.0112 0.281281ZM0.988783 1.05781H23.0112C23.1041 1.05826 23.1859 1.11909 23.2131 1.20794L12 8.21225L0.786885 1.20794C0.814064 1.11909 0.895859 1.05826 0.988783 1.05781ZM0.776532 2.09319L8.84211 7.13029L0.776532 13.5289V2.09319ZM23.2235 14.7248C23.2235 14.842 23.1284 14.937 23.0112 14.937H0.988783C0.871592 14.937 0.776532 14.842 0.776532 14.7248V14.5177L9.54098 7.59103L11.7929 8.99914C11.9194 9.07893 12.0806 9.07893 12.2071 8.99914L14.459 7.59103L23.2235 14.5177V14.7248ZM23.2235 13.5289L15.1372 7.151L23.2235 2.13978V13.5289Z" fill="white"/>
+                    </svg>
+                    example@gmail.com</a>
+                </li>
+
+                <li class="contacts-inormation__item">
+                  <div class="operating-mode">
+                    <svg class="operating-mode__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 0C5.3832 0 0 5.3832 0 12C0 18.6168 5.3832 24 12 24C18.6168 24 24 18.6168 24 12C24 5.3832 18.6168 0 12 0ZM12 23.2C5.8244 23.2 0.8 18.1756 0.8 12C0.8 5.8244 5.8244 0.8 12 0.8C18.1756 0.8 23.2 5.8244 23.2 12C23.2 18.1756 18.1756 23.2 12 23.2Z" fill="white"/>
+                      <path d="M12.0002 2.39999C11.7794 2.39999 11.6002 2.57879 11.6002 2.79999V12H5.6002C5.3794 12 5.2002 12.1788 5.2002 12.4C5.2002 12.6212 5.3794 12.8 5.6002 12.8H12.0002C12.221 12.8 12.4002 12.6212 12.4002 12.4V2.79999C12.4002 2.57879 12.221 2.39999 12.0002 2.39999Z" fill="white"/>
+                    </svg>
+
+                    <ul class="operating-mode__list">
+                      <li class="operating-mode__item">ПН-ПТ 9:00-21:00</li>
+                      <li class="operating-mode__item">СБ-ВС 11:00-19:00</li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="contacts-inormation__item contacts-inormation__item-requisites">
+                  <div class="requisites">
+                    <h4 class="requisites__title">Реквизиты</h4>
+
+                    <ul class="requisites__list">
+                      <li class="requisites__item">УРАЛЬСКИЙ БАНК ПАО "СБЕРБАНК"</li>
+                      <li class="requisites__item">БИК: 046577674</li>
+                      <li class="requisites__item">К/с: 30101810500000000674</li>
+                      <li class="requisites__item">Р/с: 40802810216540023885</li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="contacts-inormation__item contacts-inormation__item-map">
+                  <img src="img/Euskotren_Atxuri_→La_Casilla.jpg" alt="map">
+                </li>
+              </ul>
             </div>
           </li>
-          <li class="reviews__item reviews-item">
-            <div class="reviews-item__header">
-              <h3 class="reviews-item__title">Александр Ромашкин, бизнесмен</h3>
 
-              <time class="reviews-item__date">12.07.2019</time>
-            </div>
-            
-            <div class="reviews-item__text">
-              <p>Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН».</p>
-              <p>Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН».</p>
-              <p>Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН». Каждый четверг июня дарим скидку до 50% на все подвески из коллекции «АСЕАН».</p>
+          <li class="tabs__item">
+            <button class="tabs__button" type="button">Новосибирск</button>
+            <div class="tabs__item-content">
+              <ul class="contacts-inormation">
+                <li class="contacts-inormation__item">
+                  <div class="address">
+                    <svg class="address__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="29" viewBox="0 0 20 29" fill="none">
+                      <path d="M10 0C4.486 0 0 4.486 0 10C0 11.863 0.516056 13.6811 1.49272 15.2584L9.43078 28.0505C9.58283 28.2956 9.85072 28.4444 10.1388 28.4444C10.1411 28.4444 10.1432 28.4444 10.1454 28.4444C10.4361 28.4422 10.7045 28.2887 10.8538 28.0393L18.5895 15.1233C19.5123 13.5793 20 11.8077 20 10C20 4.486 15.514 0 10 0ZM17.1592 14.2677L10.1262 26.0103L2.90928 14.3803C2.09633 13.0674 1.65556 11.5528 1.65556 10C1.65556 5.405 5.405 1.65556 10 1.65556C14.595 1.65556 18.3389 5.405 18.3389 10C18.3389 11.5067 17.9272 12.9827 17.1592 14.2677Z" fill="white" fill-opacity="0.7"/>
+                      <path d="M10 5C7.243 5 5 7.243 5 10C5 12.7394 7.2065 15 10 15C12.8279 15 15 12.7093 15 10C15 7.243 12.757 5 10 5ZM10 13.3444C8.15239 13.3444 6.65556 11.8426 6.65556 10C6.65556 8.162 8.162 6.65556 10 6.65556C11.838 6.65556 13.3389 8.162 13.3389 10C13.3389 11.8157 11.8769 13.3444 10 13.3444Z" fill="white" fill-opacity="0.7"/>
+                    </svg>
+                    <address class="address__location">Новосибирск, ул. Ленина, 63  офис 69</address>
+                  </div>
+                </li>
+
+                <li class="contacts-inormation__item">
+                  <a class="call" href="tel:88005005050">
+                    <svg class="call__icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                      <path d="M20.093 25.0001C19.0528 25.0001 17.7966 24.7395 16.415 24.2181C13.3862 23.0762 10.0908 20.8193 7.13591 17.8644C4.18022 14.9087 1.9233 11.6125 0.780549 8.58365C-0.257936 5.82978 -0.260459 3.5695 0.774662 2.53521C0.923498 2.38638 1.07486 2.22661 1.23126 2.0618C2.17557 1.06872 3.24264 -0.0488049 4.657 0.0016478C5.63158 0.04201 6.57588 0.647443 7.54289 1.85074C10.4002 5.40429 9.11197 6.67065 7.62109 8.13883L7.3579 8.3995C7.11404 8.64336 6.65324 9.77265 10.94 14.0595C12.3393 15.4587 13.5325 16.4829 14.486 17.1026C15.0864 17.4928 16.1602 18.0831 16.6008 17.6424L16.8657 17.375C18.3322 15.8875 19.5986 14.6035 23.1496 17.4583C24.3529 18.4253 24.9575 19.3688 24.9978 20.345C25.0559 21.7585 23.9299 22.8281 22.936 23.7716C22.772 23.928 22.6123 24.0794 22.4634 24.2274C21.9497 24.742 21.1281 25.0001 20.093 25.0001ZM4.55609 0.840844C3.55124 0.840844 2.64394 1.79608 1.8409 2.64117C1.67945 2.81102 1.52304 2.97583 1.36916 3.12972C0.598078 3.89996 0.67628 5.92395 1.56761 8.28766C2.66916 11.2072 4.85797 14.3975 7.73125 17.2708C10.6037 20.1424 13.7923 22.3312 16.7127 23.4319C19.0764 24.3249 21.1004 24.4006 21.8698 23.6312C22.0237 23.4773 22.1885 23.3209 22.3583 23.1603C23.2219 22.3396 24.2015 21.4096 24.1586 20.3778C24.1292 19.669 23.6129 18.9063 22.624 18.1116C19.665 15.732 18.8376 16.572 17.4653 17.9637L17.1962 18.2353C16.5403 18.892 15.4749 18.7465 14.0286 17.8064C13.0254 17.1539 11.786 16.0927 10.3464 14.6523C6.78862 11.0954 5.65092 8.91832 6.76424 7.80248L7.03248 7.5376C8.4275 6.16529 9.26922 5.33702 6.88869 2.37629C6.09238 1.38826 5.33054 0.871957 4.62168 0.841685C4.59982 0.840845 4.57796 0.840844 4.55609 0.840844Z" fill="white"/>
+                    </svg>
+                    <span class="call__phone-number">8 800 500 50 50</span>
+                    <span class="call__description">Заказать звонок</span>
+                  </a>
+                </li>
+
+                <li class="contacts-inormation__item">
+                  <a class="email" href="mailto:example@gmail.com">
+                    <svg class="email__icon" width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M23.0112 0.281281H0.988783C0.442688 0.281281 0 0.723968 0 1.27006V14.7299C0 15.276 0.442688 15.7187 0.988783 15.7187H23.0112C23.5573 15.7187 24 15.276 24 14.7299V1.27006C24 0.723968 23.5573 0.281281 23.0112 0.281281ZM0.988783 1.05781H23.0112C23.1041 1.05826 23.1859 1.11909 23.2131 1.20794L12 8.21225L0.786885 1.20794C0.814064 1.11909 0.895859 1.05826 0.988783 1.05781ZM0.776532 2.09319L8.84211 7.13029L0.776532 13.5289V2.09319ZM23.2235 14.7248C23.2235 14.842 23.1284 14.937 23.0112 14.937H0.988783C0.871592 14.937 0.776532 14.842 0.776532 14.7248V14.5177L9.54098 7.59103L11.7929 8.99914C11.9194 9.07893 12.0806 9.07893 12.2071 8.99914L14.459 7.59103L23.2235 14.5177V14.7248ZM23.2235 13.5289L15.1372 7.151L23.2235 2.13978V13.5289Z" fill="white"/>
+                    </svg>
+                    example@gmail.com</a>
+                </li>
+
+                <li class="contacts-inormation__item">
+                  <div class="operating-mode">
+                    <svg class="operating-mode__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 0C5.3832 0 0 5.3832 0 12C0 18.6168 5.3832 24 12 24C18.6168 24 24 18.6168 24 12C24 5.3832 18.6168 0 12 0ZM12 23.2C5.8244 23.2 0.8 18.1756 0.8 12C0.8 5.8244 5.8244 0.8 12 0.8C18.1756 0.8 23.2 5.8244 23.2 12C23.2 18.1756 18.1756 23.2 12 23.2Z" fill="white"/>
+                      <path d="M12.0002 2.39999C11.7794 2.39999 11.6002 2.57879 11.6002 2.79999V12H5.6002C5.3794 12 5.2002 12.1788 5.2002 12.4C5.2002 12.6212 5.3794 12.8 5.6002 12.8H12.0002C12.221 12.8 12.4002 12.6212 12.4002 12.4V2.79999C12.4002 2.57879 12.221 2.39999 12.0002 2.39999Z" fill="white"/>
+                    </svg>
+
+                    <ul class="operating-mode__list">
+                      <li class="operating-mode__item">ПН-ВС 9:00-18:00</li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="contacts-inormation__item contacts-inormation__item-requisites">
+                  <div class="requisites">
+                    <h4 class="requisites__title">Реквизиты</h4>
+
+                    <ul class="requisites__list">
+                      <li class="requisites__item">УРАЛЬСКИЙ БАНК ПАО "СБЕРБАНК"</li>
+                      <li class="requisites__item">БИК: 046577674</li>
+                      <li class="requisites__item">К/с: 30101810500000000674</li>
+                      <li class="requisites__item">Р/с: 40802810216540023885</li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="contacts-inormation__item contacts-inormation__item-map">
+                  <img src="img/map.png" alt="map">
+                </li>
+              </ul>
             </div>
           </li>
         </ul>
+        <div class="tabs__content"></div>
       </section>
-
-      <nav class="page__pagination">
-        <ul class="pagination">
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">1</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">2</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">3</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">4</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">5</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link pagination__link-next" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="41" height="16" viewBox="0 0 41 16" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6888 0.18457L32.0195 1.94707L37.4418 7.68457L32.0195 13.4221L33.6888 15.1846L40.7923 7.68457L33.6888 0.18457Z" fill="white"></path>
-                <path d="M38.3142 7.68542H1" stroke="white" stroke-width="2" stroke-linecap="square"></path>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </nav>
     </main>
+    </div>
 
     <footer class="footer section-skew--left">
       <nav class="footer__nav">
@@ -238,7 +366,7 @@
             <a class="footer-menu__link" href="#">Мужская коллекция</a>
           </li>
           <li class="footer-menu__item">
-            <a class="footer-menu__link" href="page-work-process.html">коллекции</a>
+            <a class="footer-menu__link" href="page-collections.html">коллекции</a>
           </li>
           <li class="footer-menu__item">
             <a class="footer-menu__link" href="#">свадьба</a>
@@ -413,52 +541,9 @@
       </div>
     </footer>
   </div>
-
-  <section class="popup popup-leave-feedback" hidden>
-    <form class="popup-leave-feedback__form">
-      <h2 class="popup-leave-feedback__title section-title">Оставить отзыв</h2>
-
-      <div class="popup-leave-feedback__form-top">
-        <div class="popup-leave-feedback__form-name input-text-wrapper">
-          <input class="input-text" type="text" placeholder="Ваше имя">
-        </div>
-
-        <div class="popup-leave-feedback__form-phone input-text-wrapper">
-          <input class="input-text" type="text" placeholder="Номер телефона">
-        </div>
-      </div>
-
-      <div class="popup-leave-feedback__form-email input-text-wrapper">
-        <input class="input-text" type="text" placeholder="Email">
-      </div>
-
-      <div class="popup-leave-feedback__form-review textarea-wrapper">
-        <textarea class="textarea" name="" id="" cols="30" rows="3" placeholder="Ваш отзыв"></textarea>
-      </div>
-
-      <div class="popup-leave-feedback__form-bottom">
-        <div class="popup-leave-feedback__form-bottom-left">
-          <img src="./img/captcha.png" alt="">
-        </div>
-
-        <div class="popup-leave-feedback__form-bottom-right">
-          <label class="popup-leave-feedback__form-consent label"><input class="input-checkbox" type="checkbox">Я согласен с политикой обработки персональных данных</label>
-          
-          <div class="popup-leave-feedback__form-submit input-submit-wrapper">
-            <input class="input-submit" type="submit" value="Оставить отзыв">
-          </div>
-        </div>
-      </div>
-
-      <button class="popup-leave-feedback__close popup__close" type="button">
-        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M25 2.94663L22.4821 0.673828L12.5 9.68445L2.51786 0.673828L0 2.94663L9.98214 11.9573L0 20.9679L2.51786 23.2407L12.5 14.2301L22.4821 23.2407L25 20.9679L15.0179 11.9573L25 2.94663Z" fill="white" fill-opacity="0.5"/>
-        </svg>
-      </button>
-    </form>
-  </section>
     
   <script src="js/flow-menu.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/tabs.js"></script>
 </body>
 </html>
