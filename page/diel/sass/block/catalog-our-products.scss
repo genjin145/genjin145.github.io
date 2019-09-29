@@ -92,3 +92,38 @@
   }
 
 }
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  .catalog-our-products-list__item:not(.product-card--view-1) {
+    height: 323px;
+  }
+
+  .catalog-our-products-list__item:not(.product-card--view-2) {
+    width: calc((100% - 30px * 2) / 2);
+    box-sizing: border-box;
+  }
+
+  .catalog-our-products-list__item.product-card--view-2 {
+    width: calc(100% - 30px);
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .catalog-our-products-list__item,
+  .catalog-our-products-list__item.product-card--view-1 {
+    width: 350px !important;
+  }
+
+  .catalog-our-products-list__item.product-card--view-2 {
+    width: 730px !important;
+  }
+}
+
