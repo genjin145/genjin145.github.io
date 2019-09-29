@@ -28,6 +28,19 @@
     width: 16px;
     height: 16px;
   }
+
+  svg path {
+    transition: fill 300ms;
+  }
+}
+
+.popup__close:hover,
+.popup__close:focus {
+  outline: none;
+
+  svg path {
+    fill: #D7825D;
+  }
 }
 
 @media screen and (min-width: 768px) {

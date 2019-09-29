@@ -14,7 +14,7 @@
   list-style-type: none;
 }
 
-.section-card__list {
+.section-card__list:first-of-type {
   margin-top: 30px;
 }
 
@@ -41,7 +41,7 @@
     margin-bottom: 50px;
   }
 
-  .section-card__list {
+  .section-card__list:first-of-type {
     margin-top: 40px;
   }
 }
@@ -57,7 +57,7 @@
     margin-bottom: 60px;
   }
 
-  .section-card__list {
+  .section-card__list:first-of-type {
     margin-top: 60px;
   }
 }
@@ -89,71 +89,72 @@
   }
 }
 
+
 .section-card__list {
-  display: grid;
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
 
+.section-card-list__item {
+  .product-card {
+    margin-bottom: 20px;
+  }
 
+  &.product-card  {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .section-card-list__item {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+
+    .product-card {
+      margin-bottom: 30px;
+      width: calc((100% - 30px) / 2);
+      box-sizing: border-box;
+    }
+
+    &.product-card  {
+      margin-bottom: 30px;
+    }
+
+    &.product-card--view-3 {
+      width: 100%;
+      box-sizing: border-box;
+    }
   }
 
 }
-
 
 @media screen and (min-width: 1366px) {
-  .section-card-list__item {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+  .section-card__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-  .section-card__list-1 {
-    grid-template-columns: 2fr 1fr 1fr;
-  
-    .section-card-list__item {
-      margin-bottom: 0;
-  
-    }
-  
+  .section-card-list__item {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 30px * 2) / 4);
+    box-sizing: border-box;
+
     .product-card {
-      margin-bottom: 30px;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      height: calc((100% - 30px) / 2);
     }
-  
-  }
-  
-  .section-card__list-2 {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    margin-top: 0;
-  
-    .section-card-list__item {
-      margin-bottom: 0;
-  
+
+    &.product-card--view-3 {
+      width: calc((100% - 30px * 2) / 2);
+      height: initial;
+      box-sizing: border-box;
     }
-  
-    .product-card {
-      margin-bottom: 30px;
-    }
-  
-  }
-  
-  .section-card__list-3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    margin-top: 0;
-  
-    .product-card {
-      margin-bottom: 30px;
-    }
-  
   }
 }
-
 
 
 
