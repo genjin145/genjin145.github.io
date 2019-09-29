@@ -94,6 +94,7 @@ body {
 @import "./element/email";
 @import "./element/operating-mode";
 @import "./element/requisites";
+@import "./element/characteristics";
 
 // block
 
@@ -139,6 +140,8 @@ body {
 @import "./block/popup-search";
 @import "./block/popup-request-call";
 @import "./block/popup-leave-feedback";
+@import "./block/popup-product-card";
+@import "./block/popup-order-form";
 
 
 // page

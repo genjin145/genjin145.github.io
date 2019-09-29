@@ -31,17 +31,33 @@ function Popup(popupClass) {
   
   that.addElement = function(elem) {
     if (document.querySelector(`.${elem}`)) {
-      let element = document.querySelector(`.${elem}`);
-  
-      element.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        that.showPopup();
+      document.addEventListener("click", function(evt) {
+        for (let i = evt.target; i !== null; i = i.parentNode) {
+          if (i == document) break;
+          if (i.classList.contains(elem)) {
+            evt.preventDefault();
+            that.showPopup();
+            break;
+          }
+        }
+        
       });
-
     } else throw(`Элемент с классом .${elem} отсутствует!`);
   }
 }
 
-let feedbackPopup = new Popup("popup-leave-feedback");
-feedbackPopup.showPopup();
-feedbackPopup.addElement("reviews__button-primery");
+if (document.querySelector(".popup-leave-feedback") && document.querySelector(".popup-leave-feedback")) {
+  let feedbackPopup = new Popup("popup-leave-feedback");
+  feedbackPopup.showPopup();
+  feedbackPopup.addElement("reviews__button-primery");
+}
+
+if (document.querySelector(".popup-product-card") && document.querySelector(".product-card")) {
+  let productCardkPopup = new Popup("popup-product-card");
+  productCardkPopup.addElement("product-card");
+}
+
+if (document.querySelector(".popup-order") && document.querySelector(".card-item-form__submit")) {
+  let productCardkPopup = new Popup("popup-order");
+  productCardkPopup.addElement("card-item-form__submit");
+}

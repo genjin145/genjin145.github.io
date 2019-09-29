@@ -335,8 +335,8 @@
         <div class="card-item-kit__slider-wrapper">
           <ul class="card-item-kit__slider">
             <li class="card-item-kit__slider-item">
-              <ul class="kit">
-                <li class="kit__item product-card product-card--view-3">
+              <ul class="kit section-card__list">
+                <li class="kit__item section-card-list__item product-card product-card--view-3">
                   <span class="product-card__novelty">Новинка</span>
       
                   <div class="product-card__image-wrapper">
@@ -364,7 +364,7 @@
                   </a>
                 </li>
 
-                <li class="kit__item">
+                <li class="kit__item section-card-list__item">
                   <div class="product-card">
                     <a class="product-card__link" href="#">
                       <span class="product-card__novelty">Новинка</span>
@@ -410,7 +410,7 @@
                   </div>
                 </li>
 
-                <li class="kit__item">
+                <li class="kit__item section-card-list__item">
                   <div class="product-card">
                     <a class="product-card__link" href="#">
                       <span class="product-card__novelty">Новинка</span>
@@ -704,8 +704,60 @@
     </div>
   </footer>
 </div>
+
+<section class="popup popup-order">
+  <form class="popup-order-form" action="">
+    <h2 class="popup-order__title section-title">Оформление заказа</h2>
+
+    <div class="popup-order-form__left">
+      <div class="popup-order-form__name input-text-wrapper">
+        <input class="input-text" type="text" placeholder="Ваше имя">
+      </div>
+
+      <div class="popup-order-form__phone input-text-wrapper">
+        <input class="input-text" type="text" placeholder="Номер телефона">
+      </div>
+
+      <div class="popup-order-form__email input-text-wrapper">
+        <input class="input-text" type="text" placeholder="Email">
+      </div>
+
+      <div class="popup-order-form__comment textarea-wrapper">
+        <textarea class="textarea" name="" id="" cols="30" rows="1" placeholder="Комментарий"></textarea>
+      </div>
+
+      <div class="popup-order-form__captcha">
+        <img src="./img/captcha.png" alt="">
+      </div>
+
+      <label class="popup-order-form_form__consent label"><input class="input-checkbox" type="checkbox">Я согласен с политикой обработки персональных данных</label>
+
+      <div class="popup-order-form__submit-wrapper">
+        <div class="popup-order-form__submit input-submit-wrapper">
+          <input class="input-submit" type="submit" value="Оформить заказ">
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-order-form__right">
+      <div class="popup-order-form__image-wrapper">
+        <img class="popup-order-form__image" src="./img/popup_order.png" alt="">
+      </div>
+
+      <h3 class="popup-order-form__title">Кольцо Комбоджа</h3>
+      <p class="popup-order-form__price">522 000 ₽</p>
+    </div>
+
+    <button class="popup-order__close popup__close" type="button">
+      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M25 2.94663L22.4821 0.673828L12.5 9.68445L2.51786 0.673828L0 2.94663L9.98214 11.9573L0 20.9679L2.51786 23.2407L12.5 14.2301L22.4821 23.2407L25 20.9679L15.0179 11.9573L25 2.94663Z" fill="white" fill-opacity="0.5"></path>
+      </svg>
+    </button>
+  </form>
+</section>
   
 <script src="js/flow-menu.js"></script>
 <script src="js/menu.js"></script>
+<script src="js/popup.js"></script>
 </body>
 </html>

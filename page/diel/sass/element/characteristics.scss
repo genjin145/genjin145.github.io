@@ -1,0 +1,29 @@
+.characteristics {
+  width: 100%;
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+.characteristics__caption {
+  display: inline-block;
+  margin-bottom: 10px;
+  text-align: left;
+  font-family: "Lazurski";
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  color: #F8F8F8;
+  border-bottom: 1px solid #E08B66;
+}
+
+.characteristics__col {
+  padding: 10px 0;
+  vertical-align: top;
+  font-family: "Intro Light";
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.characteristics__col:first-child {
+  opacity: 0.6;
+}
