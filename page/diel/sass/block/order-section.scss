@@ -1,0 +1,96 @@
+.order-section {
+  @include section-position;
+  
+}
+
+.order-section__title {
+  margin-bottom: 60px;
+}
+
+.order-section__description {
+  display: none;
+}
+
+.order-section__description-p {
+  margin: 10px 0;
+  font-family: "Intro Light";
+  font-size: 16px;
+  line-height: 32px;
+  color: #F8F8F8;
+}
+
+.order-section__form {}
+
+.order-section__form-submit {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .order-section {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -50px;
+      right: -100px;
+      width: 404px;
+      height: 363px;
+      background-image: url(../../img/our_products_diamond_bc.png);
+      background-repeat: no-repeat;
+      transform: rotate(-70deg);
+      opacity: .2;
+      z-index: 0;
+    }
+  
+    & * {
+      z-index: 1;
+    }
+  }
+
+  .order-section__title {
+    margin-bottom: 80px;
+  }
+
+  .order-section__form {
+    width: 360px;
+  }
+
+  .order-section__form-submit {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .order-section__title {
+    margin-bottom: 30px;
+  }
+
+  .order-section__description {
+    display: block;
+    margin-bottom: 60px;
+  }
+  
+  .order-section__form {
+    padding: 100px 150px;
+    border: 2px solid rgba(224, 139, 102, 0.3);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .order-section {
+    display: flex;
+    justify-content: space-between;
+
+    &::after {
+      left: 295px;
+      right: initial;
+      top: 470px;
+      bottom: initial;
+    } 
+  }
+
+  .order-section__header {
+    width: 715px;
+  }
+}
