@@ -24,6 +24,14 @@ body {
   background-color: #0D0705;
 }
 
+p {
+  margin: 10px 0;
+  color: #FFFFFF;
+  font-family: "Intro Light";
+  font-size: 16px;
+  line-height: 26px;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -107,6 +115,7 @@ body {
 @import "./block/small-block/filter";
 @import "./block/small-block/tabs";
 @import "./block/small-block/section-skew";
+@import "./block/small-block/partners-list";
 
 @import "./block/header";
 @import "./block/slider";
@@ -135,6 +144,8 @@ body {
 @import "./block/search-section";
 @import "./block/order-section";
 @import "./block/execution-process";
+@import "./block/about-company";
+@import "./block/partners";
 
 // PopUp
 
@@ -145,7 +156,6 @@ body {
 @import "./block/popup-leave-feedback";
 @import "./block/popup-product-card";
 @import "./block/popup-order-form";
-
 
 // page
 

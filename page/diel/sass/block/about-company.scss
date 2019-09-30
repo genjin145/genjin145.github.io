@@ -1,0 +1,43 @@
+.about-company {
+  @include section-position;
+}
+
+.about-company__title {
+  margin-bottom: 30px;
+}
+
+.about-company__description {
+  margin-bottom: 30px;
+}
+
+.about-company__video {
+
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-company__title {
+    margin-bottom: 40px;
+  }
+
+  .about-company__description {
+    margin-bottom: 45px;
+    width: 585px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .about-company__description {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .about-company__video {
+    margin: 0 auto;
+    width: 1180px;
+    overflow: hidden;
+  }
+}

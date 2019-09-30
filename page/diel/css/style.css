@@ -19,6 +19,13 @@ body {
   padding: 0;
   background-color: #0D0705; }
 
+p {
+  margin: 10px 0;
+  color: #FFFFFF;
+  font-family: "Intro Light";
+  font-size: 16px;
+  line-height: 26px; }
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -1357,6 +1364,30 @@ body {
   position: relative; }
   .section-skew--left::before {
     transform: skewY(-4deg); }
+
+.partners-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+.partners-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .partners-list__item svg {
+    margin-bottom: 10px;
+    transform: scale(0.7); }
+
+@media screen and (min-width: 768px) {
+  .partners-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .partners-list:last-of-type .partners-list__item {
+    width: 100%; } }
 
 .header {
   position: absolute;
@@ -4421,6 +4452,76 @@ body {
 @media screen and (min-width: 1366px) {
   .execution-process__title {
     margin-bottom: 60px; } }
+
+.about-company {
+  padding-left: 12px;
+  padding-right: 12px; }
+  @media screen and (min-width: 768px) {
+    .about-company {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  @media screen and (min-width: 1366px) {
+    .about-company {
+      padding-left: 55px;
+      padding-right: 90px; } }
+  @media screen and (min-width: 1440px) {
+    .about-company {
+      padding-left: 270px; } }
+  @media screen and (min-width: 1920px) {
+    .about-company {
+      padding-left: 310px;
+      padding-right: 120px; } }
+
+.about-company__title {
+  margin-bottom: 30px; }
+
+.about-company__description {
+  margin-bottom: 30px; }
+
+.about-company__video img {
+  width: 100%; }
+
+@media screen and (min-width: 768px) {
+  .about-company__title {
+    margin-bottom: 40px; }
+  .about-company__description {
+    margin-bottom: 45px;
+    width: 585px; } }
+
+@media screen and (min-width: 1366px) {
+  .about-company__description {
+    margin-bottom: 50px; } }
+
+@media screen and (min-width: 1920px) {
+  .about-company__video {
+    margin: 0 auto;
+    width: 1180px;
+    overflow: hidden; } }
+
+.partners {
+  padding-left: 12px;
+  padding-right: 12px; }
+  @media screen and (min-width: 768px) {
+    .partners {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  @media screen and (min-width: 1366px) {
+    .partners {
+      padding-left: 55px;
+      padding-right: 90px; } }
+  @media screen and (min-width: 1440px) {
+    .partners {
+      padding-left: 270px; } }
+  @media screen and (min-width: 1920px) {
+    .partners {
+      padding-left: 310px;
+      padding-right: 120px; } }
+
+.partners__title {
+  margin-bottom: 20px; }
+
+.partners__description {
+  margin-bottom: 60px; }
 
 .popup {
   position: fixed;

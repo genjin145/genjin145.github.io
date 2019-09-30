@@ -1,0 +1,31 @@
+.partners-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.partners-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  svg {
+    margin-bottom: 10px;
+    transform: scale(.7);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .partners-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .partners-list:last-of-type .partners-list__item {
+    width: 100%;
+  }
+}

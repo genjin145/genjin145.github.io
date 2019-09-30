@@ -1,0 +1,11 @@
+.partners {
+  @include section-position;
+}
+
+.partners__title {
+  margin-bottom: 20px;
+}
+
+.partners__description {
+  margin-bottom: 60px;
+}
