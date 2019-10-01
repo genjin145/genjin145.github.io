@@ -103,6 +103,7 @@ p {
 @import "./element/operating-mode";
 @import "./element/requisites";
 @import "./element/characteristics";
+@import "./element/certificates-card";
 
 // block
 
@@ -146,6 +147,8 @@ p {
 @import "./block/execution-process";
 @import "./block/about-company";
 @import "./block/partners";
+@import "./block/certificates";
+@import "./block/news";
 
 // PopUp
 
@@ -165,11 +168,9 @@ p {
 @import "./page/page-for-buyer";
 @import "./page/page-contacts";
 @import "./page/page-order";
+@import "./page/page-about";
 
 
-.main {
-  overflow: hidden;
-}
 
 @media screen and (min-width: 1440px) {
   .main-page {

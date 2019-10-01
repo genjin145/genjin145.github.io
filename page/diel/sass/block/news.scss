@@ -1,0 +1,64 @@
+.news {
+  @include section-position;
+}
+
+.news__image-wrapper {
+  margin-bottom: 30px;
+}
+
+.news__image {
+  width: 100%;
+}
+
+.news__title {
+  margin-bottom: 40px;
+}
+
+.news__date {
+  font-family: "Lazurski";
+  font-size: 18px;
+  line-height: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .news__image-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .news__date {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .news__title {
+    margin-bottom: 50px;
+  }
+
+  .news__image-wrapper {
+    margin-bottom: 30px;
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .news__title {
+    width: 100%;
+  }
+
+  .news__article {
+    width: 745px;
+  }
+
+  .news__image-wrapper {
+    order: 1;
+    width: 700px;
+  }
+}

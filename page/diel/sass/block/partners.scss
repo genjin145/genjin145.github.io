@@ -9,3 +9,58 @@
 .partners__description {
   margin-bottom: 60px;
 }
+
+@media screen and (min-width: 768px) {
+  .partners__title {
+    margin-bottom: 30px;
+  }
+
+  .partners__description {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .partners__list {
+    display: flex;
+  }
+
+  .partners__title {
+    margin-bottom: 55px;
+  }
+
+  .partners__description {
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .partners {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      right: -120px;
+      width: 403px;
+      height: 363px;
+      background-image: url(../../img/our_products_diamond_bc.png);
+      background-repeat: no-repeat;
+      opacity: .1;
+      transform: scaleX(-1) rotate(-20deg);
+    }
+  }
+
+  .partners__list {
+    display: flex;
+  }
+
+  .partners__title {
+    margin-bottom: 55px;
+  }
+
+  .partners__description {
+    margin-bottom: 70px;
+  }
+}

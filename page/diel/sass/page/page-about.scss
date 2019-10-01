@@ -1,0 +1,25 @@
+.page-about__about-company {
+  margin-bottom: 50px;
+}
+
+.page-about__partners {
+  padding-bottom: 95px;
+}
+
+@media screen and (min-width: 768px) {
+
+
+  .page-about__partners {
+    padding-bottom: 150px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .page-about__about-company {
+    margin-bottom: 115px;
+  }
+
+  .page-about__partners {
+    padding-bottom: 300px;
+  }
+}

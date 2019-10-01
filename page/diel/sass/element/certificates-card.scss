@@ -1,0 +1,109 @@
+.certificates-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: rgba(175, 175, 175, 0.09);
+}
+
+.certificates-card__title {
+  margin: 0;
+  padding-top: 10px;
+  font-family: "Lazurski";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  border-top: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+.certificates-card__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  overflow: hidden; 
+}
+
+.certificates-card__image {
+  width: 100%;
+}
+
+.certificates-card__description,
+.certificates-card__link-detail {
+  display: none;
+}
+
+.certificates-card--view-2 {
+  flex-direction: row;
+
+  .certificates-card__title {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .certificates-card__image-wrapper {
+    flex-shrink: 0;
+    display: flex;
+    padding-right: 20px;
+    width: 55%;
+  }
+
+  .certificates-card__image {
+    width: 50%;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .certificates-card {
+    padding: 30px;
+  }
+
+  .certificates-card__title {
+    padding-top: 15px;
+    font-size: 18px;
+  }
+
+  .certificates-card__description,
+  .certificates-card__link-detail {
+    display: block;
+  }
+
+  .certificates-card__description {
+    margin: 0;
+    margin-top: 20px; 
+  }
+
+  .certificates-card__link-detail {
+    margin-top: 30px; 
+  }
+
+  .certificates-card__image-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .certificates-card--view-1 {
+    padding: 40px 45px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .certificates-card {
+    padding: 35px 40px;
+  }
+
+  .certificates-card__image-wrapper {
+    margin-bottom: 30px;
+  }
+
+  .certificates-card__title {
+    font-size: 24px;
+  }
+
+  .certificates-card--view-1 {
+    padding: 60px;
+  }
+}

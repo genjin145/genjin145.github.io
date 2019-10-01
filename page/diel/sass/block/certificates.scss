@@ -1,0 +1,158 @@
+
+
+.certificates-slider {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.certificates-slider__item {
+  display: flex;
+}
+
+
+
+
+
+
+.certificates-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+
+
+
+.certificates {
+  @include section-position;
+}
+
+.certificates__title {
+  margin-bottom: 30px;
+}
+
+.certificates__slider {
+  width: 560px;
+}
+
+@media screen and (min-width: 768px) {
+  .certificates__title {
+    margin-bottom: 50px;
+  }
+
+  .certificates__slider {
+    width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .certificates__title {
+    margin-bottom: 80px;
+  }
+
+  .certificates__title {
+    margin-bottom: 50px;
+  }
+
+  .certificates__slider {
+    width: 1460px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .certificates__title {
+    margin-bottom: 50px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.certificates-slider__item {
+  display: flex;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+
+
+.certificates__list:nth-of-type(1) {
+  display: flex;
+
+  .certificates-list__item {
+    display: flex;
+    margin-right: 10px;
+    width: calc((100% - 10px * 2) / 2);
+
+    .certificates-card {
+      margin-bottom: 10px;
+    }
+  }
+
+  .certificates-list__item:last-child {
+    flex-direction: column;
+
+    .certificates-card {
+      height: calc((100% - 10px * 2) / 2);
+    }
+  }
+}
+
+.certificates__list:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+
+  .certificates-list__item {
+    margin-bottom: 10px;
+    height: calc((100% - 10px * 2) / 2);
+
+    .certificates-card {
+      margin-right: 10px;
+      
+      height: 100%;
+    }
+  }
+
+  .certificates-list__item:last-child {
+    display: flex;
+
+    .certificates-card {
+      width: calc((100% - 10px * 2) / 2);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .certificates__list:nth-of-type(1) {
+  
+    .certificates-list__item {
+      margin-right: 30px;
+  
+      .certificates-card {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  
+  .certificates__list:nth-of-type(2) {
+  
+    .certificates-list__item {
+      margin-bottom: 30px;
+  
+      .certificates-card {
+        margin-right: 30px;
+      }
+    }
+  }
+
+}

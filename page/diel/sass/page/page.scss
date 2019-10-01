@@ -43,9 +43,11 @@
 }
 
 .page__breadcrumbs {
+  position: relative;
   padding: 12px;
   padding-top: 60px;
   padding-bottom: 20px;
+  z-index: 200;
 
   @media screen and (min-width: 768px) {
     padding: 20px;
