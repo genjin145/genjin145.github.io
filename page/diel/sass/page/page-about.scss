@@ -3,14 +3,26 @@
 }
 
 .page-about__partners {
+  padding-top: 50px;
   padding-bottom: 95px;
+}
+
+.page-about__certificates {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
 
 
   .page-about__partners {
+    padding-top: 155px;
     padding-bottom: 150px;
+  }
+
+  .page-about__certificates {
+    padding-top: 80px;
+    padding-bottom: 50px;
   }
 }
 
@@ -20,6 +32,19 @@
   }
 
   .page-about__partners {
-    padding-bottom: 300px;
+    padding-top: 180px;
+    padding-bottom: 200px;
+  }
+
+  .page-about__certificates {
+    padding-top: 120px;
+    padding-bottom: 150px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .page-about__certificates {
+    padding-top: 145px;
+    padding-bottom: 150px;
   }
 }

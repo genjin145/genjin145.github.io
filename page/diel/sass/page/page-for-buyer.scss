@@ -12,11 +12,27 @@
 .page-for-buyer__buyer {
   // padding-bottom: 60px;
 
-
-
   &::before {
     background-color: transparent;
   }
+}
+
+.page-for-buyer__work-process {
+  padding-bottom: 50px;
+}
+
+.page-for-buyer__all {
+  z-index: 2;
+
+  &:before {
+    top: 0;
+    height: 100%;
+    background-color: #170D08;
+  }
+}
+
+.page-for-buyer__section-faq {
+  padding-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
@@ -28,6 +44,14 @@
     .main {
       padding-top: 74px;
     }
+  }
+
+  .page-for-buyer__work-process {
+    padding-bottom: 90px;
+  }
+
+  .page-for-buyer__section-faq {
+    padding-bottom: 100px;
   }
 }
 
@@ -41,10 +65,88 @@
       padding-top: 119px;
     }
   }
+
+  .page-for-buyer__work-process {
+    padding-bottom: 215px;
+  }
+
+  .page-for-buyer__section-faq {
+    padding-bottom: 235px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
   .page-for-buyer__buyer {
     // padding-bottom: 227px;
   }
+
+  .page-for-buyer__work-process {
+    padding-bottom: 245px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-faq__slider {
+
+  #tns2-item1 {
+    .jumping-slider__image-wrapper::before {
+      border: 1px solid #E08B66;
+    }
+  }
+
+  .jumping-slider__image-wrapper {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-image: linear-gradient(0deg, rgba(23, 13, 8, 0.95), rgba(23, 13, 8, 0.95));
+    }
+  }
+
+  .jumping-slider__text {
+    
+
+    @media screen and (min-width: 768px) {
+      top: 30px;
+    }
+
+    @media screen and (min-width: 1366px) {
+      top: 80px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.section-faq__slider-options__nav .jumping-line {
+  fill: red;
 }

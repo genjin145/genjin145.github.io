@@ -94,14 +94,19 @@
   // }
 }
 
-@media screen and (min-width: 1336px) {
+@media screen and (min-width: 1366px) {
   .jumping-slider {
     height: 590px;
   }
 
   .jumping-slider__image-wrapper {
     width: 717px;
-    height: 527px;
+    height: 100%;
+  }
+
+  .jumping-slider__image {
+    height: 100%;
+    object-fit: cover;
   }
 
   .jumping-slider__item {
@@ -111,8 +116,11 @@
 
   .jumping-slider__text {
     position: absolute;
-    bottom: 40px;
-    left: 60px;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .jumping-slider__title {

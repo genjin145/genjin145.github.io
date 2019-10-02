@@ -19,6 +19,9 @@ body {
   padding: 0;
   background-color: #0D0705; }
 
+main {
+  overflow: hidden; }
+
 p {
   margin: 10px 0;
   color: #FFFFFF;
@@ -463,6 +466,9 @@ p {
       line-height: 29px;
       padding-top: 15px;
       padding-bottom: 15px; } }
+
+.textarea:focus {
+  outline: none; }
 
 .textarea::placeholder {
   color: rgba(255, 255, 255, 0.5); }
@@ -1739,19 +1745,25 @@ p {
   .jumping-slider__item {
     width: 300px; } }
 
-@media screen and (min-width: 1336px) {
+@media screen and (min-width: 1366px) {
   .jumping-slider {
     height: 590px; }
   .jumping-slider__image-wrapper {
     width: 717px;
-    height: 527px; }
+    height: 100%; }
+  .jumping-slider__image {
+    height: 100%;
+    object-fit: cover; }
   .jumping-slider__item {
     position: relative;
     width: 717px; }
   .jumping-slider__text {
     position: absolute;
-    bottom: 40px;
-    left: 60px; }
+    bottom: 0;
+    left: 0;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    padding-right: 60px; }
   .jumping-slider__title {
     font-size: 24px;
     line-height: 36px; }
@@ -5921,13 +5933,63 @@ p {
 .page-for-buyer__buyer::before {
   background-color: transparent; }
 
+.page-for-buyer__work-process {
+  padding-bottom: 50px; }
+
+.page-for-buyer__all {
+  z-index: 2; }
+  .page-for-buyer__all:before {
+    top: 0;
+    height: 100%;
+    background-color: #170D08; }
+
+.page-for-buyer__section-faq {
+  padding-bottom: 50px; }
+
 @media screen and (min-width: 768px) {
   .page-for-buyer .main {
-    padding-top: 74px; } }
+    padding-top: 74px; }
+  .page-for-buyer__work-process {
+    padding-bottom: 90px; }
+  .page-for-buyer__section-faq {
+    padding-bottom: 100px; } }
 
 @media screen and (min-width: 1366px) {
   .page-for-buyer .main {
-    padding-top: 119px; } }
+    padding-top: 119px; }
+  .page-for-buyer__work-process {
+    padding-bottom: 215px; }
+  .page-for-buyer__section-faq {
+    padding-bottom: 235px; } }
+
+@media screen and (min-width: 1920px) {
+  .page-for-buyer__work-process {
+    padding-bottom: 245px; } }
+
+.section-faq__slider #tns2-item1 .jumping-slider__image-wrapper::before {
+  border: 1px solid #E08B66; }
+
+.section-faq__slider .jumping-slider__image-wrapper {
+  position: relative; }
+  .section-faq__slider .jumping-slider__image-wrapper::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(0deg, rgba(23, 13, 8, 0.95), rgba(23, 13, 8, 0.95)); }
+
+@media screen and (min-width: 768px) {
+  .section-faq__slider .jumping-slider__text {
+    top: 30px; } }
+
+@media screen and (min-width: 1366px) {
+  .section-faq__slider .jumping-slider__text {
+    top: 80px; } }
+
+.section-faq__slider-options__nav .jumping-line {
+  fill: red; }
 
 .page-contacts__top-wrapper {
   background-image: linear-gradient(143.89deg, #220F06 25.63%, #120A06 82.49%); }
@@ -5965,6 +6027,7 @@ p {
 
 @media screen and (min-width: 1920px) {
   .page-order__execution-process {
+    margin-right: -120px;
     padding-top: 230px;
     padding-bottom: 240px; } }
 
@@ -5972,17 +6035,50 @@ p {
   margin-bottom: 50px; }
 
 .page-about__partners {
+  padding-top: 50px;
   padding-bottom: 95px; }
+
+.page-about__certificates {
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 @media screen and (min-width: 768px) {
   .page-about__partners {
-    padding-bottom: 150px; } }
+    padding-top: 155px;
+    padding-bottom: 150px; }
+  .page-about__certificates {
+    padding-top: 80px;
+    padding-bottom: 50px; } }
 
 @media screen and (min-width: 1366px) {
   .page-about__about-company {
     margin-bottom: 115px; }
   .page-about__partners {
-    padding-bottom: 300px; } }
+    padding-top: 180px;
+    padding-bottom: 200px; }
+  .page-about__certificates {
+    padding-top: 120px;
+    padding-bottom: 150px; } }
+
+@media screen and (min-width: 1920px) {
+  .page-about__certificates {
+    padding-top: 145px;
+    padding-bottom: 150px; } }
+
+.page-news__other {
+  padding-bottom: 90px; }
+
+@media screen and (min-width: 768px) {
+  .page-news__other {
+    padding-bottom: 80px; } }
+
+@media screen and (min-width: 1366px) {
+  .page-news__other {
+    padding-bottom: 220px; } }
+
+@media screen and (min-width: 1366px) {
+  .page-news__other {
+    padding-bottom: 155px; } }
 
 @media screen and (min-width: 1440px) {
   .main-page {

@@ -24,6 +24,10 @@ body {
   background-color: #0D0705;
 }
 
+main {
+  overflow: hidden;
+}
+
 p {
   margin: 10px 0;
   color: #FFFFFF;
@@ -169,6 +173,7 @@ p {
 @import "./page/page-contacts";
 @import "./page/page-order";
 @import "./page/page-about";
+@import "./page/page-news";
 
 
 
