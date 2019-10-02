@@ -61,3 +61,8 @@ if (document.querySelector(".popup-order") && document.querySelector(".card-item
   let productCardkPopup = new Popup("popup-order");
   productCardkPopup.addElement("card-item-form__submit");
 }
+
+if (document.querySelector(".filter") && document.querySelector(".diel-select-list__item")) {
+  let filter = new Popup("filter");
+  filter.addElement("diel-select-list__item");
+}
