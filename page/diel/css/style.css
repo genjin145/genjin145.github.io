@@ -2549,9 +2549,12 @@ p {
     width: 100%; }
   .stocks-slider__image-wrapper {
     order: 1;
-    padding-right: 410px;
+    padding-right: 0;
     width: 750px;
     height: 550px; }
+  .stocks-slider__image {
+    width: initial;
+    object-fit: cover; }
   .stocks-slider__title {
     margin-top: 120px;
     font-size: 24px; }
@@ -2566,7 +2569,9 @@ p {
   .stocks-slider__item {
     justify-content: flex-start; }
   .stocks-slider__text {
-    margin-right: 85px; } }
+    margin-right: 85px; }
+  .stocks-slider__image-wrapper {
+    padding-right: 410px; } }
 
 .stocks-slider-options__item-text {
   font-family: "Lazurski";
