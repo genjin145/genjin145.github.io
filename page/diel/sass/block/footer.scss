@@ -230,8 +230,8 @@
   transition: color 300ms;
 }
 
-.footer-info-menu__link:hover,
-.footer-info-menu__link:focus {
+.footer-info-menu__link[href]:hover,
+.footer-info-menu__link[href]:focus {
   color: #E08B66;
 }
 

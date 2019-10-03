@@ -37,6 +37,13 @@
   border: 1px solid rgba(215, 130, 93, 0.5);
 }
 
+.button-serch svg {
+  transition: transform 300ms;
+}
+
+.button-serch:hover svg {
+  transform: scale(1.1);
+}
 
 
 

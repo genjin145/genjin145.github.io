@@ -209,6 +209,13 @@
 }
 
 @media screen and (min-width: 1920px) {
+  .product-card--view-1 {
+
+    .product-card__image {
+      height: 230px;
+    }
+  }
+
   .product-card--view-3 {
     width: 730px;
     // height: 675px;

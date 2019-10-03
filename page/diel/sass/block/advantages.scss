@@ -143,10 +143,6 @@
   .advantages-article__inner {
     width: 400px;
   }
-
-  .advantages__button-next {
-    display: block;
-  }
 }
 
 @media screen and (min-width: 1366px) {
@@ -174,6 +170,7 @@
   }
 
   .advantages__button-next {
+    display: block;
     right: 50px;
   }
 
