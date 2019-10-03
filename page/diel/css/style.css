@@ -4907,7 +4907,7 @@ p {
   visibility: hidden;
   opacity: 0;
   overflow-y: auto;
-  z-index: 900;
+  z-index: 1000;
   transition: opacity 300ms; }
 
 .popup--active {
@@ -4946,7 +4946,8 @@ p {
   z-index: 100;
   overflow: hidden;
   overflow-y: auto;
-  transition: opacity 400ms; }
+  transition: opacity 400ms;
+  z-index: 1000; }
 
 .popup-main-menu--hidden {
   visibility: hidden;
@@ -5250,7 +5251,8 @@ p {
   z-index: 900;
   overflow: hidden;
   overflow-y: auto;
-  transition: opacity 400ms; }
+  transition: opacity 400ms;
+  z-index: 1000; }
 
 .popup-search--hidden {
   visibility: hidden;

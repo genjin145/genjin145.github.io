@@ -8,6 +8,7 @@
   overflow: hidden;
   overflow-y: auto;
   transition: opacity 400ms;
+  z-index: 1000;
 }
 
 .popup-main-menu--hidden {
