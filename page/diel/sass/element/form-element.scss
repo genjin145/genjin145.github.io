@@ -202,8 +202,12 @@
   letter-spacing: -0.191667px;
   color: #E08B66;
   background-color: transparent;
-  border: 1px solid #E08B66;
+  border: 1px solid rgba(224, 139, 102, 0.5);
   cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .input-submit-wrapper {

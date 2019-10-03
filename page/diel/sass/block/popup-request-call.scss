@@ -70,6 +70,13 @@
 .popup-request-call__close {
   top: 30px;
   right: 30px;
+
+  transition: transform 300ms;
+
+  &:hover {
+    transform: rotate(90deg);
+    cursor: pointer;
+  }
 }
 
 
