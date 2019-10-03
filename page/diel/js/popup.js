@@ -32,7 +32,7 @@ function Popup(popupClass) {
     });
     
     that.addElement = function(elem) {
-      if (document.querySelector(`${elem}`)) {
+      if (document.querySelector(`.${elem}`)) {
         document.addEventListener("click", function(evt) {
           for (let i = evt.target; i !== null; i = i.parentNode) {
             if (i == document) break;
@@ -64,12 +64,12 @@ if (document.querySelector(".popup-product-card") && document.querySelector(".pr
 
 if (document.querySelector(".popup-order") && document.querySelector(".card-item-form__submit")) {
   let productCardkPopup = new Popup(".popup-order");
-  productCardkPopup.addElement(".card-item-form__submit");
+  productCardkPopup.addElement("card-item-form__submit");
 }
 
 if (document.querySelector(".filter") && document.querySelector(".diel-select-list__item")) {
   let filter = new Popup(".filter");
-  filter.addElement(".diel-select-list__item");
+  filter.addElement("diel-select-list__item");
 }
 
 if (document.querySelector(".popup-main-menu") && document.querySelector(".main-menu-button")) {
