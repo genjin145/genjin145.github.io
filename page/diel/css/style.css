@@ -3506,19 +3506,31 @@ p {
 .card-item-form__color-radio {
   position: absolute;
   visibility: hidden; }
+  .card-item-form__color-radio ~ span::before {
+    transition: all 200ms; }
 
-.card-item-form__color-radio:checked ~ span {
+.card-item-form__color-radio:hover ~ span,
+.card-item-form__color-radio:focus ~ span {
   border-color: #E08B66; }
-  .card-item-form__color-radio:checked ~ span::before {
+  .card-item-form__color-radio:hover ~ span::before,
+  .card-item-form__color-radio:focus ~ span::before {
     content: "";
     position: absolute;
     width: 26px;
     height: 26px;
     background-color: #EDBD4E;
-    background-image: url(../img/check_mark.svg);
     background-repeat: no-repeat;
     background-position: 50%;
     border-radius: 50%; }
+
+.card-item-form__color-radio:checked ~ span::before {
+  content: "";
+  position: absolute;
+  background-color: #EDBD4E;
+  background-image: url(../img/check_mark.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%; }
 
 .card-item-form__color-item > span {
   position: absolute;
