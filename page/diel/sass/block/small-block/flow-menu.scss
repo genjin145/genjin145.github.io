@@ -40,7 +40,8 @@
 
   .flow-menu__item--description {
     position: relative;
-    display: flex;
+    display: none;
+    // display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: auto;

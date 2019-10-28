@@ -44,6 +44,9 @@
 .card-item-form__in-favorite {
   margin-right: 25px;
   padding: 5px;
+  padding-top: 0;
+  width: initial;
+  height: initial;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -484,6 +487,10 @@
   .card-item__form {
     margin-top: 80px;
   }
+
+  .card-item__kit {
+    margin-right: 43px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -514,5 +521,9 @@
     position: absolute;
     left: 1065px;
     margin-top: 82px;
+  }
+
+  .card-item__kit {
+    margin-right: 110px;
   }
 }

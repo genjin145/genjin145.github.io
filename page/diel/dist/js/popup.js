@@ -30,6 +30,11 @@ function Popup(popupClass) {
         that.closePopup();
       }
     });
+
+    popup.addEventListener("click", function(evt) {
+      console.log("aaa");
+      
+    });
     
     that.addElement = function(elem) {
       if (document.querySelector(`.${elem}`)) {
