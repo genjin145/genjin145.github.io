@@ -6,7 +6,7 @@ function Popup(popupClass) {
   if (document.querySelector(`${popupClass}`)) {
     popup = document.querySelector(`${popupClass}`);
 
-    if (document.querySelector(".popup__close")) {
+    if (popup.querySelector(".popup__close")) {
       close = popup.querySelector(".popup__close");
 
       close.addEventListener("click", function(evt) {
@@ -32,8 +32,9 @@ function Popup(popupClass) {
     });
 
     popup.addEventListener("click", function(evt) {
-      console.log("aaa");
-      
+      if (evt.target === popup) {
+        that.closePopup();
+      }
     });
     
     that.addElement = function(elem) {
@@ -47,7 +48,7 @@ function Popup(popupClass) {
               break;
             }
           }
-          
+
         });
       }
     }
@@ -85,8 +86,19 @@ if (document.querySelector(".popup-main-menu") && document.querySelector(".main-
 }
 
 if (document.querySelector(".popup-search") && document.querySelector(".user-menu__link-search")) {
-  let search = new Popup(".popup-search");
-  document.querySelector(".user-menu__link-search").addEventListener("click", function() {
+  let search = new Popup(".popup-search"),
+      btn = document.querySelector(".user-menu__link-search");
+
+  btn.addEventListener("click", function() {
     search.showPopup();
+  });
+}
+
+if (document.querySelector(".popup-request-call") && document.querySelector(".user-menu__link-phone")) {
+  let popup = new Popup(".popup-request-call"),
+      btn = document.querySelector(".user-menu__link-phone");
+
+    btn.addEventListener("click", function() {
+    popup.showPopup();
   });
 }

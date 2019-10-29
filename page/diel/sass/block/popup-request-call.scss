@@ -68,10 +68,15 @@
 }
 
 .popup-request-call__close {
+  position: absolute;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
   top: 30px;
   right: 30px;
-
   transition: transform 300ms;
+  cursor: pointer;
+
 
   &:hover {
     transform: rotate(90deg);

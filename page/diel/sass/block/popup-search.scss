@@ -45,6 +45,7 @@
   letter-spacing: 3px;
   background-color: transparent;
   border: none;
+  outline: none;
 }
 
 .main-search__input::placeholder {
@@ -133,7 +134,7 @@
 
 .main-search-result__link {
   display: block;
-  padding: 10px;
+  padding: 10px 0;
   font-family: "Intro Light";
   font-size: 16px;
   line-height: 26px;
@@ -147,6 +148,32 @@
 .main-search-result__link:hover,
 .main-search-result__link:focus {
   color: #E08B66;
+}
+
+.main-search-result__all-result {
+  margin-top: 40px;
+  padding-top: 30px;
+  color: #E08B66;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 345px;
+    height: 2px;
+    background-color: rgba(224, 139, 102, 0.5);
+  }
+}
+
+.main-search-result__all-result:hover .main-search-result__all-result-image,
+.main-search-result__all-result:focus .main-search-result__all-result-image {
+  margin-left: 25px;
+}
+
+.main-search-result__all-result-image {
+  margin-left: 5px;
+  transition: margin 300ms;
 }
 
 .popup-search__logo {

@@ -249,6 +249,7 @@
   position: relative;
   display: inline-block;
   color: #FFFFFF;
+  border: 1px solid rgba(255,255,255,.5);
   cursor: pointer;
 }
 
@@ -263,8 +264,9 @@
   background-image: url(./../img/arrow_down.svg);
   background-repeat: no-repeat;
   background-position: right 15px top 50%;
-  border: 1px solid rgba(255,255,255,.5);
+  border: none;
   transition: border-color 300ms;
+  outline: none;
 
   @media screen and (min-width: 768px) {
     padding: 10px 20px;
@@ -281,19 +283,17 @@
   padding-right: 15px;
 }
 
+.diel-select__button-filter {
+  background-image: url(./../img/filter.svg);
+}
+
 .diel-select__list {
   position: absolute;
-  top: calc(100% - 1px);
-  left: 0;
-  right: 0;
   visibility: hidden;
   margin: 0;
   padding: 0;
   height: 0;
   list-style-type: none;
-  border: 1px solid transparent;
-  // transition: 300ms;
-  overflow: hidden;
   z-index: 100;
 }
 
@@ -316,12 +316,9 @@
   color: #E08B66;
 }
 
-.diel-select--active,
-.diel-select:hover {
-  .diel-select__button {
-    border-color: #E08B66;
-    background-color: #220F06;
-  }
+.diel-select--active {
+  border-color: #E08B66;
+  background-color: #220F06;
 
   .diel-select__button-text {
     padding-bottom: 6px;
@@ -330,14 +327,25 @@
 
   .diel-select__list {
     visibility: initial;
-    padding-bottom: 10px;
+    width: 100%;
     height: auto;
-    border-color: #E08B66;
-    border-top-color: transparent;
-    background-color: #220F06;
   }
 
   .diel-select__button {
     color: #E08B66;
+  }
+
+  .diel-select-list__item {
+    margin-left: -1px;
+    padding-bottom: 10px;
+    width: calc(100% + 2px);
+    box-sizing: border-box;
+    background-color: #220F06;
+    border-left: 1px solid #E08B66;
+    border-right: 1px solid #E08B66;
+  }
+
+  .diel-select-list__item:last-child {
+    border-bottom: 1px solid #E08B66;
   }
 }
