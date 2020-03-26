@@ -55,6 +55,7 @@ img {
 .portfolio-work__link {
   color: #fff;
   text-decoration: none;
+  transition: color 300ms;
 }
 
 .portfolio-work__link:hover,
@@ -64,7 +65,7 @@ img {
 }
 
 .portfolio-work__image-wrapper {
-  transition: opacity 200ms;
+  transition: opacity 300ms;
 }
 
 .portfolio-work__link:hover .portfolio-work__image-wrapper,
@@ -92,6 +93,13 @@ img {
 .portfolio-work__image {
   width: auto;
   height: 100%;
+  object-fit: contain;
+  transition: transform 300ms;
+}
+
+.portfolio-work__link:hover .portfolio-work__image,
+.portfolio-work__link:focus .portfolio-work__image {
+  transform: scale(1.1);
 }
 
 .portfolio-work__item:first-child .portfolio-work__image {
