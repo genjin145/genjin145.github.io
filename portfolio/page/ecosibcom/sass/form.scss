@@ -1,0 +1,84 @@
+.form {
+  background-color: #fff;
+}
+
+.form__title {
+  margin: 0;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 300;
+}
+
+.form__box {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__desc {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.form__desc p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.form__input {
+  padding: 7px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  border: 1px solid #7f7f7f;
+  border-radius: 5px;
+  transition: border-color 300ms;
+}
+
+.form__input--error {
+  border-color: #D7244C;
+}
+
+.form__input--error::placeholder {
+  color: #D7244C;
+  font-style: italic;
+}
+.form__input--error::-ms-input-placeholder {
+  color: #D7244C;
+  font-style: italic;
+}
+.form__input--error:-ms-input-placeholder {
+  color: #D7244C !important;
+  font-style: italic !important;
+}
+
+.form__input:hover,
+.form__input:focus {
+  border-color: #000;
+  outline: none;
+}
+
+.form__input::placeholder {
+  transition: color 300ms;
+}
+.form__input::-ms-input-placeholder {
+  transition: color 300ms;
+}
+.form__input:-ms-input-placeholder {
+  transition: color 300ms;
+}
+
+.form__input:hover::placeholder {
+  color: #000;
+}
+.form__input:hover::-ms-input-placeholder {
+  color: #000;
+}
+.form__input:hover:-ms-input-placeholder {
+  color: #000 !important;
+}
+
+.form__input:focus::placeholder {
+  color: transparent;
+  transition: none;
+}

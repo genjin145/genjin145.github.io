@@ -1,0 +1,19 @@
+{
+  "name": "ecosibcom",
+  "version": "0.0.1",
+  "description": "http://ecosibcom.ru/test/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mark",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "inputmask": "^5.0.3",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.13.1",
+    "slick-carousel": "^1.8.1"
+  }
+}

@@ -1,0 +1,48 @@
+html {
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  // scroll-behavior: smooth;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  box-sizing: border-box;
+
+  @media (max-width: 999px) {
+    margin: 0 15px;
+  }
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 36px;
+
+  @media (max-width: 575px) {
+    font-size: 30px;
+  }
+}
+
+.section-title.section-title--secondary {
+  color: #0AAED3;
+  font-weight: 700;
+}
+
+@import "btn";
+@import "form";
+
+@import "header";
+@import "main-menu";
+@import "hero";
+@import "services";
+@import "our-work";
+@import "reviews";
+@import "contacts";
+@import "popup";
