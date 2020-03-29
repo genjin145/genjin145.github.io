@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container p-3 mt-5 shadow-sm rounded">
+    <div class="row">
+      <div class="col-12 col-xl-6">
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="pg-figures" checked>
+          <label class="form-check-label" for="pg-figures">
+            Цифры 
+            <span class="bg-light text-secondary">0 - 9</span>
+          </label>
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="pg-lowercase" checked>
+          <label class="form-check-label" for="pg-lowercase">
+            Строчние буквы
+            <span class="bg-light text-secondary">a - z</span>
+          </label>
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="pg-uppercase" checked>
+          <label class="form-check-label" for="pg-uppercase">
+            Заглавные буквы
+            <span class="bg-light text-secondary">A - Z</span>
+          </label>
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="pg-characters">
+          <label class="form-check-label" for="pg-characters">
+            Спец. символы
+            <span class="bg-light text-secondary">! @ # $ % ^ & * ( ) - _ + = ; :  . / ? \ | ` ~ [ ] { }</span>
+          </label>
+        </div>
+
+        <div class="form-group d-flex">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Кол-во паролей</span>
+            </div>
+            <input type="number" class="form-control pg-number" min="1" value="5">
+          </div>
+        </div>
+
+        <div class="form-group d-flex">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Кол-во сиволов</span>
+            </div>
+            <input type="number" class="form-control pg-qty" min="1" value="8">
+          </div>
+        </div>
+
+        <div class="form-group d-flex flex-row-reverse">
+          <button type="button" class="btn btn-primary pg-generate">Генерировать</button>
+        </div>
+      </div>
+
+      <div class="col-12 col-xl-6">
+        <ul class="list-group list-group-flush pg-result">
+          <li class="list-group-item">123456</li>
+          <li class="list-group-item">password</li>
+          <li class="list-group-item">123456789</li>
+          <li class="list-group-item">12345678</li>
+          <li class="list-group-item">12345</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
