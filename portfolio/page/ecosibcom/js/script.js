@@ -67,7 +67,7 @@ function sendForm() {
   $('.form').on('submit', function() {
     $.ajax({
       url: $(this).attr('action'),
-      type: 'POST',
+      type: 'GET',
       data: $(this).serialize(),
       success: function() {
         $('.popup').remove();
@@ -86,7 +86,7 @@ $('.js-call').on('click', function(evt) {
 
   $.ajax({
     url: 'popup.html',
-    type: 'POST',
+    type: 'GET',
     success: function(res) {
       $('body').append(res);
       
