@@ -73,8 +73,8 @@ class Timer {
   }
 
   static getFullTime(seconds) {
-    let h = Math.floor(seconds / 3600),
-        m = Math.floor(seconds / 60),
+    let h = Math.floor(seconds / 3600 % 3600),
+        m = Math.floor(seconds / 60 % 60),
         s = Math.floor(seconds % 60);
   
     return {
