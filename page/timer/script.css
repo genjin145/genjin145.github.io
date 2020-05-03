@@ -1,0 +1,59 @@
+* {
+  color: lightgray;
+  font-family: 'Press Start 2P', cursive;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.timer__display {
+  display: flex;
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 62px;
+}
+
+.timer__display-hours::after {
+  content: ":";
+}
+
+.timer__display-minuts::after {
+  content: ":";
+}
+
+.timer-button {
+  padding: 15px 40px;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.timer-button:hover {
+  cursor: pointer;
+}
+
+.timer-button:focus {
+  outline-color: black;
+}
+
+.timer-button:hover:disabled {
+  cursor: not-allowed;
+}
