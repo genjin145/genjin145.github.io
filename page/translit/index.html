@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Translit</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <div class="container pt-5 shadow-lg rounded">
+      <div class="row">
+
+        <div class="col">
+          <div class="row mb-2">
+            <div class="col">
+              Транслитерировать с <mark class="translator-translit-mark">rus</mark> на
+              <button class="translator-translit-latin btn btn-dark">latin</button>
+              <button class="translator-translit-ru btn btn-dark">rus</button>
+            </div>
+
+            <div class="col text-right">
+              Изменить <span>раскладку</span> с <mark class="translator-layout-mark">qwerty</mark> на
+              <button class="translator-layout-ru btn btn-secondary">йцукен</button>
+              <button class="translator-layout-en btn btn-secondary">qwerty</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <textarea class="translator-input form-control" rows="5"></textarea>
+            </div>
+          </div>
+
+          <div class="row mt-2 mb-2">
+            <div class="col">
+              <button class="translator-reverse btn btn-light w-100">Reverse</button>
+            </div>
+          </div>
+
+          <div class="row ">
+            <div class="col">
+              <pre class="translator-output text border rounded"></pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="col">
+          <div class="log">
+            <div class="log-item">
+              <p>строка</p>
+              <p>строка 1</p>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

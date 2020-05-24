@@ -1,0 +1,23 @@
+.translator-output {
+  padding: 6px 12px;
+  height: calc(1.5em * 5 + .75rem + 2px);
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  white-space: pre-wrap;
+  background-color: #fff;
+}
+
+.translator-translit-mark,
+.translator-layout-mark {
+  display: inline-block;
+  text-align: center;
+}
+
+.translator-translit-mark {
+  min-width: 60px;
+}
+
+.translator-layout-mark {
+  min-width: 80px;
+}

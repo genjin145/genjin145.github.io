@@ -1,0 +1,15 @@
+{
+  "name": "translit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "keywords": [],
+  "author": "Mark <genjin145@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^2.10.9"
+  }
+}
