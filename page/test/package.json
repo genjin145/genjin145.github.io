@@ -1,0 +1,20 @@
+{
+  "name": "bvb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mark",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.5.0",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
+  }
+}

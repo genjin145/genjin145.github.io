@@ -1,0 +1,40 @@
+.header {
+  padding: 13px 0;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.03);
+}
+
+.header__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__phone {
+  color: #79818C;
+}
+
+.header__call svg {
+  display: none;
+}
+
+@media (max-width: 1199.98px) {
+  .header__right {
+    justify-content: flex-end;
+  }
+
+  .header__phone {
+    display: none;
+  }
+
+  .header__call {
+    
+    svg {
+      display: block;
+    }
+
+    span {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+$grid-columns:      13;
+$grid-gutter-width: 20px;
+
+@import './bootstrap/bootstrap-reboot';
+@import './bootstrap/bootstrap-grid';
+
+@import './blocks/link';
+@import './blocks/button';
+
+@import './blocks/card-house';
+
+@import './blocks/header';
+@import './blocks/main-aside';
+@import './blocks/main';
+@import './blocks/list-house';
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #79818C;
+  background-color: #F5F5F6;
+}

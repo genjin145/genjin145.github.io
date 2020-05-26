@@ -1,0 +1,57 @@
+.card-house {
+  display: block;
+  padding: 20px 10px;
+  color: #79818C;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-house:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-house__img {
+  margin: -10px;
+  margin-top: -20px;
+  margin-bottom: 16px;
+}
+
+.card-house__img img {
+  width: 100%;
+}
+
+.card-house__title {
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4F4F4F;
+}
+
+.card-house__desc {
+  margin-bottom: 12px;
+}
+
+.card-house__address {
+  margin-bottom: 16px;
+}
+
+.card-house__passed,
+.card-house__stock {
+  display: inline-block;
+  padding: 5px 23px;
+  color: #FFFFFF;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  border-radius: 3px;
+}
+
+.card-house__passed {
+  margin-right: 5px;
+  background-color: #5AB87D;
+}
+
+.card-house__stock {
+  background-color: #FA7474;
+}

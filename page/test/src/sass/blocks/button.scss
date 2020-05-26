@@ -1,0 +1,19 @@
+.button {
+  display: inline-block;
+  padding: 10px 25px;
+  color: #4F4F4F;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: #FADE56;
+  border-radius: 3px;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 1199.98px) {
+  .button {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,24 @@
+.list-house {
+
+}
+
+.list-house__title {
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4F4F4F;
+}
+
+.list-house__box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px
+}
+
+@media (max-width: 1199.98px) {
+  .list-house__title {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
