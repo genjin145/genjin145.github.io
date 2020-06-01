@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roiburo test</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+
+  <section class="apartment">
+    <div class="container">
+
+      <h2 class="apartment__title">Выберите свою квартиру</h2>
+
+      <div class="apartment__main tabs">
+        <div class="apartment__navs">
+          <b class="apartment__navs-title">Выберите нужную вам секцию</b>
+
+          <ol class="apartment__tabs tabs__nav">
+            <li class="tabs__nav-item">
+              <a class="tabs__nav-link tabs__nav-link--active" href="#">
+                <span class="mobile">Секции</span>
+                <span class="desktop">Выберите секцию</span>
+              </a>
+            </li>
+    
+            <li class="tabs__nav-item">
+              <a class="tabs__nav-link" href="#">
+                <span class="mobile">Этаж</span>
+                <span class="desktop">Выберите этаж</span>
+              </a>
+            </li>
+    
+            <li class="tabs__nav-item">
+              <a class="tabs__nav-link" href="#">
+                <span class="mobile">План</span>
+                <span class="desktop">Выберите планировку</span>
+              </a>
+            </li>
+    
+            <li class="tabs__nav-item">
+              <a class="tabs__nav-link" href="#">
+                <span class="mobile">Квартира</span>
+                <span class="desktop">Выберите квартиру</span>
+              </a>
+            </li>
+          </ol>
+
+          <div class="apartment__selected hidden">
+            <b class="apartment__selected-title">Выбрано:</b>
+
+            <ul class="apartment__selected-list">
+              <li class="apartment__selected-item">IV секция</li>
+              <li class="apartment__selected-item">3 Этаж</li>
+            </ul>
+          </div>
+
+          <p class="apartment__progress">
+            Шаг&nbsp;<span class="apartment__progress-current">1</span>/<span class="apartment__progress-max">4</span>
+          </p>
+        </div>
+    
+        <div class="apartment__content">
+          <div class="tabs__content">
+            <div class="apartment-section tabs__content-item">
+              <div class="box">
+                <svg class="" width="510" height="327" viewBox="0 0 510 327" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <g class="compass">
+                      <path d="M219.709 171.511L236.377 178.328C236.747 178.479 237.148 178.546 237.549 178.523C237.951 178.5 238.341 178.387 238.689 178.195C238.93 178.061 239.147 177.892 239.332 177.693C239.693 177.304 239.917 176.815 239.972 176.297C240.026 175.779 239.91 175.257 239.638 174.806L227.989 155.477L223.503 157.958L231.269 170.844L214.601 164.028C214.101 163.823 213.547 163.775 213.017 163.889C212.486 164.003 212.007 164.274 211.646 164.664C211.286 165.053 211.062 165.541 211.007 166.059C210.952 166.577 211.069 167.099 211.34 167.549L222.989 186.879L227.475 184.398L219.709 171.511Z" fill="#C7C7C7"/>
+                      <path d="M284.074 273.363L288.56 270.881C289.155 270.552 289.862 270.463 290.525 270.633C291.188 270.803 291.754 271.219 292.097 271.789L296.583 269.307C295.553 267.598 293.857 266.352 291.867 265.841C289.877 265.331 287.756 265.599 285.972 266.586L281.486 269.067C279.701 270.054 278.399 271.68 277.865 273.586C277.331 275.492 277.61 277.523 278.64 279.232C279.67 280.941 281.366 282.188 283.356 282.698C285.346 283.209 287.467 282.941 289.251 281.954L293.737 279.472C294.332 279.143 295.039 279.054 295.702 279.224C296.366 279.394 296.931 279.81 297.274 280.38C297.618 280.949 297.711 281.626 297.533 282.262C297.355 282.897 296.921 283.439 296.326 283.768L291.84 286.249C291.245 286.578 290.538 286.668 289.875 286.497C289.212 286.327 288.646 285.912 288.303 285.342L283.817 287.823C284.847 289.532 286.543 290.779 288.533 291.289C290.523 291.8 292.644 291.532 294.429 290.545L298.914 288.064C300.699 287.076 302.001 285.451 302.535 283.545C303.069 281.638 302.79 279.607 301.76 277.898C300.73 276.189 299.034 274.943 297.044 274.432C295.054 273.922 292.933 274.19 291.149 275.177L286.663 277.658C286.068 277.987 285.361 278.077 284.698 277.906C284.034 277.736 283.469 277.321 283.126 276.751C282.782 276.181 282.69 275.504 282.867 274.869C283.045 274.234 283.479 273.692 284.074 273.363Z" fill="#C7C7C7"/>
+                      <path d="M321.253 181.209L318.664 176.914L305.207 184.358C304.612 184.687 304.178 185.228 304 185.864C303.822 186.499 303.915 187.176 304.258 187.746L314.613 204.928C314.956 205.498 315.521 205.913 316.185 206.083C316.848 206.253 317.555 206.164 318.15 205.835L331.607 198.391L329.019 194.096L317.804 200.299L315.216 196.003L321.944 192.282L319.356 187.986L312.627 191.708L310.038 187.412L321.253 181.209Z" fill="#C7C7C7"/>
+                      <path d="M209.638 263.781C210.042 264.155 210.563 264.393 211.121 264.459C211.679 264.525 212.245 264.415 212.732 264.146L212.77 264.125C213.259 263.844 213.637 263.416 213.846 262.908C214.056 262.401 214.084 261.841 213.928 261.316L208.059 241.653L203.079 243.016L206.292 253.776L199.691 247.662C199.287 247.289 198.767 247.051 198.209 246.986C197.651 246.921 197.086 247.031 196.6 247.3C196.113 247.57 195.731 247.983 195.511 248.478C195.291 248.974 195.245 249.524 195.381 250.047L197.607 258.58L189.487 250.534L185.765 253.985L200.605 268.686C201.001 269.077 201.522 269.333 202.085 269.413C202.648 269.492 203.224 269.392 203.722 269.127C204.219 268.862 204.612 268.447 204.839 267.947C205.066 267.446 205.115 266.888 204.977 266.359L202.603 257.263L209.638 263.781Z" fill="#C7C7C7"/>
+                      <path d="M270.312 250.525L260.594 234.4C259.671 234.645 258.717 234.763 257.759 234.751L256.45 239.433L270.312 250.525Z" fill="#C7C7C7"/>
+                      <path d="M260.44 229.168C262.917 227.797 263.766 224.763 262.337 222.391C260.907 220.019 257.74 219.206 255.262 220.577C252.785 221.947 251.936 224.981 253.365 227.353C254.795 229.726 257.962 230.538 260.44 229.168Z" fill="#C7C7C7"/>
+                      <path d="M250.611 217.826L240.894 201.7L243.99 218.748L248.878 220.002C249.346 219.202 249.929 218.469 250.611 217.826V217.826Z" fill="#C7C7C7"/>
+                      <path d="M277.76 228.539L276.732 229.715L277.008 231.226L281.659 230.979L277.76 228.539Z" fill="#C7C7C7"/>
+                      <path d="M267.79 222.232C268.046 223.116 268.169 224.03 268.156 224.948L273.043 226.199L284.63 212.917L267.79 222.232Z" fill="#C7C7C7"/>
+                      <path d="M262.935 216.274C263.771 216.722 264.536 217.282 265.207 217.935L282.047 208.621L264.247 211.594L262.935 216.274Z" fill="#C7C7C7"/>
+                      <path d="M264.256 201.991L261.669 205.782L262.916 206.779L264.517 206.512L264.256 201.991Z" fill="#C7C7C7"/>
+                      <path d="M238.966 220.03L238.688 218.497L233.968 218.748L237.925 221.224L238.966 220.03Z" fill="#C7C7C7"/>
+                      <path d="M252.763 233.467C251.928 233.019 251.163 232.46 250.491 231.806L233.652 241.12L251.451 238.148L252.763 233.467Z" fill="#C7C7C7"/>
+                      <path d="M242.651 223.545L231.065 236.827L247.904 227.512C247.649 226.628 247.526 225.714 247.538 224.796L242.651 223.545Z" fill="#C7C7C7"/>
+                      <path d="M252.781 242.959L251.203 243.225L251.459 247.679L254.008 243.944L252.781 242.959Z" fill="#C7C7C7"/>
+                      <path d="M266.822 229.74C266.354 230.54 265.769 231.273 265.086 231.917L274.804 248.042L271.708 230.995L266.822 229.74Z" fill="#C7C7C7"/>
+                      <path d="M245.38 199.22L255.098 215.345C256.021 215.101 256.975 214.982 257.933 214.994L259.242 210.312L245.38 199.22Z" fill="#C7C7C7"/>
+                      <path d="M212.544 269.208L208.918 272.754C217.84 281.129 228.945 287.057 241.075 289.921C253.205 292.785 265.916 292.481 277.884 289.039L276.397 284.289C265.316 287.475 253.547 287.757 242.316 285.104C231.085 282.452 220.804 276.962 212.544 269.208V269.208Z" fill="#C7C7C7"/>
+                      <path d="M302.283 269.968L305.833 273.577C314.928 265.368 321.559 254.973 325.035 243.477C328.511 231.98 328.704 219.803 325.596 208.213L320.577 209.448C323.457 220.179 323.278 231.454 320.061 242.099C316.843 252.743 310.704 262.368 302.283 269.968V269.968Z" fill="#C7C7C7"/>
+                      <path d="M303.154 180.538L306.78 176.992C297.858 168.618 286.754 162.69 274.624 159.825C262.494 156.961 249.782 157.266 237.814 160.707L239.301 165.457C250.382 162.271 262.152 161.99 273.382 164.642C284.613 167.295 294.894 172.784 303.154 180.538V180.538Z" fill="#C7C7C7"/>
+                      <path d="M213.411 179.772L209.861 176.163C200.471 184.714 193.726 195.581 190.371 207.567C187.015 219.552 187.179 232.191 190.844 244.09L195.804 242.664C192.412 231.647 192.26 219.945 195.367 208.848C198.474 197.751 204.718 187.689 213.411 179.772V179.772Z" fill="#C7C7C7"/>
+                    </g>
+                    <rect x="2.5" y="11.6887" width="90.5007" height="162.121" stroke="#E2E2E2"/>
+                    <g class="apartment-section__g" tabindex="0" data-value="1">
+                      <path d="M108 94.0541V9.66768H124.92L132.44 3L139.96 9.66768L147.48 3L155 9.66768L162.52 3L170.04 9.66768L177.56 3L185.08 9.66768L192.6 3L200.12 9.66768L207.64 3L215.16 9.66768L222.68 3L230.2 9.66768L237.72 3L245.24 9.66768L252.76 3L260.28 9.66768L267.801 3L275.321 9.66768L282.841 3L290.361 9.66768L297.881 3L305.401 9.66768L312.921 3L320.441 9.66768H336.107V105.238H256.212V101.171H215.685V105.238H135.79V94.0541H108Z" stroke="#415EB7" stroke-width="2"/>
+                      <g class="apartment-section__title">
+                        <path d="M224.301 64.2536L226.564 64.7213V65.0331H218.832V64.7213L221.095 64.2536V43.9865L218.832 43.5188V43.207H226.564V43.5188L224.301 43.9865V64.2536Z" fill="#415EB7"/>
+                      </g>
+                    </g>
+                    <g class="apartment-section__g" tabindex="0" data-value="2">
+                      <path d="M508.691 97.6189V9.27535H488.955L480.937 2L472.92 9.27535L464.902 2L456.884 9.27535L448.866 2L440.848 9.27535L432.831 2L424.813 9.27535L416.795 2L408.777 9.27535L400.759 2L392.741 9.27535L384.724 2L376.706 9.27535L368.688 2L360.67 9.27535L352.652 2L344.635 9.27535H336V111.13H385.99V102.816H468.927V97.6189H508.691Z" stroke="#415EB7" stroke-width="2"/>
+                      <g class="apartment-section__title">
+                        <path d="M417.937 64.4018L419.98 64.8695V65.1813H413V64.8695L415.043 64.4018V44.1347L413 43.667V43.3552H419.98V43.667L417.937 44.1347V64.4018Z" fill="#415EB7"/>
+                        <path d="M429 64.4018L431.042 64.8695V65.1813H424.063V64.8695L426.106 64.4018V44.1347L424.063 43.667V43.3552H431.042V43.667L429 44.1347V64.4018Z" fill="#415EB7"/>
+                      </g>
+                    </g>
+                    <g class="apartment-section__g" tabindex="0" data-value="3">
+                      <path d="M489.212 267.169V314.368H409.165V296.012L399 284.888L409.165 273.763L399 262.639L409.165 251.514L399 240.389L409.165 229.265L399 218.14L409.165 207.015L399 195.891L409.165 184.766L399 173.641L409.165 162.517L399 151.392L409.165 140.268L399 129.143L409.165 118.018V103H469.49V259.987H475.291V267.169H489.212Z" stroke="#415EB7" stroke-width="2"/>
+                      <g class="apartment-section__title">
+                        <path d="M434.809 218.245L436.799 218.712V219.024H430V218.712L431.99 218.245V197.978L430 197.51V197.198H436.799V197.51L434.809 197.978V218.245Z" fill="#415EB7"/>
+                        <path d="M445.586 218.245L447.576 218.712V219.024H440.777V218.712L442.767 218.245V197.978L440.777 197.51V197.198H447.576V197.51L445.586 197.978V218.245Z" fill="#415EB7"/>
+                        <path d="M456.362 218.245L458.352 218.712V219.024H451.553V218.712L453.543 218.245V197.978L451.553 197.51V197.198H458.352V197.51L456.362 197.978V218.245Z" fill="#415EB7"/>
+                      </g>
+                    </g>
+                    <g class="apartment-section__g" tabindex="0" data-value="4">
+                      <path d="M115.386 185L10.1825 185L10.1825 187.097L10.1825 194.225L1.99999 201.353L10.1825 208.482L2 215.61L10.1825 222.739L2 229.867L10.1825 236.995L2 244.124L10.1825 251.252L2 258.381L10.1825 265.509L2 272.637L10.1825 279.766L2 286.894L10.1825 294.023L2 301.151L10.1825 308.28L10.1825 315.956L115.386 315.956L115.386 277.121L130.874 277.121L130.874 230.157L115.386 230.157L115.386 185Z" stroke="#415EB7" stroke-width="2"/>
+                      <g class="apartment-section__title">
+                        <path d="M58.8083 237.841V239.214L56.3942 239.623C56.1412 239.667 55.9438 239.759 55.8021 239.9C55.6705 240.041 55.6047 240.225 55.6047 240.454V255.893C55.6047 256.121 55.6705 256.306 55.8021 256.447C55.9337 256.588 56.131 256.68 56.3942 256.724L58.8083 257.107V258.453H49V257.107L51.4293 256.724C51.6925 256.68 51.8899 256.588 52.0215 256.447C52.153 256.306 52.2188 256.121 52.2188 255.893V240.454C52.2188 240.234 52.148 240.054 52.0063 239.913C51.8747 239.763 51.6824 239.667 51.4293 239.623L49 239.214V237.841H58.8083Z" fill="#415EB7"/>
+                        <path d="M73.9573 258.519H70.8751L62.9799 240.322C62.8989 240.129 62.7825 239.979 62.6307 239.873C62.4889 239.768 62.3068 239.684 62.0841 239.623L60.338 239.214V237.841H69.4783V239.214L66.3505 239.741L72.9856 255.55L78.9071 239.741L75.7945 239.214V237.841H83.796V239.214L81.9589 239.623C81.7362 239.684 81.5439 239.768 81.3819 239.873C81.2301 239.979 81.1187 240.129 81.0479 240.322L73.9573 258.519Z" fill="#415EB7"/>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+
+            <div class="apartment-floor tabs__content-item hidden">
+              <box class="box">
+                <ul class="apartment-floor__list">
+                  <li class="apartment-floor__item">
+                    <button class="apartment-floor__button button">1 этаж</button>
+                  </li>
+                  <li class="apartment-floor__item">
+                    <button class="apartment-floor__button button">2 этаж</button>
+                  </li>
+                  <li class="apartment-floor__item">
+                    <button class="apartment-floor__button button">3 этаж</button>
+                  </li>
+                  <li class="apartment-floor__item">
+                    <button class="apartment-floor__button button">4 этаж</button>
+                  </li>
+                  <li class="apartment-floor__item">
+                    <button class="apartment-floor__button button">5 этаж</button>
+                  </li>
+                  <li class="apartment-floor__item">
+                    <button class="apartment-floor__button button">6 этаж</button>
+                  </li>
+                  <li class="apartment-floor__item">
+                    <button class="apartment-floor__button button">7 этаж</button>
+                  </li>
+                  <li class="apartment-floor__item">
+                    <button class="apartment-floor__button button">8 этаж</button>
+                  </li>
+                  <li class="apartment-floor__item">
+                    <button class="apartment-floor__button button">9 этаж</button>
+                  </li>
+                  <li class="apartment-floor__item">
+                    <button class="apartment-floor__button button">10 этаж</button>
+                  </li>
+                  <li class="apartment-floor__item">
+                    <button class="apartment-floor__button button">11 этаж</button>
+                  </li>
+                  <li class="apartment-floor__item">
+                    <button class="apartment-floor__button button">12 этаж</button>
+                  </li>
+                  <li class="apartment-floor__item">
+                    <button class="apartment-floor__button button">13 этаж</button>
+                  </li>
+                  <li class="apartment-floor__item">
+                    <button class="apartment-floor__button button">14 этаж</button>
+                  </li>
+                  <li class="apartment-floor__item">
+                    <button class="apartment-floor__button button">Не важно</button>
+                  </li>
+                </ul>
+              </box>
+            </div>
+
+            <div class="apartment-layout tabs__content-item hidden">
+              <div class="box">
+                <ul class="apartment-layout__list">
+                  <li class="apartment-layout__item">
+                    <button class="apartment-layout__button">
+                      <b>Студия 42м<sup>²</sup></b>
+                      <p>нажмите, чтобы посмотреть планировку</p>
+                    </button>
+                  </li>
+                  <li class="apartment-layout__item">
+                    <button class="apartment-layout__button">
+                      <b>Студия 42м<sup>²</sup></b>
+                      <p>нажмите, чтобы посмотреть планировку</p>
+                    </button>
+                  </li>
+                  <li class="apartment-layout__item">
+                    <button class="apartment-layout__button">
+                      <b>Студия 42м<sup>²</sup></b>
+                      <p>нажмите, чтобы посмотреть планировку</p>
+                    </button>
+                  </li>
+                  <li class="apartment-layout__item">
+                    <button class="apartment-layout__button">
+                      <b>Студия 42м<sup>²</sup></b>
+                      <p>нажмите, чтобы посмотреть планировку</p>
+                    </button>
+                  </li>
+                  <li class="apartment-layout__item">
+                    <button class="apartment-layout__button">
+                      <b>Студия 42м<sup>²</sup></b>
+                      <p>нажмите, чтобы посмотреть планировку</p>
+                    </button>
+                  </li>
+                  <li class="apartment-layout__item">
+                    <button class="apartment-layout__button">
+                      <b>Студия 42м<sup>²</sup></b>
+                      <p>нажмите, чтобы посмотреть планировку</p>
+                    </button>
+                  </li>
+                  <li class="apartment-layout__item">
+                    <button class="apartment-layout__button">
+                      <b>Студия 42м<sup>²</sup></b>
+                      <p>нажмите, чтобы посмотреть планировку</p>
+                    </button>
+                  </li>
+                  <li class="apartment-layout__item">
+                    <button class="apartment-layout__button">
+                      <b>Студия 42м<sup>²</sup></b>
+                      <p>нажмите, чтобы посмотреть планировку</p>
+                    </button>
+                  </li>
+                  <li class="apartment-layout__item">
+                    <button class="apartment-layout__button">
+                      <b>Студия 42м<sup>²</sup></b>
+                      <p>нажмите, чтобы посмотреть планировку</p>
+                    </button>
+                  </li>
+                  <li class="apartment-layout__item">
+                    <button class="apartment-layout__button">
+                      <b>Студия 42м<sup>²</sup></b>
+                      <p>нажмите, чтобы посмотреть планировку</p>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="apartment-final tabs__content-item hidden">
+              <section class="box">
+                <header class="apartment-final__header">
+                  <h3 class="apartment-final__title">Студия с совмещённым сан-узлом</h3>
+                  <p class="apartment-final__desc">Квартира №2312131</p>
+                </header>
+
+                <div class="apartment-final__left">
+                  <img src="img/room.svg" alt="room">
+                </div>
+
+                <div class="apartment-final__right">
+                  <ul class="apartment-final__list">
+                    <li class="apartment-final__item">
+                      Общая площадь:
+                      <span class="apartment-final__item-value">75,1 кв.м</span>
+                    </li>
+                    <li class="apartment-final__item">
+                      Кухня:
+                      <span class="apartment-final__item-value">14,1 кв.м</span>
+                    </li>
+                    <li class="apartment-final__item">
+                      Жилая площадь:
+                      <span class="apartment-final__item-value">43,4 кв.м</span>
+                    </li>
+                    <li class="apartment-final__item">
+                      Сан.узел:
+                      <span class="apartment-final__item-value">4,4 кв.м</span>
+                    </li>
+                    <li class="apartment-final__item">
+                      Лоджия:
+                      <span class="apartment-final__item-value">5,9 кв.м</span>
+                    </li>
+                    <li class="apartment-final__item">
+                      Прихожая:
+                      <span class="apartment-final__item-value">7,3 кв.м</span>
+                    </li>
+                  </ul>
+
+                  <div class="apartment-final__right-footer">
+                    <div class="apartment-final__price">
+                      <b class="apartment-final__price-title">Цена:</b>
+                      <p class="apartment-final__price-value">14 500 000 руб</p>
+                    </div>
+
+                    <button class="apartment-final__submit button-secondary">Записаться на просмотр</button>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="apartment__button-nav">
+        <button class="apartment-button apartment-button--prev">
+          <svg width="17" height="26" viewBox="0 0 17 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 24L3 13L15 2" stroke="#E2E2E2" stroke-width="4"/>
+          </svg>
+          Назад
+        </button>
+
+        <button class="apartment-button apartment-button--next">
+          Далее
+          <svg width="17" height="26" viewBox="0 0 17 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 2L14 13L2 24" stroke="white" stroke-width="4"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+</body>
+</html>
