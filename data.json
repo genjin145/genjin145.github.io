@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "transportationDate": "22.09.2019",
+    "companyName": "БАСАТИ СПЕДИШН, ООО",
+    "fullNameCarrier": "Штурманов Алексей Геннадьевич",
+    "phoneCarrier": "+7 (940) 921-32-32",
+    "comments": "",
+    "ati": 12345
+  },
+  {
+    "id": 2,
+    "transportationDate": "07.02.2018",
+    "companyName": "ТРАНС ГРУЗ, ООО",
+    "fullNameCarrier": "Еременко Е.А.",
+    "phoneCarrier": "+7 (920) 386-21-64",
+    "comments": "удален",
+    "ati": 23456
+  },
+  {
+    "id": 3,
+    "transportationDate": "15.03.2020",
+    "companyName": "Карат, ООО",
+    "fullNameCarrier": "Ахмедов Р.Г.",
+    "phoneCarrier": "+7 (920) 386-21-64",
+    "comments": "",
+    "ati": 12678
+  }
+]
