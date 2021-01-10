@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d6b6f063.chunk.css",
+    "main.js": "/static/js/main.7ad4b13c.chunk.js",
+    "main.js.map": "/static/js/main.7ad4b13c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d04a544b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d04a544b.js.map",
+    "static/js/2.e002487c.chunk.js": "/static/js/2.e002487c.chunk.js",
+    "static/js/2.e002487c.chunk.js.map": "/static/js/2.e002487c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.d6b6f063.chunk.css.map": "/static/css/main.d6b6f063.chunk.css.map",
+    "static/js/2.e002487c.chunk.js.LICENSE.txt": "/static/js/2.e002487c.chunk.js.LICENSE.txt",
+    "static/media/arrow-left.03d159ab.svg": "/static/media/arrow-left.03d159ab.svg",
+    "static/media/arrow-right.3599ee8e.svg": "/static/media/arrow-right.3599ee8e.svg",
+    "static/media/checkbox-off.f5c02be0.svg": "/static/media/checkbox-off.f5c02be0.svg",
+    "static/media/checkbox-on.901a8c40.svg": "/static/media/checkbox-on.901a8c40.svg",
+    "static/media/next.0bca8a46.svg": "/static/media/next.0bca8a46.svg",
+    "static/media/prev.a16da14b.svg": "/static/media/prev.a16da14b.svg",
+    "static/media/radio-off.2b67213c.svg": "/static/media/radio-off.2b67213c.svg",
+    "static/media/radio-on.1182f746.svg": "/static/media/radio-on.1182f746.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d04a544b.js",
+    "static/js/2.e002487c.chunk.js",
+    "static/css/main.d6b6f063.chunk.css",
+    "static/js/main.7ad4b13c.chunk.js"
+  ]
+}
