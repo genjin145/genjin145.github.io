@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.box {
+  display: inline-grid;
+  justify-content: center;
+  row-gap: 20px;
+  align-items: center;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.image {
+  color: rgba(0, 0, 0, .4);
+  font-size: 24px;
+  text-align: center;
+}

@@ -1,0 +1,33 @@
+.wrapper {
+  position: relative;
+  display: flex;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 0;
+  padding-top: 17px;
+  padding-bottom: 7px;
+  color:  rgba(0, 0, 0, .9);
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.input:focus {
+  outline: none;
+  border-color: #347CFF;
+}
+
+.active + .label {
+  font-size: .85rem;
+  transform: translateY(-17px);
+}
+
+.label {
+  position: absolute;
+  left: 0;
+  top: 17px;
+  color: rgba(0, 0, 0, .3);
+}

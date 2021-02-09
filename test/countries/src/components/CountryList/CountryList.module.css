@@ -1,0 +1,12 @@
+.list {
+  list-style-type: none;
+}
+
+.item + .item {
+  margin-top: 35px;
+}
+
+.item {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #A5A5A5;
+}

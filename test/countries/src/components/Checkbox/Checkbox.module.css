@@ -1,0 +1,23 @@
+.wrapper {
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.input {
+  position: absolute;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.box {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.label {
+  margin-left: 13px;
+}

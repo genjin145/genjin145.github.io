@@ -1,0 +1,29 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 24px 100px 24px;
+  grid-template-rows: 24px;
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+
+.button {
+  background-color:transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button:hover path,
+.button:focus path {
+  fill: #347CFF;
+}
+
+button:disabled path {
+  fill: rgba(0, 0, 0, .4) !important;
+}
+
+.value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

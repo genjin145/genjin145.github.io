@@ -1,0 +1,23 @@
+.link {
+  display: inline-flex;
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #2962FF;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  align-items: center;
+  column-gap: 19px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+

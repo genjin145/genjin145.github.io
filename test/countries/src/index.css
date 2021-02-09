@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #FAFAFA;
+}
+
+h2 {
+  font-weight: normal;
+  margin-bottom: 35px;
+}
+
+button, input, textarea {
+  font-family: "Roboto", sans-serif;
+}

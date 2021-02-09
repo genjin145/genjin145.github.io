@@ -1,0 +1,36 @@
+.box {
+  margin: 0 64px;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  color: #2962FF;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.header {
+  padding-top: 52px;
+  padding-bottom: 64px;
+}
+
+.header_link {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 22px;
+}
+
+.header_link svg {
+  margin-right: 8px;
+}
+
+.header_title {
+  color: rgba(0, 0, 0, .87);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+}

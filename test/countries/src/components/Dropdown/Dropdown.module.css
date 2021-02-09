@@ -1,0 +1,57 @@
+.wrapper {
+  position: relative;
+}
+
+.button {
+  display: flex;
+  padding: 0;
+  padding-top: 17px;
+  padding-bottom: 7px;
+  width: 100%;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, .9);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+  cursor: pointer;
+}
+
+.button:focus {
+  border-color: #347CFF;
+  outline: none;
+}
+
+.active .label {
+  font-size: 14px;
+  transform: translateY(-17px);
+}
+
+.label {
+  position: absolute;
+  left: 0;
+  top: 17px;
+  color: rgba(0, 0, 0, .4);
+}
+
+.value {
+  min-height: 19px;
+}
+
+.list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  display: grid;
+  row-gap: 16px;
+  margin: 0;
+  padding: 16px;
+  background-color: #fff;
+  list-style-type: none;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.23), 0px 3px 6px rgba(0, 0, 0, 0.16);
+  z-index: 1;
+}
+
+.item {
+
+}

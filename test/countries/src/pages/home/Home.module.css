@@ -1,0 +1,27 @@
+.home {
+  display: grid;
+  grid-template-columns: 1fr 393px;
+  height: 100vh;
+}
+
+.home__left {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.home__right {
+  padding: 52px 32px;
+  background-color: #fff;
+  border-left: 1px solid #A5A5A5;
+}
+
+.home__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.home__pagination {
+  margin-top: auto;
+}
