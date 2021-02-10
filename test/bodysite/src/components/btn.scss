@@ -1,0 +1,27 @@
+.btn {
+  padding: 8px;
+  color: $white;
+  font-weight: 500;
+  line-height: 17px;
+  background-color: $primary;
+  border: 1px solid $primary;
+  border-radius: 4px;
+
+  svg {
+    margin-left: 9px;
+    width: 10px;
+    height: 10px;
+    fill: $white;
+  }
+
+  &_outline {
+    padding: 11px 21px;
+    color: $primary;
+    background-color: transparent;
+    border: 1px solid $primary;
+
+    svg {
+      fill: $primary;
+    }
+  }
+}

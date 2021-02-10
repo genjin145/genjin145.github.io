@@ -1,0 +1,38 @@
+.catalog {
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  &__list {
+    margin-bottom: -30px;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__show-more {
+    display: none;
+  }
+
+  @media (max-width: 991px) {
+    padding-top: 0;
+    padding-bottom: 15px;
+
+    &__list {
+      margin: 0;
+      margin-bottom: 15px;
+    }
+
+    &__item {
+      padding: 0;
+      border-bottom: 1px solid #EBF8FF;
+
+      &:last-child {
+        border: none;
+      }
+    }
+
+    &__show-more {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

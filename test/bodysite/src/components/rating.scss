@@ -1,0 +1,76 @@
+.rating {
+  display: flex;
+
+  &__item {
+    margin-right: 3px;
+    width: 19px;
+    height: 20px;
+    background-image: url(../img/svg/star-dark.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &[data-rating="0.5"] {
+    .rating__item:nth-child(1) {
+      background-image: url(../img/svg/star-part.svg);
+    }
+  }
+  &[data-rating="1"] {
+    .rating__item:nth-child(1) {
+      background-image: url(../img/svg/star.svg);
+    }
+  }
+  &[data-rating="1.5"] {
+    .rating__item:nth-child(-n + 2) {
+      background-image: url(../img/svg/star-part.svg);
+    }
+    .rating__item:nth-child(-n + 1) {
+      background-image: url(../img/svg/star.svg);
+    }
+  }
+  &[data-rating="2"] {
+    .rating__item:nth-child(-n + 2) {
+      background-image: url(../img/svg/star.svg);
+    }
+  }
+  &[data-rating="2.5"] {
+    .rating__item:nth-child(-n + 3) {
+      background-image: url(../img/svg/star-part.svg);
+    }
+    .rating__item:nth-child(-n + 2) {
+      background-image: url(../img/svg/star.svg);
+    }
+  }
+  &[data-rating="3"] {
+    .rating__item:nth-child(-n + 3) {
+      background-image: url(../img/svg/star.svg);
+    }
+  }
+  &[data-rating="3.5"] {
+    .rating__item:nth-child(-n + 4) {
+      background-image: url(../img/svg/star-part.svg);
+    }
+    .rating__item:nth-child(-n + 3) {
+      background-image: url(../img/svg/star.svg);
+    }
+  }
+  &[data-rating="4"] {
+    .rating__item:nth-child(-n + 4) {
+      background-image: url(../img/svg/star.svg);
+    }
+  }
+  &[data-rating="4.5"] {
+    .rating__item:nth-child(-n + 5) {
+      background-image: url(../img/svg/star-part.svg);
+    }
+    .rating__item:nth-child(-n + 4) {
+      background-image: url(../img/svg/star.svg);
+    }
+  }
+  &[data-rating="5"] {
+    .rating__item:nth-child(-n + 5) {
+      background-image: url(../img/svg/star.svg);
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'SF UI Text';
+  src: url('../fonts/SFUI/SFUIText-Light.eot');
+  src: local('SF UI Text Light'), local('../fonts/SFUI/SFUIText-Light'),
+      url('../fonts/SFUI/SFUIText-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SFUI/SFUIText-Light.woff2') format('woff2'),
+      url('../fonts/SFUI/SFUIText-Light.woff') format('woff'),
+      url('../fonts/SFUI/SFUIText-Light.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF UI Text';
+  src: url('../fonts/SFUI/SFUIText-Regular.eot');
+  src: local('SF UI Text Regular'), local('../fonts/SFUI/SFUIText-Regular'),
+      url('../fonts/SFUI/SFUIText-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SFUI/SFUIText-Regular.woff2') format('woff2'),
+      url('../fonts/SFUI/SFUIText-Regular.woff') format('woff'),
+      url('../fonts/SFUI/SFUIText-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF UI Text';
+  src: url('../fonts/SFUI/SFUIText-Medium.eot');
+  src: local('SF UI Text Medium'), local('../fonts/SFUI/SFUIText-Medium'),
+      url('../fonts/SFUI/SFUIText-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SFUI/SFUIText-Medium.woff2') format('woff2'),
+      url('../fonts/SFUI/SFUIText-Medium.woff') format('woff'),
+      url('../fonts/SFUI/SFUIText-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,34 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/grid";
+
+@import "../../node_modules/swiper/swiper.scss";
+
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+// @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../components/title";
+@import "../components/btn";
+@import "../components/badge";
+@import "../components/rating";
+
+body {
+  font-size: 14px;
+  font-family: "SF UI Text";
+}
+
+img {
+  display: block;
+  width: 100%
+}
+
+@import "../components/advantages/advantages";
+@import "../components/category/category";
+@import "../components/catalog/catalog";
+@import "../components/product/product";
+@import "../components/hit/hit";

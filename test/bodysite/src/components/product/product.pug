@@ -1,0 +1,36 @@
+article.product
+  header.product__header
+    span.product__badge.badge hit
+    button.product__lens
+      +icon("lens")
+    .product__img
+      img(src="img/product-1.jpg", alt="Смартфон Apple Iphone 8 64GB Gold")
+      button.product__zoom
+        span.product__zoom-box
+          +icon("expand")
+
+    h3.product__title
+      a(href="#") Смартфон Apple Iphone 8 64GB Gold
+
+  .product__rating
+    .product__rating-rating.rating(data-rating="4.5")
+      i.rating__item
+      i.rating__item
+      i.rating__item
+      i.rating__item
+      i.rating__item
+
+    p.product__reviews 10 отзывов
+  
+  a.product__price(href="#")
+    b.product__price-current 56 890 ₽
+    del.product__price-old 56 990 ₽
+
+  p.product__status В наличии
+
+  footer.product__footer
+    button.product__cart.btn В корзину
+    button.product__compare(aria-label="Сравнить цены")
+      +icon("compare")
+    button.product__favorite(aria-label="Добавить в избранные")
+      +icon("favorite")
