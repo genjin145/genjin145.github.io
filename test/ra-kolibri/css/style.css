@@ -1,5 +1,16 @@
+@font-face {
+  font-family: 'Airport';
+  src: url('../fonts/airport/airport.eot');
+  src: local('Airport'),
+       url('../fonts/airport/airport.woff') format('woff'),
+       url('../fonts/airport/airport.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
-  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
 }
 
@@ -9,7 +20,7 @@ body {
   background-color: #EEEEEE;
 }
 
-main {
+.container {
   margin: 0 auto;
   padding-top: 60px;
   max-width: 545px;
@@ -23,38 +34,45 @@ main {
   text-decoration: none;
 }
 
+.link:hover {
+  text-decoration: underline;
+}
+
 .news-card {
   margin-bottom: 20px;
   padding: 35px 50px;
   background-color: #fff;
   border: 1px solid #E5E5E5;
   border-radius: 6px;
-  box-shadow: 0 1px 1px 0 #B7B7B7;
-}
-
-.news-card__header {
-  margin-bottom: 20px;
+  box-shadow: 0 1px 1px 0 rgba(183, 183, 183, .4);
 }
 
 .news-card__title {
   margin: 0;
-  color: #555555;
+  margin-bottom: 20px;
   font-size: 37px;
-  font-family: 'airport';
+  font-family: 'Airport', Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
+}
+
+.news-card__title a {
+  color: #555555;
+  text-decoration: none;
+}
+
+.news-card__title a:hover {
+  text-decoration: underline;
 }
 
 .news-card-box {
   display: flex;
 }
 
-.news-card-box__left {
-  margin-right: 15px;
-}
-
 .news-card-box__img-wrapper {
+  flex-shrink: 0;
   display: block;
+  margin-right: 15px;
   width: 120px;
   height: 120px;
 }
@@ -62,6 +80,7 @@ main {
 .news-card-box__img {
   width: 100%;
   height: 100%;
+  font-family: 'object-fit: cover; object-position: center;';
   object-fit: cover;
   object-position: center;
 }
@@ -72,11 +91,8 @@ main {
 }
 
 .news-card-box__desc {
-  margin-bottom: 4px;
-}
-
-.news-card-box__desc p {
   margin: 0;
+  margin-bottom: 4px;
   line-height: 18px;
 }
 
@@ -99,12 +115,9 @@ main {
     flex-direction: column;
   }
 
-  .news-card-box__left {
+  .news-card-box__img-wrapper {
     margin: 0;
     margin-bottom: 15px;
-  }
-
-  .news-card-box__img-wrapper {
     width: 100%;
     height: 200px;
   }
