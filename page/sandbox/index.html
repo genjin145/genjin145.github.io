@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple online Sandbox</title>
+  <link rel="stylesheet" href="styles/codemirror.css">
+  <link rel="stylesheet" href="styles/darcula.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/codemirror/codemirror.js"></script>
+  <script src="scripts/codemirror/htmlmixed.js"></script>
+  <script src="scripts/codemirror/xml.js"></script>
+  <script src="scripts/codemirror/css.js"></script>
+  <script src="scripts/codemirror/javascript.js"></script>
+  <script defer src="scripts/main.js"></script>
+</head>
+<body>
+  <div class="sandbox">
+    <div class="aside">
+      <div class="field html">
+        <p>html</p>
+        <div class="editor"></div>
+      </div>
+
+      <div class="field css">
+        <p>css</p>
+        <div class="editor"></div>
+      </div>
+
+      <div class="field js">
+        <p>js</p>
+        <div class="editor"></div>
+      </div>
+    </div>
+
+    <div class="resize"></div>
+
+    <div class="result">
+      <div class="overlay"></div>
+
+      <iframe src="result.html" frameborder="0"></iframe>
+    </div>
+  </div>
+</body>
+</html>
