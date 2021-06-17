@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="description"/>
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="header__top-inner container">
+          <div class="header__location header-location">
+            <button class="header-location__button" type="button">
+              <svg class="header-location__icon icon">
+                <use xlink:href="img/svg/symbol/sprite.svg#geo"></use>
+              </svg>Ваш город:<span class="header-location__location">Москва</span>
+              <svg class="header-location__arrow icon">
+                <use xlink:href="img/svg/symbol/sprite.svg#arrow-down"></use>
+              </svg>
+            </button>
+            <div class="header-location__dropdown">
+              <div class="header-location__dropdown-inner">
+                <p class="header-location__title">Ваш город: <span class="header-location__title-location">Москва</span>?</p>
+                <button class="header-location__yes button-secondary">Да</button>
+                <button class="header-location__no button-primary">Нет</button>
+              </div>
+            </div>
+          </div>
+          <nav class="header__nav">
+            <ul class="header-menu">
+              <li class="header-menu__item"><a class="header-menu__link" href="#">Доставка</a></li>
+              <li class="header-menu__item"><a class="header-menu__link" href="#">Оплата</a></li>
+              <li class="header-menu__item"><a class="header-menu__link" href="#">Возврат</a></li>
+              <li class="header-menu__item header-menu__item_dircetion_right"><a class="header-menu__link" href="#">О нас
+                  <svg class="header-menu__link-icon icon">
+                    <use xlink:href="img/svg/symbol/sprite.svg#arrow-down"></use>
+                  </svg></a>
+                <div class="header-menu__dropdown">
+                  <ul class="header-menu__submenu">
+                    <li class="header-menu__subitem"><a class="header-menu__sublink" href="#">О компании</a></li>
+                    <li class="header-menu__subitem"><a class="header-menu__sublink" href="#">Испытательная лаборатория</a></li>
+                    <li class="header-menu__subitem"><a class="header-menu__sublink" href="#">Сертификаты</a></li>
+                    <li class="header-menu__subitem"><a class="header-menu__sublink" href="#">Раскрытие информации</a></li>
+                    <li class="header-menu__subitem"><a class="header-menu__sublink" href="#">Реквизиты</a></li>
+                    <li class="header-menu__subitem"><a class="header-menu__sublink" href="#">Отзывы</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header-menu__item"><a class="header-menu__link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header__links"><a class="header__link" href="mailto:sale@oao-sozvezdie.ru">
+              <svg class="header__link-icon icon" viewBox="0 0 22.25 18.62">
+<path d="M22.24,18.62H0V0H22.24ZM1.52,17.12H20.74V1.53H1.52Z"/>
+<g>
+<polygon points="11.13 11.49 0.13 1.04 0.13 0.13 1.02 0.13 11.13 9.72 21.23 0.13 22.13 0.13 22.13 1.05 11.13 11.49"/>
+</g>
+<path d="M11.13,11.66,11,11.58,0,1.09V0H1.07l0,0,10,9.51L21.18,0h1.07V1.1ZM.25,1,11.13,11.31,22,1V.25h-.72L11.13,9.89,11,9.81,1,.25H.25Z"/>
+</svg>sale@oao-sozvezdie.ru</a><a class="header__link" href="tel:8(495)617-18-77">
+              <svg class="header__link-icon icon" viewBox="0 0 20.44 20">
+<path d="M3.26 2.47L7 6.15 5.7 7.59l6.74 6.89L13.8 13l3.76 3.75-4.45 1.7L1.56 6.94l1.7-4.44M2.74.1L2 2 .31 6.44 0 7.27l.61.61 11.51 11.51.61.61.81-.31L18 18l1.93-.73-1.48-1.47L14.7 12l-1-1-.93 1-.4.44-4.84-5L8 7.06l.89-.95L8 5.22 4.19 1.51z"></path>
+<g>
+<path class="docls-2" d="M16.38 8.81h-1.33a3.39 3.39 0 00-3.38-3.39V4.09a4.72 4.72 0 014.71 4.72z"></path>
+<path class="docls-2" d="M20.44 9.54h-1.33a8.21 8.21 0 00-8.17-8.21V0a9.54 9.54 0 019.5 9.54z"></path>
+</g>
+</svg>8 (495) 617-18-77</a></div>
+        </div>
+      </div>
+      <div class="header__sticky">
+        <div class="header__sticky-inner container">
+          <div class="header__left"><a class="header__logo logo" href="/">
+              <svg class="logo-icon icon">
+                <use xlink:href="img/svg/symbol/sprite.svg#Logo"></use>
+              </svg></a>
+            <div class="header__catalog-overlay"></div>
+            <div class="header__catalog">
+              <button class="header__catalog-button button-secondary">
+                <svg class="header__catalog-icon icon">
+                  <use xlink:href="img/svg/symbol/sprite.svg#Catalog"></use>
+                </svg>
+                <svg class="header__catalog-close icon">
+                  <use xlink:href="img/svg/symbol/sprite.svg#Close"></use>
+                </svg>каталог
+              </button>
+            </div>
+            <div class="header__catalog-menu">
+              <ul class="menu-catalog">
+                <li class="menu-catalog__item"><a class="menu-catalog__link" href="#">Электроника<sup class="menu-catalog__link-sup">30 700 700</sup></a>
+                  <ul class="menu-catalog__submenu">
+                    <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Электронные компоненты<sup class="menu-catalog__sublink-sup">500 700</sup></a></li>
+                    <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Электромеханические компоненты<sup class="menu-catalog__sublink-sup">700</sup></a></li>
+                    <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Акустические компоненты<sup class="menu-catalog__sublink-sup">500 700</sup></a></li>
+                    <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Оптоэлектроника<sup class="menu-catalog__sublink-sup">54 700</sup></a>
+                      <ul class="menu-catalog__submenu">
+                        <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Оптопары<sup class="menu-catalog__sublink-sup">500 700</sup></a></li>
+                        <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Компоненты ВОЛС<sup class="menu-catalog__sublink-sup">1</sup></a></li>
+                        <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Фоточувствительные элементы<sup class="menu-catalog__sublink-sup">700</sup></a></li>
+                        <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Излучающие диоды ИК и УФ диапазона<sup class="menu-catalog__sublink-sup">87</sup></a></li>
+                        <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Лазерные диоды и модули<sup class="menu-catalog__sublink-sup">500</sup></a></li>
+                        <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Светодиоды<sup class="menu-catalog__sublink-sup">2 678</sup></a>
+                          <ul class="menu-catalog__submenu">
+                            <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Светодиоды одноцветные<sup class="menu-catalog__sublink-sup">500 700</sup></a></li>
+                            <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Светодиоды с держателем на блок<sup class="menu-catalog__sublink-sup">1</sup></a></li>
+                            <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Светодиоды осветительные<sup class="menu-catalog__sublink-sup">700</sup></a></li>
+                            <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Светодиодные индикаторы в корпусе<sup class="menu-catalog__sublink-sup">87</sup></a></li>
+                            <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Светодиодные ленты<sup class="menu-catalog__sublink-sup">500</sup></a></li>
+                            <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Светодиоды многоцветные<sup class="menu-catalog__sublink-sup">2 678</sup></a></li>
+                            <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Светодиоды «Пиранья»<sup class="menu-catalog__sublink-sup">1 015</sup></a></li>
+                            <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">SMD-светодиоды<sup class="menu-catalog__sublink-sup">170</sup></a></li>
+                            <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Светодиодные матрицы<sup class="menu-catalog__sublink-sup">500</sup></a></li>
+                            <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Световые полосы, шкалы<sup class="menu-catalog__sublink-sup">2 678</sup></a></li>
+                            <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Аксессуары для светодиодов<sup class="menu-catalog__sublink-sup">1 015</sup></a>
+                              <ul class="menu-catalog__submenu">
+                                <li class="menu-catalog__subitem menu-catalog__subitem_single"><a class="menu-catalog__sublink" href="#">Вторичная оптика<sup class="menu-catalog__sublink-sup">256</sup></a></li>
+                                <li class="menu-catalog__subitem menu-catalog__subitem_single"><a class="menu-catalog__sublink" href="#">Держатели светодиодов<sup class="menu-catalog__sublink-sup">34</sup></a></li>
+                                <li class="menu-catalog__subitem menu-catalog__subitem_single"><a class="menu-catalog__sublink" href="#">Радиаторы для светодиодов<sup class="menu-catalog__sublink-sup">4</sup></a></li>
+                                <li class="menu-catalog__subitem menu-catalog__subitem_single"><a class="menu-catalog__sublink" href="#">Прочие аксессуары для светодиодов<sup class="menu-catalog__sublink-sup">15</sup></a></li>
+                              </ul>
+                            </li>
+                            <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Светодиоды мигающие<sup class="menu-catalog__sublink-sup">170</sup></a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Индикаторы и дисплеи<sup class="menu-catalog__sublink-sup">1 015</sup></a></li>
+                        <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Лампы<sup class="menu-catalog__sublink-sup">170</sup></a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Корпусные и установочные изделия<sup class="menu-catalog__sublink-sup">500 700</sup></a></li>
+                    <li class="menu-catalog__subitem"><a class="menu-catalog__sublink" href="#">Источники питания<sup class="menu-catalog__sublink-sup">500 700</sup></a></li>
+                  </ul>
+                </li>
+                <li class="menu-catalog__item"><a class="menu-catalog__link" href="#">Электроснабжение и СКС<sup class="menu-catalog__link-sup">700 900</sup></a></li>
+                <li class="menu-catalog__item"><a class="menu-catalog__link" href="#">Оборудование инструмент<sup class="menu-catalog__link-sup">900</sup></a></li>
+                <li class="menu-catalog__item"><a class="menu-catalog__link" href="#">Средства разработки<sup class="menu-catalog__link-sup">1 900</sup></a></li>
+                <li class="menu-catalog__item"><a class="menu-catalog__link" href="#">Телекомуникация и связь<sup class="menu-catalog__link-sup">30 900</sup></a></li>
+                <li class="menu-catalog__item"><a class="menu-catalog__link" href="#">Дом и сад<sup class="menu-catalog__link-sup">700</sup></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__search search">
+            <div class="search__controls">
+              <button class="button search__button" type="button">Везде
+                <svg class="search__button-icon icon">
+                  <use xlink:href="img/svg/symbol/sprite.svg#arrow-down"></use>
+                </svg>
+              </button>
+              <input class="search__input" type="text" placeholder="Поиск по сайту"/>
+              <button class="search__clear" type="button">
+                <svg class="search__clear-icon icon">
+                  <use xlink:href="img/svg/symbol/sprite.svg#Close"></use>
+                </svg>
+              </button>
+              <button class="search__submit" type="button">
+                <svg class="search__submit-icon icon">
+                  <use xlink:href="img/svg/symbol/sprite.svg#Search"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="header__buttons"><a class="header__button header__button_active" href="#">
+              <svg class="header__button-icon icon">
+                <use xlink:href="img/svg/symbol/sprite.svg#compare"></use>
+              </svg><span class="header__button-counter">10</span></a><a class="header__button" href="#">
+              <svg class="header__button-icon icon">
+                <use xlink:href="img/svg/symbol/sprite.svg#Favorite"></use>
+              </svg><span class="header__button-counter">5</span></a><a class="header__button" href="#">
+              <svg class="header__button-icon icon">
+                <use xlink:href="img/svg/symbol/sprite.svg#Personal-area"></use>
+              </svg><span class="header__button-counter">5</span></a>
+            <button class="header__button">
+              <svg class="header__button-icon icon">
+                <use xlink:href="img/svg/symbol/sprite.svg#Personal-area"></use>
+              </svg>
+            </button>
+          </div>
+          <button class="header__callback button">Обратный звонок</button>
+        </div>
+      </div>
+    </header>
+    <main>
+    </main>
+    <footer class="footer"></footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
