@@ -36,6 +36,15 @@
       </div>
     </header>
     <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__info">
+            <p class="hero__subtitle">Начни обучение прямо сейчас</p>
+            <h1 class="hero__title">Инвестиции для&nbsp;начинающих</h1>
+            <p class="hero__desc">Обучайся, получай аналитику и пользуйся различными инструментами для инвестора</p><a class="hero__start-learn btn-primary" href="#">Начать обучение</a>
+          </div>
+        </div>
+      </section>
       <section class="investment">
         <div class="investment__inner container"><svg class="investment__picture" width="431" height="509" viewBox="0 0 431 509" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M215.037 508.215C333.799 508.215 430.074 406.022 430.074 279.961C430.074 153.9 333.799 51.707 215.037 51.707C96.2754 51.707 0 153.9 0 279.961C0 406.022 96.2754 508.215 215.037 508.215Z" fill="white"/>
@@ -539,7 +548,7 @@
                   <footer class="tariff__footer">
                     <p class="tariff__price"><span class="tariff__price-label">Цена:</span><span class="tariff__price-current">12 000 ₽</span><span class="tariff__price-old">38 000 ₽</span></p>
                     <div class="tariff__bottom">
-                      <button class="tariff__signup btn-light" type="button">Записаться</button>
+                      <button class="tariff__signup tariff__signup_size_sm btn-light" type="button">Записаться</button>
                     </div>
                   </footer>
                 </div>
@@ -551,12 +560,12 @@
                   <h3 class="tariff__title tariff__title_size_lg">TrendUP Premium</h3>
                   <p class="tariff__alert">Также все из курса “Самостоятельный</p>
                   <ul class="tariff__list tariff__list_size_lg">
-                    <li class="tariff__list-item">Доступ к базе знаний азеДоступ ке</li>
-                    <li class="tariff__list-item">Доступ к базе</li>
-                    <li class="tariff__list-item">Доступ к базе знаний азеДоступ ке</li>
-                    <li class="tariff__list-item">Доступ к базе</li>
-                    <li class="tariff__list-item">Доступ к базе знаний азеДоступ ке</li>
-                    <li class="tariff__list-item">Доступ к базе</li>
+                    <li class="tariff__list-item tariff__list-item_mark_light">Доступ к базе знаний азеДоступ ке</li>
+                    <li class="tariff__list-item tariff__list-item_mark_light">Доступ к базе</li>
+                    <li class="tariff__list-item tariff__list-item_mark_light">Доступ к базе знаний азеДоступ ке</li>
+                    <li class="tariff__list-item tariff__list-item_mark_light">Доступ к базе</li>
+                    <li class="tariff__list-item tariff__list-item_mark_light">Доступ к базе знаний азеДоступ ке</li>
+                    <li class="tariff__list-item tariff__list-item_mark_light">Доступ к базе</li>
                   </ul>
                   <footer class="tariff__footer">
                     <p class="tariff__price"><span class="tariff__price-label">Цена:</span><span class="tariff__price-current tariff__price-current_size_lg">40 000 ₽</span><span class="tariff__price-old tariff__price-old_size_lg">162 000 ₽</span></p>
@@ -568,6 +577,67 @@
               </article>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="support">
+        <div class="container">
+          <h2 class="support__title section-title">Поддержка во время обучения</h2>
+          <ul class="support__list">
+            <li class="support__item">
+              <h3 class="support__item-title">Сапорт 24/7</h3>
+              <p class="support__item-desc">Техподдержка решит все вопросы по оплате и другим техническим моментам</p>
+            </li>
+            <li class="support__item">
+              <h3 class="support__item-title">Преподаватель</h3>
+              <p class="support__item-desc">Задавайте любые вопросы и получайте ответы в режиме реального времени</p>
+            </li>
+            <li class="support__item">
+              <h3 class="support__item-title">Сообщество</h3>
+              <p class="support__item-desc">Вы сможете общаться и обмениваться опытом с другими учениками</p>
+            </li>
+          </ul>
+          <picture><img class="support__picture" src="img/support.jpg" alt="Сотрудники тех. поддержки"/></picture>
+        </div>
+      </section>
+      <section class="recording-course">
+        <div class="recording-course__inner container">
+          <div class="recording-course__tariff">
+            <h3 class="recording-course__tariff-title">Выберите тариф:</h3>
+            <div class="recording-course__toggle">
+              <div class="recording-course__toggle-item">
+                <input class="recording-course__toggle-input" type="radio" name="tariff" id="tariff-1" checked="checked"/>
+                <label class="recording-course__toggle-label" for="tariff-1">TrendUp-премиум</label>
+              </div>
+              <div class="recording-course__toggle-item">
+                <input class="recording-course__toggle-input" type="radio" name="tariff" id="tariff-2"/>
+                <label class="recording-course__toggle-label" for="tariff-2">Cамостоятельный</label>
+              </div>
+            </div>
+            <div class="recording-course__controls">
+              <button class="recording-course__controls-prev" type="button" aria-label="Предыдущий тариф">
+                <svg class="recording-course__controls-icon icon" width="24" height="24">
+                  <use xlink:href="img/svg/symbol/sprite.svg#chevron-left"></use>
+                </svg>
+              </button>
+              <button class="recording-course__controls-next" type="button" aria-label="Следующий тариф">
+                <svg class="recording-course__controls-icon icon" width="24" height="24">
+                  <use xlink:href="img/svg/symbol/sprite.svg#chevron-right"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="recording-course__prices">
+              <p class="recording-course__price recording-course__price_active">129 000 ₽<span class="recording-course__price-desc">Стоимость обучения по тарифу</span></p>
+              <p class="recording-course__price">12 000 ₽<span class="recording-course__price-desc">Стоимость обучения по тарифу</span></p>
+            </div>
+            <ul class="recording-course__list">
+              <li class="recording-course__list-item">Весь тариф</li>
+              <li class="recording-course__list-item">Анализ Вашего личного инвест-портфеля</li>
+              <li class="recording-course__list-item">Дневник трейдера</li>
+            </ul>
+          </div>
+          <form class="recording-course__form" action="/">
+            <h2 class="recording-course__title">Запись на курс</h2>
+          </form>
         </div>
       </section>
     </main>
